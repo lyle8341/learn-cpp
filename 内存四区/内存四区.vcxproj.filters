@@ -15,34 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="整形.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sizeof关键字.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="实型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="字符型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="转义字符.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="字符串类型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="布尔类型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="数据输入.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="starter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="全局区.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="栈区.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="堆区.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="new关键字.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

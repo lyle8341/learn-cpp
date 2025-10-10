@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{739702a6-4b2c-4426-928f-0100239d45d4}</ProjectGuid>
-    <RootNamespace>数据类型</RootNamespace>
+    <ProjectGuid>{61899e39-6c73-499e-8c80-a2705a633ceb}</ProjectGuid>
+    <RootNamespace>类和对象</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,17 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="布尔类型.cpp" />
-    <ClCompile Include="sizeof关键字.cpp" />
-    <ClCompile Include="字符串类型.cpp" />
-    <ClCompile Include="字符型.cpp" />
-    <ClCompile Include="实型.cpp" />
-    <ClCompile Include="数据输入.cpp" />
-    <ClCompile Include="整形.cpp" />
-    <ClCompile Include="转义字符.cpp" />
+    <ClInclude Include="starter.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="starter.h" />
+    <ClCompile Include="struct和class区别.cpp" />
+    <ClCompile Include="封装的意义.cpp" />
+    <ClCompile Include="封装的权限控制.cpp" />
+    <ClCompile Include="构造函数和析构函数.cpp" />
+    <ClCompile Include="构造函数的分类及调用.cpp" />
+    <ClCompile Include="继承.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

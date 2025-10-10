@@ -15,34 +15,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="整形.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sizeof关键字.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="实型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="字符型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="转义字符.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="字符串类型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="布尔类型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="数据输入.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="starter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="swap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="函数定义和调用.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="值传递.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="函数声明.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="函数分文件编写.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="函数默认参数.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="函数占位符.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="函数重载.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

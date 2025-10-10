@@ -15,34 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="整形.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sizeof关键字.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="实型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="字符型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="转义字符.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="字符串类型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="布尔类型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="数据输入.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="starter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="封装的意义.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="继承.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="封装的权限控制.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="struct和class区别.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="构造函数和析构函数.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="构造函数的分类及调用.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
