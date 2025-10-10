@@ -15,28 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="整形.cpp">
+    <ClCompile Include="switch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sizeof关键字.cpp">
+    <ClCompile Include="while.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="实型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="字符型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="转义字符.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="字符串类型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="布尔类型.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="数据输入.cpp">
+    <ClCompile Include="goto.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
