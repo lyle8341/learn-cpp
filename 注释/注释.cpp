@@ -10,3 +10,7 @@ using namespace std;
  每个程序都必须有这么一个函数
  有且仅有一个
 */
+
+int main() {
+	return 0;
+}
