@@ -1,6 +1,4 @@
-#include <iostream>
 #include "starter.h"
-using namespace std;
 
 #ifdef RUN_INTEGER
 

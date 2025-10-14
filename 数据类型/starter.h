@@ -1,5 +1,10 @@
 #pragma once
 
+#include <iostream>
+using namespace std;
+
+
+
 //#define RUN_SIZEOF
 //#define RUN_INTEGER
 //#define FLOAT_DOUBLE

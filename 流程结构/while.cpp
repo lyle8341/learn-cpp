@@ -1,8 +1,5 @@
-#include <iostream>
 #include "starter.h"
 #include <ctime>
-
-using namespace std;
 
 
 #ifdef GUESS_NUM

@@ -1,7 +1,5 @@
-#include <iostream>
 #include "starter.h"
 
-using namespace std;
 
 #ifdef ARRAY_NAME_USAGE
 int main() {

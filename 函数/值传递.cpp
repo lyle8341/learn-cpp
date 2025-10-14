@@ -1,7 +1,5 @@
-#include <iostream>
 #include "starter.h"
 
-using namespace std;
 
 #ifdef PASS_BY_VALUE
 

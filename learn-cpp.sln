@@ -14,6 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EAA0D4A0-8D7E-4480-A9D8-7B56919D4CFE}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		images\默认构造函数.png = images\默认构造函数.png
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "流程结构", "流程结构\流程结构.vcxproj", "{B59B048E-CD95-4AFF-8C5C-29831D6787FC}"
@@ -31,6 +32,14 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "引用", "引用\引用.vcxproj", "{194DDF31-6B3B-44F0-9BBF-C2E3626246E6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类和对象", "类和对象\类和对象.vcxproj", "{61899E39-6C73-499E-8C80-A2705A633CEB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "友元", "友元\友元.vcxproj", "{7C19502C-C132-427D-949E-B94337EC32FA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "运算符重载", "运算符重载\运算符重载.vcxproj", "{4F20A75E-A4FE-4359-8BA2-C4C9CC357DC3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "继承", "继承\继承.vcxproj", "{B573EC3B-39F0-48F2-AAF4-D9BBBEDAFDF2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "多态", "多态\多态.vcxproj", "{5EB49EC3-81A8-40E7-A53F-F91F1C26ADF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -136,6 +145,38 @@ Global
 		{61899E39-6C73-499E-8C80-A2705A633CEB}.Release|x64.Build.0 = Release|x64
 		{61899E39-6C73-499E-8C80-A2705A633CEB}.Release|x86.ActiveCfg = Release|Win32
 		{61899E39-6C73-499E-8C80-A2705A633CEB}.Release|x86.Build.0 = Release|Win32
+		{7C19502C-C132-427D-949E-B94337EC32FA}.Debug|x64.ActiveCfg = Debug|x64
+		{7C19502C-C132-427D-949E-B94337EC32FA}.Debug|x64.Build.0 = Debug|x64
+		{7C19502C-C132-427D-949E-B94337EC32FA}.Debug|x86.ActiveCfg = Debug|Win32
+		{7C19502C-C132-427D-949E-B94337EC32FA}.Debug|x86.Build.0 = Debug|Win32
+		{7C19502C-C132-427D-949E-B94337EC32FA}.Release|x64.ActiveCfg = Release|x64
+		{7C19502C-C132-427D-949E-B94337EC32FA}.Release|x64.Build.0 = Release|x64
+		{7C19502C-C132-427D-949E-B94337EC32FA}.Release|x86.ActiveCfg = Release|Win32
+		{7C19502C-C132-427D-949E-B94337EC32FA}.Release|x86.Build.0 = Release|Win32
+		{4F20A75E-A4FE-4359-8BA2-C4C9CC357DC3}.Debug|x64.ActiveCfg = Debug|x64
+		{4F20A75E-A4FE-4359-8BA2-C4C9CC357DC3}.Debug|x64.Build.0 = Debug|x64
+		{4F20A75E-A4FE-4359-8BA2-C4C9CC357DC3}.Debug|x86.ActiveCfg = Debug|Win32
+		{4F20A75E-A4FE-4359-8BA2-C4C9CC357DC3}.Debug|x86.Build.0 = Debug|Win32
+		{4F20A75E-A4FE-4359-8BA2-C4C9CC357DC3}.Release|x64.ActiveCfg = Release|x64
+		{4F20A75E-A4FE-4359-8BA2-C4C9CC357DC3}.Release|x64.Build.0 = Release|x64
+		{4F20A75E-A4FE-4359-8BA2-C4C9CC357DC3}.Release|x86.ActiveCfg = Release|Win32
+		{4F20A75E-A4FE-4359-8BA2-C4C9CC357DC3}.Release|x86.Build.0 = Release|Win32
+		{B573EC3B-39F0-48F2-AAF4-D9BBBEDAFDF2}.Debug|x64.ActiveCfg = Debug|x64
+		{B573EC3B-39F0-48F2-AAF4-D9BBBEDAFDF2}.Debug|x64.Build.0 = Debug|x64
+		{B573EC3B-39F0-48F2-AAF4-D9BBBEDAFDF2}.Debug|x86.ActiveCfg = Debug|Win32
+		{B573EC3B-39F0-48F2-AAF4-D9BBBEDAFDF2}.Debug|x86.Build.0 = Debug|Win32
+		{B573EC3B-39F0-48F2-AAF4-D9BBBEDAFDF2}.Release|x64.ActiveCfg = Release|x64
+		{B573EC3B-39F0-48F2-AAF4-D9BBBEDAFDF2}.Release|x64.Build.0 = Release|x64
+		{B573EC3B-39F0-48F2-AAF4-D9BBBEDAFDF2}.Release|x86.ActiveCfg = Release|Win32
+		{B573EC3B-39F0-48F2-AAF4-D9BBBEDAFDF2}.Release|x86.Build.0 = Release|Win32
+		{5EB49EC3-81A8-40E7-A53F-F91F1C26ADF2}.Debug|x64.ActiveCfg = Debug|x64
+		{5EB49EC3-81A8-40E7-A53F-F91F1C26ADF2}.Debug|x64.Build.0 = Debug|x64
+		{5EB49EC3-81A8-40E7-A53F-F91F1C26ADF2}.Debug|x86.ActiveCfg = Debug|Win32
+		{5EB49EC3-81A8-40E7-A53F-F91F1C26ADF2}.Debug|x86.Build.0 = Debug|Win32
+		{5EB49EC3-81A8-40E7-A53F-F91F1C26ADF2}.Release|x64.ActiveCfg = Release|x64
+		{5EB49EC3-81A8-40E7-A53F-F91F1C26ADF2}.Release|x64.Build.0 = Release|x64
+		{5EB49EC3-81A8-40E7-A53F-F91F1C26ADF2}.Release|x86.ActiveCfg = Release|Win32
+		{5EB49EC3-81A8-40E7-A53F-F91F1C26ADF2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

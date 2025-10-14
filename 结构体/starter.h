@@ -1,5 +1,8 @@
 #pragma once
 
+#include <iostream>
+using namespace std;
+
 //#define DEFINE_STRUCT
 //#define STRUCT_ARRAY
 //#define STRUCT_POINTER

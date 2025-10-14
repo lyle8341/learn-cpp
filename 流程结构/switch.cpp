@@ -1,7 +1,4 @@
-#include <iostream>
 #include "starter.h"
-
-using namespace std;
 
 
 #ifdef SWITCH_TEST

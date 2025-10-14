@@ -1,7 +1,4 @@
-#include <iostream>
 #include "starter.h"
-
-using namespace std;
 
 
 #ifdef CONST_DECORATE_POINTER

@@ -1,7 +1,5 @@
-#include <iostream>
 #include "starter.h"
 
-using namespace std;
 
 #ifdef MEM_FOUR_REGION_STACK
 

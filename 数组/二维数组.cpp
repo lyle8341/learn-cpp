@@ -1,8 +1,6 @@
-#include <iostream>
 #include "starter.h"
 #include <ctime>
 
-using namespace std;
 
 #ifdef TWO_DIMENSIONAL_ARRAY
 

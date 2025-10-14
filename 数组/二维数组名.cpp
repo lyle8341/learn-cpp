@@ -1,7 +1,5 @@
-#include <iostream>
 #include "starter.h"
 
-using namespace std;
 
 #ifdef TWO_D_ARRAY_NAME
 int main() {

@@ -1,5 +1,11 @@
 #pragma once
 
+
+#include <iostream>
+using namespace std;
+
+
+
 //#define REFERENCE_BASE
 
 //#define REFERENCE_NOTICE

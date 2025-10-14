@@ -1,7 +1,5 @@
-#include <iostream>
 #include "starter.h"
 
-using namespace std;
 
 #ifdef POINTER_AND_FUNCTION
 

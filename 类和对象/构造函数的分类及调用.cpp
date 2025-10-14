@@ -1,7 +1,4 @@
-#include <iostream>
 #include "starter.h"
-
-using namespace std;
 
 
 #ifdef CONSTRUCT_FUNCTION_TYPE_CALLED

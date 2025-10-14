@@ -1,5 +1,9 @@
 #pragma once
 
+#include <iostream>
+using namespace std;
+
+
 //#define FUNCTION_DEF_INVOKE
 
 //#define PASS_BY_VALUE

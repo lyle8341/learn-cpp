@@ -1,5 +1,11 @@
 #pragma once
 
+
+#include <iostream>
+using namespace std;
+
+
+
 //#define POINTER_DEFINE
 //#define POINTER_MEM_OCCUPY
 //#define NULL_POINTER

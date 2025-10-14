@@ -1,7 +1,5 @@
-#include <iostream>
 #include "starter.h"
 
-using namespace std;
 
 #ifdef REFERENCE_AS_RETURN
 
@@ -10,7 +8,7 @@ using namespace std;
 int& test01() {
 	int a = 10; //局部变量存放在四区中的栈
 	return a;
- }
+}
 
 
 //2. 函数的调用可以作为左值

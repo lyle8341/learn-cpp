@@ -1,5 +1,9 @@
 #pragma once
 
+#include <iostream>
+using namespace std;
+
+
 //#define MEM_FOUR_REGION_GLOBAL
 
 //#define MEM_FOUR_REGION_STACK
