@@ -10,6 +10,6 @@ using namespace std;
 //#define FLOAT_DOUBLE
 //#define CHAR_TEST
 //#define Escape_Char
-//#define STRING_TYPE
+#define STRING_TYPE
 //#define BOOL_TYPE
-#define DATA_INPUT
+//#define DATA_INPUT

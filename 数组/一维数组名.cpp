@@ -2,6 +2,10 @@
 
 
 #ifdef ARRAY_NAME_USAGE
+
+//TODO 关键区别：数组名 ≠ 指针变量（数组名不是变量，是一个右值）
+
+
 int main() {
 	//数组名用途
 

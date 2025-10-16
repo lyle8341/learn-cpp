@@ -44,5 +44,8 @@
     <ClCompile Include="指针数组函数.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="指针的地址.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

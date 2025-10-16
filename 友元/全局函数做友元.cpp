@@ -24,7 +24,7 @@ private:
 
 };
 
-//全局函数
+//TODO 全局函数
 void family(House* house) {
 	cout << "家人全局函数 正在访问: " << house->livingRoom << endl;
 	cout << "家人全局函数 正在访问: " << house->bedroom << endl;
