@@ -17,7 +17,7 @@ public:
 
 class House {
 
-	//House好友列表
+	//TODO House好友列表
 	friend void Family::activity();
 
 public:

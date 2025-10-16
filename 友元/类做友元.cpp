@@ -5,7 +5,7 @@
 
 class House {
 
-	//House的好友列表
+	//TODO House的好友列表
 	friend class Family;
 
 public:

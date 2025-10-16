@@ -19,4 +19,30 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="继承的基本语法.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="继承中的对象模型.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="继承中的构造和析构顺序.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="继承中同名成员处理方式.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="继承中同名静态成员处理方式.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="多继承.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="菱形继承.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="菱形继承解决方案.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

@@ -148,6 +148,7 @@
     <ClCompile Include="指针和数组.cpp" />
     <ClCompile Include="指针所占内存空间.cpp" />
     <ClCompile Include="指针数组函数.cpp" />
+    <ClCompile Include="指针的地址.cpp" />
     <ClCompile Include="空指针.cpp" />
     <ClCompile Include="野指针.cpp" />
   </ItemGroup>

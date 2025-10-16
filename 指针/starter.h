@@ -16,4 +16,6 @@ using namespace std;
 
 //#define POINTER_AND_ARRAY
 //#define POINTER_AND_FUNCTION
-#define POINTER_ARRAY_FUNCTION
+//#define POINTER_ARRAY_FUNCTION
+
+#define POINTER_ADDRESS
