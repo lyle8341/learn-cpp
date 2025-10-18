@@ -16,4 +16,6 @@ using namespace std;
 
 //#define STRING_INSERT_DELETE
 
-#define STRING_SUBSTRING
+//#define STRING_SUBSTRING
+
+#define STRING_MENU

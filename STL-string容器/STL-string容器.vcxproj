@@ -30,6 +30,7 @@
     <ClCompile Include="string_赋值.cpp" />
     <ClCompile Include="string_构造函数.cpp" />
     <ClCompile Include="字符串_查找和替换.cpp" />
+    <ClCompile Include="菜单.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
