@@ -4,35 +4,35 @@
 #ifdef DATA_INPUT
 
 int main() {
-	// ÕûĞÎ
+	// æ•´å½¢
 	int a = 0;
-	cout << "Çë¸øÕûĞÎ±äÁ¿a¸³Öµ£º" << endl;
+	cout << "è¯·ç»™æ•´å½¢å˜é‡aèµ‹å€¼ï¼š" << endl;
 	cin >> a;
-	cout << "ÕûĞÎ±äÁ¿ a = " << a << endl;
+	cout << "æ•´å½¢å˜é‡ a = " << a << endl;
 
-	//¸¡µã
+	//æµ®ç‚¹
 	float f = 3.14f;
-	cout << "Çë¸ø¸¡µãĞÍ±äÁ¿f¸³Öµ£º" << endl;
+	cout << "è¯·ç»™æµ®ç‚¹å‹å˜é‡fèµ‹å€¼ï¼š" << endl;
 	cin >> f;
-	cout << "ÕûĞÎ±äÁ¿ f = " << f << endl;
+	cout << "æ•´å½¢å˜é‡ f = " << f << endl;
 
-	//×Ö·ûĞÍ
+	//å­—ç¬¦å‹
 	char ch = 'x';
-	cout << "Çë¸ø×Ö·ûĞÍ±äÁ¿ch¸³Öµ£º" << endl;
+	cout << "è¯·ç»™å­—ç¬¦å‹å˜é‡chèµ‹å€¼ï¼š" << endl;
 	cin >> ch;
-	cout << "ÕûĞÎ±äÁ¿ ch = " << ch << endl;
+	cout << "æ•´å½¢å˜é‡ ch = " << ch << endl;
 
-	//×Ö·û´®ĞÍ
+	//å­—ç¬¦ä¸²å‹
 	string str = "hello";
-	cout << "Çë¸ø×Ö·û´®±äÁ¿str¸³Öµ£º" << endl;
+	cout << "è¯·ç»™å­—ç¬¦ä¸²å˜é‡strèµ‹å€¼ï¼š" << endl;
 	cin >> str;
-	cout << "ÕûĞÎ±äÁ¿ str = " << str << endl;
+	cout << "æ•´å½¢å˜é‡ str = " << str << endl;
 
-	//²¼¶ûÀàĞÍ
+	//å¸ƒå°”ç±»å‹
 	bool flag = true;
-	cout << "Çë¸ø²¼¶û±äÁ¿flag¸³Öµ£º" << endl;
+	cout << "è¯·ç»™å¸ƒå°”å˜é‡flagèµ‹å€¼ï¼š" << endl;
 	cin >> flag;
-	cout << "ÕûĞÎ±äÁ¿ flag = " << flag << endl;
+	cout << "æ•´å½¢å˜é‡ flag = " << flag << endl;
 
 	return 0;
 }

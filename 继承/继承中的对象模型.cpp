@@ -12,17 +12,17 @@ private:
 };
 
 
-//TODO ¸¸ÀàÖÐËùÓÐ·Ç¾²Ì¬³ÉÔ±ÊôÐÔ¶¼»á±»×ÓÀà¼Ì³ÐÏÂÈ¥
-//TODO ¸¸ÀàÖÐË½ÓÐ³ÉÔ±ÊôÐÔ£¬ÊÇ±»±àÒëÆ÷¸øÒþ²ØÁË
+//TODO çˆ¶ç±»ä¸­æ‰€æœ‰éžé™æ€æˆå‘˜å±žæ€§éƒ½ä¼šè¢«å­ç±»ç»§æ‰¿ä¸‹åŽ»
+//TODO çˆ¶ç±»ä¸­ç§æœ‰æˆå‘˜å±žæ€§ï¼Œæ˜¯è¢«ç¼–è¯‘å™¨ç»™éšè—äº†
 class Son : public Base {
 public:
 	int d;
 };
 
-//TODO ÀûÓÃ¿ª·¢ÈËÔ±ÃüÁîÌáÊ¾·û¹¤¾ß²é¿´¶ÔÏóÄ£ÐÍ¾ÖÃüÁî:
-//TODO cl /d1 reportSingleClassLayoutÀàÃû ÀàËùÔÚµÄcppÎÄ¼þ ----> cl /d1 reportSingleClassLayoutSon ¼Ì³ÐÖÐµÄ¶ÔÏóÄ£ÐÍ.cpp
-//TODO cl /d1 reportSingleClassLayoutÀàÃû ÀàËùÔÚµÄcppÎÄ¼þ ----> cl /d1 reportSingleClassLayoutSon ¼Ì³ÐÖÐµÄ¶ÔÏóÄ£ÐÍ.cpp
-//TODO cl /d1 reportSingleClassLayoutÀàÃû ÀàËùÔÚµÄcppÎÄ¼þ ----> cl /d1 reportSingleClassLayoutSon ¼Ì³ÐÖÐµÄ¶ÔÏóÄ£ÐÍ.cpp
+//TODO åˆ©ç”¨å¼€å‘äººå‘˜å‘½ä»¤æç¤ºç¬¦å·¥å…·æŸ¥çœ‹å¯¹è±¡æ¨¡åž‹å±€å‘½ä»¤:
+//TODO cl /d1 reportSingleClassLayoutç±»å ç±»æ‰€åœ¨çš„cppæ–‡ä»¶ ----> cl /d1 reportSingleClassLayoutSon ç»§æ‰¿ä¸­çš„å¯¹è±¡æ¨¡åž‹.cpp
+//TODO cl /d1 reportSingleClassLayoutç±»å ç±»æ‰€åœ¨çš„cppæ–‡ä»¶ ----> cl /d1 reportSingleClassLayoutSon ç»§æ‰¿ä¸­çš„å¯¹è±¡æ¨¡åž‹.cpp
+//TODO cl /d1 reportSingleClassLayoutç±»å ç±»æ‰€åœ¨çš„cppæ–‡ä»¶ ----> cl /d1 reportSingleClassLayoutSon ç»§æ‰¿ä¸­çš„å¯¹è±¡æ¨¡åž‹.cpp
 int main() {
 	cout << "size of Son = " << sizeof(Son) << endl;
 	return 0;

@@ -1,5 +1,5 @@
 #include "starter.h"
-#include "../±ê×¼Ä£°å¿â(STL)/lyleRandom.h"
+#include "../æ ‡å‡†æ¨¡æ¿åº“(STL)/lyleRandom.h"
 
 #ifdef VECTOR_INSERT_DELETE
 
@@ -14,20 +14,20 @@ int main() {
 	}
 	printVector(v);
 
-	v.pop_back();//Î²É¾
+	v.pop_back();//å°¾åˆ 
 	printVector(v);
 
-	//²åÈë
+	//æ’å…¥
 	v.insert(v.begin(), 99);
 	printVector(v);
 
 	v.insert(v.begin(), 2, 999);
 	printVector(v);
-	//É¾³ı
+	//åˆ é™¤
 	v.erase(v.begin());
 	printVector(v);
-	
-	//Çå¿Õvector
+
+	//æ¸…ç©ºvector
 	//v.erase(v.begin(), v.end());
 	v.clear();
 	printVector(v);

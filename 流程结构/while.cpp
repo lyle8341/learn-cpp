@@ -5,32 +5,32 @@
 #ifdef GUESS_NUM
 
 int main() {
-	//Ìí¼ÓËæ»úÊıÖÖ×Ó
+	//æ·»åŠ éšæœºæ•°ç§å­
 	srand((unsigned int)time(NULL));
 
-	//Éú³É0+1 ~ 99+1Ëæ»úÊı
+	//ç”Ÿæˆ0+1 ~ 99+1éšæœºæ•°
 	int num = rand() % 100 + 1;
 	//cout << num << endl;
 
 	int val = 0;
-	cout << "ÇëÊäÈë²Â²âµÄÊı×Ö: " << endl;
+	cout << "è¯·è¾“å…¥çŒœæµ‹çš„æ•°å­—: " << endl;
 
 	int stat_count = 0;
 
-	//ÅĞ¶ÏÍæ¼ÒµÄ²Â²â
+	//åˆ¤æ–­ç©å®¶çš„çŒœæµ‹
 	while (true)
 	{
 		stat_count++;
 		cin >> val;
 		if (val < num) {
-			cout << "Æ«Ğ¡£¬ÇëÖØ²Â" << endl;
+			cout << "åå°ï¼Œè¯·é‡çŒœ" << endl;
 		}
 		else if (val > num) {
-			cout << "Æ«´ó£¬ÇëÖØ²Â" << endl;
+			cout << "åå¤§ï¼Œè¯·é‡çŒœ" << endl;
 		}
 		else {
-			cout << "²Â²âÕıÈ·" << endl;
-			cout << "¹²¼Æ²Â²â´ÎÊı: " << stat_count << endl;
+			cout << "çŒœæµ‹æ­£ç¡®" << endl;
+			cout << "å…±è®¡çŒœæµ‹æ¬¡æ•°: " << stat_count << endl;
 			break;
 		}
 	}

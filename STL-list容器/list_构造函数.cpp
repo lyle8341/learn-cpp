@@ -7,7 +7,7 @@
 
 
 int main() {
-	list<int> L1; // Ä¬ÈÏ¹¹Ôì
+	list<int> L1; // é»˜è®¤æ„é€ 
 	L1.push_back(10);
 	L1.push_back(20);
 	L1.push_back(30);
@@ -15,11 +15,11 @@ int main() {
 
 	printList(L1);
 
-	//Çø¼ä¹¹Ôì
+	//åŒºé—´æ„é€ 
 	list<int> L2(L1.begin(), L1.end());
 	printList(L2);
 
-	//¿½±´¹¹Ôì
+	//æ‹·è´æ„é€ 
 	list<int> L3(L2);
 	printList(L3);
 

@@ -1,5 +1,5 @@
 #include "starter.h"
-#include "../±ê×¼Ä£°å¿â(STL)/lyleRandom.h"
+#include "../æ ‡å‡†æ¨¡æ¿åº“(STL)/lyleRandom.h"
 
 #ifdef VECTOR_SAVE_GET
 
@@ -12,22 +12,22 @@ int main() {
 	{
 		v.push_back(lyle_generateRandom());
 	}
-	//ÀûÓÃ[]·ÃÎÊÊı×éÖĞÔªËØ
+	//åˆ©ç”¨[]è®¿é—®æ•°ç»„ä¸­å…ƒç´ 
 	for (int i = 0;i < v.size(); i++)
 	{
 		cout << v[i] << " ";
 	}
 	cout << endl;
 
-	//ÀûÓÃat·½Ê½·ÃÎÊÔªËØ
+	//åˆ©ç”¨atæ–¹å¼è®¿é—®å…ƒç´ 
 	for (int i = 0; i < v.size(); i++)
 	{
 		cout << v.at(i) << " ";
 	}
 	cout << endl;
 
-	cout << "µÚÒ»¸öÔªËØ: " <<v.front() << endl;
-	cout << "×îºóÒ»¸öÔªËØ: " <<v.back() << endl;
+	cout << "ç¬¬ä¸€ä¸ªå…ƒç´ : " <<v.front() << endl;
+	cout << "æœ€åä¸€ä¸ªå…ƒç´ : " <<v.back() << endl;
 
 	return 0;
 }

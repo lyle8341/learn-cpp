@@ -1,65 +1,65 @@
 #include "starter.h"
 #include <vector>
-#include "../±ê×¼Ä£°å¿â(STL)/lyleRandom.h"
+#include "../æ ‡å‡†æ¨¡æ¿åº“(STL)/lyleRandom.h"
 
-//ÄÚ½¨·Âº¯ÊıĞèÒªÒıÈë
+//å†…å»ºä»¿å‡½æ•°éœ€è¦å¼•å…¥
 #include <functional>
-//Ëã·¨
+//ç®—æ³•
 #include <algorithm>
 
 #ifdef INTERNAL_FUNCTION_OBJ
 
-void ËãÊõ·Âº¯Êı() {
-	//È¡·´
-	negate<int> n;
-	cout << n(50) << endl;
+void ç®—æœ¯ä»¿å‡½æ•°() {
+    //å–å
+    negate<int> n;
+    cout << n(50) << endl;
 
-	plus<int> p;
-	cout << p(10, 20) << endl;
+    plus<int> p;
+    cout << p(10, 20) << endl;
 
-	//plus
-	//minus
-	//multiplies
-	//divides
-	//modulus
+    //plus
+    //minus
+    //multiplies
+    //divides
+    //modulus
 }
 
-void ¹ØÏµ·Âº¯Êı() {
-	vector<int> v;
-	for (int i = 0; i < 10; i++)
-	{
-		v.push_back(lyle_generateRandom());
-	}
-	printVector(v);
-	sort(v.begin(), v.end(), greater<int>());
-	printVector(v);
-	//equal_to
-	//not_equal
-	//greater_equal
-	//less
-	//less_equal
+void å…³ç³»ä»¿å‡½æ•°() {
+    vector<int> v;
+    for (int i = 0; i < 10; i++)
+    {
+        v.push_back(lyle_generateRandom());
+    }
+    printVector(v);
+    sort(v.begin(), v.end(), greater<int>());
+    printVector(v);
+    //equal_to
+    //not_equal
+    //greater_equal
+    //less
+    //less_equal
 }
 
-void Âß¼­·Âº¯Êı() {
-	vector<bool> v;
-	v.push_back(true);
-	v.push_back(false);
-	v.push_back(true);
-	v.push_back(false);
-	printVector(v);
+void é€»è¾‘ä»¿å‡½æ•°() {
+    vector<bool> v;
+    v.push_back(true);
+    v.push_back(false);
+    v.push_back(true);
+    v.push_back(false);
+    printVector(v);
 
-	vector<bool> v2;
-	v2.resize(v.size());//TODO ±ØĞëÓĞ!!!
+    vector<bool> v2;
+    v2.resize(v.size());//TODO å¿…é¡»æœ‰!!!
 
-	transform(v.begin(), v.end(), v2.begin(), logical_not<bool>());
-	printVector(v2);
+    transform(v.begin(), v.end(), v2.begin(), logical_not<bool>());
+    printVector(v2);
 }
 
 int main() {
-	lyle_initRandom();
-	//ËãÊõ·Âº¯Êı();
-	//¹ØÏµ·Âº¯Êı();
-	Âß¼­·Âº¯Êı();
-	return 0;
+    lyle_initRandom();
+    //ç®—æœ¯ä»¿å‡½æ•°();
+    //å…³ç³»ä»¿å‡½æ•°();
+    é€»è¾‘ä»¿å‡½æ•°();
+    return 0;
 }
 #endif // INTERNAL_FUNCTION_OBJ

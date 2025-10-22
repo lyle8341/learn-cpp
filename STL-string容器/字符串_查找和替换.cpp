@@ -5,11 +5,11 @@
 
 void strFind() {
 	string str1 = "abcdefg";
-	int idx = str1.find("de");//´Ó×óÍùÓÒ²éÕÒ
-	str1.rfind("de");//´ÓÓÒÍù×ó²éÕÒ
+	int idx = str1.find("de");//ä»å·¦å¾€å³æŸ¥æ‰¾
+	str1.rfind("de");//ä»å³å¾€å·¦æŸ¥æ‰¾
 
-	if (-1 == idx) {//TODO Î´ÕÒµ½
-		cout << "Î´ÕÒµ½" << endl;
+	if (-1 == idx) {//TODO æœªæ‰¾åˆ°
+		cout << "æœªæ‰¾åˆ°" << endl;
 	}
 	else {
 		cout << idx << endl;
@@ -19,7 +19,7 @@ void strFind() {
 
 void strReplace() {
 	string str1 = "abcdefg";
-	//´Ó1ºÅÎ»ÖÃÆğ 3¸ö×Ö·û Ìæ»»Îª XXXXXX
+	//ä»1å·ä½ç½®èµ· 3ä¸ªå­—ç¬¦ æ›¿æ¢ä¸º XXXXXX
 	str1.replace(1, 3, "XXXXXX");
 	cout << str1 << endl;
 

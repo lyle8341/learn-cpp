@@ -9,10 +9,10 @@ public:
 		this->age = age;
 	}
 
-	//vector ÖĞÓĞËÄ¸öÔªËØ
-	//TODO vectorÎö¹¹4´Î£¬¾Ö²¿±äÁ¿Îö¹¹4´Î£¬vectorÀ©ÈİÎö¹¹n´Î
+	//vector ä¸­æœ‰å››ä¸ªå…ƒç´ 
+	//TODO vectorææ„4æ¬¡ï¼Œå±€éƒ¨å˜é‡ææ„4æ¬¡ï¼Œvectoræ‰©å®¹ææ„næ¬¡
 	~Person() {
-		cout << "name = " << this->name << " µÄ¶ÔÏóÎö¹¹ÁË" << endl;
+		cout << "name = " << this->name << " çš„å¯¹è±¡ææ„äº†" << endl;
 	}
 
 	string name;
@@ -20,23 +20,23 @@ public:
 };
 
 void myPrint(const Person& p) {
-	cout << "ĞÕÃû: " << p.name << "\tÄêÁä: " << p.age << endl;
+	cout << "å§“å: " << p.name << "\tå¹´é¾„: " << p.age << endl;
 }
 
-//´æ·Å×Ô¶¨ÒåÀàĞÍ
+//å­˜æ”¾è‡ªå®šä¹‰ç±»å‹
 void test01() {
 	vector<Person> v;
-	Person p1("ÌÆÉ®", 30);
-	Person p2("ÎòÄÜ", 30);
-	Person p3("Îò¿Õ", 30);
-	Person p4("Îò¾»", 30);
+	Person p1("å”åƒ§", 30);
+	Person p2("æ‚Ÿèƒ½", 30);
+	Person p3("æ‚Ÿç©º", 30);
+	Person p4("æ‚Ÿå‡€", 30);
 
 	v.push_back(p1);
 	v.push_back(p2);
 	v.push_back(p3);
 	v.push_back(p4);
 
-	//µÚÈıÖÖ±éÀú ÀûÓÃSTLÌá¹©µÄ±éÀúËã·¨
+	//ç¬¬ä¸‰ç§éå† åˆ©ç”¨STLæä¾›çš„éå†ç®—æ³•
 	for_each(v.begin(), v.end(), myPrint);
 
 
@@ -47,14 +47,14 @@ void test01() {
 	}
 }
 
-//´æ·Å×Ô¶¨ÒåÀàĞÍÖ¸Õë
+//å­˜æ”¾è‡ªå®šä¹‰ç±»å‹æŒ‡é’ˆ
 void test02() {
 	vector<Person*> v;
 
-	Person p1("ÌÆÉ®", 30);
-	Person p2("ÎòÄÜ", 30);
-	Person p3("Îò¿Õ", 30);
-	Person p4("Îò¾»", 30);
+	Person p1("å”åƒ§", 30);
+	Person p2("æ‚Ÿèƒ½", 30);
+	Person p3("æ‚Ÿç©º", 30);
+	Person p4("æ‚Ÿå‡€", 30);
 	v.push_back(&p1);
 	v.push_back(&p2);
 	v.push_back(&p3);

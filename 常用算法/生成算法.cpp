@@ -7,7 +7,7 @@
 int main() {
 
 
-	//int accumulate(iterator beg, iterator end, 0);// 0£ºÆðÊ¼Öµ
+	//int accumulate(iterator beg, iterator end, 0);// 0ï¼šèµ·å§‹å€¼
 
 	//fill(iterator beg, iterator end, value)
 

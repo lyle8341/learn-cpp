@@ -10,10 +10,10 @@ int main() {
 	L1.push_back(3);
 	L1.push_back(4);
 
-	cout << "µÚÒ»¸öÔªËØ:" << L1.front() << endl;
-	cout << "×îºóÒ»¸ö:" << L1.back() << endl;
+	cout << "ç¬¬ä¸€ä¸ªå…ƒç´ :" << L1.front() << endl;
+	cout << "æœ€åä¸€ä¸ª:" << L1.back() << endl;
 
-	//TODO ²»Ö§³ÖËæ»ú·ÃÎÊ(it = it + 1)£¬Ö»ÄÜ ++, »ò --
+	//TODO ä¸æ”¯æŒéšæœºè®¿é—®(it = it + 1)ï¼Œåªèƒ½ ++, æˆ– --
 
 
 }

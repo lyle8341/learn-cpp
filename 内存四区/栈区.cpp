@@ -3,7 +3,7 @@
 
 #ifdef MEM_FOUR_REGION_STACK
 
-//不要返回局部变量的地址
+//涓嶈杩斿洖灞�閮ㄥ彉閲忕殑鍦板潃
 int* func() {
 	int a = 10;
 	return &a;

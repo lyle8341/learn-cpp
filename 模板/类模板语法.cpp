@@ -3,11 +3,11 @@
 
 #ifdef CLASS_TEMPLATE
 
-//TODO ÀàÄ£°åÃ»ÓĞ×Ô¶¯ÍÆµ¼·½Ê½£¬±ØĞëÏÔÊ¾Ö¸¶¨
+//TODO ç±»æ¨¡æ¿æ²¡æœ‰è‡ªåŠ¨æ¨å¯¼æ–¹å¼ï¼Œå¿…é¡»æ˜¾ç¤ºæŒ‡å®š
 
 
 
-//ÀàÄ£°å
+//ç±»æ¨¡æ¿
 template<class NameType, class AgeType>
 class Person {
 public:
@@ -17,7 +17,7 @@ public:
 	}
 
 	void print() {
-		cout << "ĞÕÃû: " << name << "\tÄêÁä: " << age << endl;
+		cout << "å§“å: " << name << "\tå¹´é¾„: " << age << endl;
 	}
 
 	NameType name;

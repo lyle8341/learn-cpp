@@ -3,67 +3,67 @@
 
 #ifdef VIRTUAL_DESTRUCTOR_PURE_VIRTUAL_DESTRUCTOR
 
-//¶àÌ¬Ê¹ÓÃÊ±£¬Èç¹û×ÓÀàÖÐÓÐÊôÐÔ¿ª±Ùµ½¶ÑÇø£¬ÄÇÃ´¸¸ÀàÖ¸ÕëÔÚÊÍ·ÅÊ±ÎÞ·¨µ÷ÓÃµ½×ÓÀàµÄÎö¹¹´úÂë
-//½â¾ö·½Ê½£º ½«¸¸ÀàÖÐµÄÎö¹¹º¯Êý¸ÄÎªÐéÎö¹¹»òÕß´¿ÐéÎö¹¹
+//å¤šæ€ä½¿ç”¨æ—¶ï¼Œå¦‚æžœå­ç±»ä¸­æœ‰å±žæ€§å¼€è¾Ÿåˆ°å †åŒºï¼Œé‚£ä¹ˆçˆ¶ç±»æŒ‡é’ˆåœ¨é‡Šæ”¾æ—¶æ— æ³•è°ƒç”¨åˆ°å­ç±»çš„æžæž„ä»£ç 
+//è§£å†³æ–¹å¼ï¼š å°†çˆ¶ç±»ä¸­çš„æžæž„å‡½æ•°æ”¹ä¸ºè™šæžæž„æˆ–è€…çº¯è™šæžæž„
 
-// ÓÐ´¿ÐéÎö¹¹µÄÀà£¬Ò²ÊôÓÚ³éÏóÀà£¬ÎÞ·¨ÊµÀý»¯
+// æœ‰çº¯è™šæžæž„çš„ç±»ï¼Œä¹Ÿå±žäºŽæŠ½è±¡ç±»ï¼Œæ— æ³•å®žä¾‹åŒ–
 
 class Animal {
 public:
 
-	Animal() {
-		cout << "AnimalÄ¬ÈÏ¹¹Ôìº¯Êýµ÷ÓÃÁË" << endl;
-	}
+    Animal() {
+        cout << "Animalé»˜è®¤æž„é€ å‡½æ•°è°ƒç”¨äº†" << endl;
+    }
 
-	//ÐéÎö¹¹
-	/*virtual ~Animal() {
-		cout << "AnimalÐéÎö¹¹º¯Êýµ÷ÓÃÁË" << endl;
-	}*/
+    //è™šæžæž„
+    /*virtual ~Animal() {
+        cout << "Animalè™šæžæž„å‡½æ•°è°ƒç”¨äº†" << endl;
+    }*/
 
-	//´¿ÐéÎö¹¹
-	virtual ~Animal() = 0;
+    //çº¯è™šæžæž„
+    virtual ~Animal() = 0;
 
-	//´¿Ðéº¯Êý
-	virtual void speak() = 0;
+    //çº¯è™šå‡½æ•°
+    virtual void speak() = 0;
 };
 
-//TODO ÐéÎö¹¹ºÍ´¿ÐéÎö¹¹±ØÐëÓÐ¾ßÌåº¯ÊýÊµÏÖ£¬ÒòÎªÈç¹û¸¸ÀàÓÐ¶ÑÇøÊôÐÔµÄ»°¾ÍÒªÓÃµ½
+//TODO è™šæžæž„å’Œçº¯è™šæžæž„å¿…é¡»æœ‰å…·ä½“å‡½æ•°å®žçŽ°ï¼Œå› ä¸ºå¦‚æžœçˆ¶ç±»æœ‰å †åŒºå±žæ€§çš„è¯å°±è¦ç”¨åˆ°
 Animal::~Animal() {
-	cout << "Animal´¿ÐéÎö¹¹º¯Êýµ÷ÓÃÁË" << endl;
+    cout << "Animalçº¯è™šæžæž„å‡½æ•°è°ƒç”¨äº†" << endl;
 }
 
 
 class Cat :public Animal {
 public:
-	Cat(string name) {
-		cout << "CatÓÐ²Î¹¹Ôìµ÷ÓÃÁË" << endl;
-		this->name = new string(name);
-	}
+    Cat(string name) {
+        cout << "Catæœ‰å‚æž„é€ è°ƒç”¨äº†" << endl;
+        this->name = new string(name);
+    }
 
-	virtual void speak() {
-		cout << *name << ":Ð¡Ã¨ÔÚËµ»°" << endl;
-	}
+    virtual void speak() {
+        cout << *name << ":å°çŒ«åœ¨è¯´è¯" << endl;
+    }
 
 
-	~Cat() {
-		if (name != NULL) {
-			cout << "CatÎö¹¹º¯Êýµ÷ÓÃÁË" << endl;
-			delete name;
-			name = NULL;
-		}
-	}
+    ~Cat() {
+        if (name != NULL) {
+            cout << "Catæžæž„å‡½æ•°è°ƒç”¨äº†" << endl;
+            delete name;
+            name = NULL;
+        }
+    }
 
-	string* name;
+    string* name;
 };
 
 
 int main() {
-	Animal* animal = new Cat("Tom");
-	animal->speak();
-	//TODO ¸¸ÀàÖ¸ÕëÔÚÎö¹¹Ê±£¬²»»áµ÷ÓÃ×ÓÀàÖÐµÄÎö¹¹º¯Êý£¬µ¼ÖÂ×ÓÀà¶ÑÇøÊôÐÔ³öÏÖÄÚ´æÐ¹Â©
-	//TODO ½â¾ö·½Ê½£º ½«¸¸ÀàÖÐµÄÎö¹¹º¯Êý¸ÄÎªÐéÎö¹¹»òÕß´¿ÐéÎö¹¹
-	delete animal;
-	return 0;
+    Animal* animal = new Cat("Tom");
+    animal->speak();
+    //TODO çˆ¶ç±»æŒ‡é’ˆåœ¨æžæž„æ—¶ï¼Œä¸ä¼šè°ƒç”¨å­ç±»ä¸­çš„æžæž„å‡½æ•°ï¼Œå¯¼è‡´å­ç±»å †åŒºå±žæ€§å‡ºçŽ°å†…å­˜æ³„æ¼
+    //TODO è§£å†³æ–¹å¼ï¼š å°†çˆ¶ç±»ä¸­çš„æžæž„å‡½æ•°æ”¹ä¸ºè™šæžæž„æˆ–è€…çº¯è™šæžæž„
+    delete animal;
+    return 0;
 }
 
 #endif // VIRTUAL_DESTRUCTOR_PURE_VIRTUAL_DESTRUCTOR

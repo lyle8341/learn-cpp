@@ -25,15 +25,15 @@ public:
 
 void test01() {
 	Alpaca a;
-	//µ±ÁâÐÎ¼Ì³Ð£¬Á½¸ö¸¸ÀàÓµÓÐÏàÍ¬Êý¾Ý£¬ÐèÒª¼Ó×÷ÓÃÓòÇø·Ö
+	//å½“è±å½¢ç»§æ‰¿ï¼Œä¸¤ä¸ªçˆ¶ç±»æ‹¥æœ‰ç›¸åŒæ•°æ®ï¼Œéœ€è¦åŠ ä½œç”¨åŸŸåŒºåˆ†
 	a.Sheep::age = 10;
 	a.Camel::age = 20;
-	//µ«ÊÇÕâ·ÝÊý¾ÝÖ»ÐèÒªÒ»·Ý¼´¿É£¬ÁâÐÎ¼Ì³Ðµ¼ÖÂÓÐÁ½·ÝÊý¾Ý£¬×ÊÔ´ÀË·Ñ
+	//ä½†æ˜¯è¿™ä»½æ•°æ®åªéœ€è¦ä¸€ä»½å³å¯ï¼Œè±å½¢ç»§æ‰¿å¯¼è‡´æœ‰ä¸¤ä»½æ•°æ®ï¼Œèµ„æºæµªè´¹
 
-	cout << "ÑòµÄÄêÁä: " << a.Sheep::age << endl;
-	cout << "ÍÕµÄÄêÁä: " << a.Camel::age << endl;
+	cout << "ç¾Šçš„å¹´é¾„: " << a.Sheep::age << endl;
+	cout << "é©¼çš„å¹´é¾„: " << a.Camel::age << endl;
 
-	//TODO cl /d1 reportSingleClassLayoutAlpaca ÁâÐÎ¼Ì³Ð.cpp
+	//TODO cl /d1 reportSingleClassLayoutAlpaca è±å½¢ç»§æ‰¿.cpp
 
 	/*
 		class Alpaca    size(8) :

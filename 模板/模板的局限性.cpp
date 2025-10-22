@@ -18,8 +18,8 @@ bool mycompare(T& a, T& b) {
 	return a == b;
 }
 
-//TODO ÀûÓÃ¾ßÌå»¯PersonµÄ°æ±¾ÊµÏÖ£¬ ¾ßÌå»¯ÓÅÏÈµ÷ÓÃ
-//TODO ¾ßÌå»¯Óï·¨  template<>
+//TODO åˆ©ç”¨å…·ä½“åŒ–Personçš„ç‰ˆæœ¬å®ç°ï¼Œ å…·ä½“åŒ–ä¼˜å…ˆè°ƒç”¨
+//TODO å…·ä½“åŒ–è¯­æ³•  template<>
 template<> bool mycompare(Person& a, Person& b) {
 	return a.name == b.name && a.age == b.age;
 }
@@ -27,13 +27,13 @@ template<> bool mycompare(Person& a, Person& b) {
 void test01() {
 	int a = 10;
 	int b = 20;
-	cout << (mycompare(a, b) ? "ÏàµÈ" : "²»ÏàµÈ") << endl;
+	cout << (mycompare(a, b) ? "ç›¸ç­‰" : "ä¸ç›¸ç­‰") << endl;
 }
 
 void test02() {
 	Person a("Tom", 10);
 	Person b("Tom", 10);
-	cout << (mycompare(a, b) ? "ÏàµÈ" : "²»ÏàµÈ") << endl;
+	cout << (mycompare(a, b) ? "ç›¸ç­‰" : "ä¸ç›¸ç­‰") << endl;
 }
 
 int main() {

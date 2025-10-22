@@ -5,103 +5,103 @@ using namespace std;
 
 
 void printMap(map<int, int>& m) {
-	for (map<int, int>::iterator it = m.begin(); it != m.end(); it++)
-	{
-		//cout << "key:" << (*it).first << " value:" << (*it).second << endl;
-		cout << "key:" << it->first << " value:" << it->second << endl;
-	}
-	cout << endl;
+    for (map<int, int>::iterator it = m.begin(); it != m.end(); it++)
+    {
+        //cout << "key:" << (*it).first << " value:" << (*it).second << endl;
+        cout << "key:" << it->first << " value:" << it->second << endl;
+    }
+    cout << endl;
 }
 
-//¶Ô×éÊ¹ÓÃ
+//å¯¹ç»„ä½¿ç”¨
 void pair_use() {
-	//TODO ·½Ê½Ò»
-	pair<string, int> p("Tom", 1);
-	cout << "first:" << p.first << " second: " << p.second << endl;
-	//TODO ·½Ê½¶ş
-	pair<string, int> p2 = make_pair("Jerry", 2);
-	cout << "first:" << p2.first << " second: " << p2.second << endl;
+    //TODO æ–¹å¼ä¸€
+    pair<string, int> p("Tom", 1);
+    cout << "first:" << p.first << " second: " << p.second << endl;
+    //TODO æ–¹å¼äºŒ
+    pair<string, int> p2 = make_pair("Jerry", 2);
+    cout << "first:" << p2.first << " second: " << p2.second << endl;
 }
 
 void map_construct() {
-	map<int, int> m;
-	m.insert(pair<int, int>(2, 20)); //ÄäÃû¶Ô×é
-	m.insert(pair<int, int>(1, 10)); //ÄäÃû¶Ô×é
-	m.insert(make_pair(4, 40));
-	m.insert(make_pair(3, 30));
-	m.insert(map<int, int>::value_type(6, 60));
-	//TODO ²»½¨Òé²åÈëÓÃ£¬ÓÃÍ¾£ºÀûÓÃkey(È·¶¨key´æÔÚÊ±)·ÃÎÊvalue
-	m[8] = 100;
-	cout << m[120] << endl;
-	printMap(m);
+    map<int, int> m;
+    m.insert(pair<int, int>(2, 20)); //åŒ¿åå¯¹ç»„
+    m.insert(pair<int, int>(1, 10)); //åŒ¿åå¯¹ç»„
+    m.insert(make_pair(4, 40));
+    m.insert(make_pair(3, 30));
+    m.insert(map<int, int>::value_type(6, 60));
+    //TODO ä¸å»ºè®®æ’å…¥ç”¨ï¼Œç”¨é€”ï¼šåˆ©ç”¨key(ç¡®å®škeyå­˜åœ¨æ—¶)è®¿é—®value
+    m[8] = 100;
+    cout << m[120] << endl;
+    printMap(m);
 
-	//¿½±´¹¹Ôì
-	map<int, int> m2(m);
-	//printMap(m2);
+    //æ‹·è´æ„é€ 
+    map<int, int> m2(m);
+    //printMap(m2);
 
-	map<int, int> m3;
-	m3 = m2;
-	//printMap(m3);
+    map<int, int> m3;
+    m3 = m2;
+    //printMap(m3);
 
-	m.erase(m.begin());//°´ÕÕkeyÉ¾³ı
-	printMap(m);
+    m.erase(m.begin());//æŒ‰ç…§keyåˆ é™¤
+    printMap(m);
 
-	m.erase(60);
-	printMap(m);
+    m.erase(60);
+    printMap(m);
 
-	m.clear();
+    m.clear();
 }
 
 void find_count() {
-	map<int, int> m;
-	m.insert(pair<int, int>(2, 20)); //ÄäÃû¶Ô×é
-	m.insert(pair<int, int>(1, 10)); //ÄäÃû¶Ô×é
-	m.insert(make_pair(4, 40));
-	m.insert(make_pair(3, 30));
-	m.insert(map<int, int>::value_type(6, 60));
+    map<int, int> m;
+    m.insert(pair<int, int>(2, 20)); //åŒ¿åå¯¹ç»„
+    m.insert(pair<int, int>(1, 10)); //åŒ¿åå¯¹ç»„
+    m.insert(make_pair(4, 40));
+    m.insert(make_pair(3, 30));
+    m.insert(map<int, int>::value_type(6, 60));
 
-	map<int, int>::iterator pos = m.find(4);
+    map<int, int>::iterator pos = m.find(4);
 
-	if (pos != m.end()) {
-		cout << "ÕÒµ½ÁË" << endl;
-	}
-	m.count(2);//Í³¼Ækey=2µÄ¸öÊı
+    if (pos != m.end()) {
+        cout << "æ‰¾åˆ°äº†" << endl;
+    }
+    m.count(2);//ç»Ÿè®¡key=2çš„ä¸ªæ•°
 }
 
 
 
-//TODO ×Ô¶¨ÒåÅÅĞò
+//TODO è‡ªå®šä¹‰æ’åº
 
 class MyCompare {
 public:
-	bool operator()(int a, int b) const {
-		return a > b;
-	}
+    bool operator()(int a, int b) const {
+        return a > b;
+    }
 
 };
 
 void printMap(map<int, int, MyCompare>& m) {
-	for (map<int, int, MyCompare>::iterator it = m.begin(); it != m.end(); it++)
-	{
-		cout << "key:" << it->first << " value:" << it->second << endl;
-	}
-	cout << endl;
+    for (map<int, int, MyCompare>::iterator it = m.begin(); it != m.end(); it++)
+    {
+        cout << "key:" << it->first << " value:" << it->second << endl;
+    }
+    cout << endl;
 }
 
 
 void map_sort() {
-	map<int, int, MyCompare> m;
-	m.insert(pair<int, int>(2, 20)); //ÄäÃû¶Ô×é
-	m.insert(pair<int, int>(1, 10)); //ÄäÃû¶Ô×é
-	m.insert(make_pair(4, 40));
-	m.insert(make_pair(3, 30));
-	m.insert(map<int, int>::value_type(6, 60));
-	printMap(m);
+    map<int, int, MyCompare> m;
+    m.insert(pair<int, int>(2, 20)); //åŒ¿åå¯¹ç»„
+    m.insert(pair<int, int>(1, 10)); //åŒ¿åå¯¹ç»„
+    m.insert(make_pair(4, 40));
+    m.insert(make_pair(3, 30));
+    m.insert(map<int, int>::value_type(6, 60));
+    printMap(m);
 }
 
 int main() {
-	//map_construct();
-	//find_count();
-	map_sort();
-	return 0;
+    //map_construct();
+    //find_count();
+    map_sort();
+    return 0;
 }

@@ -3,14 +3,14 @@
 
 #ifdef POINTER_AND_FUNCTION
 
-//Öµ´«µÝ
+//å€¼ä¼ é€’
 void swap01(int a, int b) {
 	int temp = a;
 	a = b;
 	b = temp;
 	cout << "swap01 a = " << a << "\tb = " << b << endl;
 }
-//µØÖ·´«µÝ
+//åœ°å€ä¼ é€’
 void swap02(int* a, int* b) {
 	int temp = *a;
 	*a = *b;

@@ -3,26 +3,26 @@
 #ifdef STRING_MENU
 
 void printContext(ostream& out, string content, string& side) {
-	content.insert(0, side);
-	content.append(side);
-	out << content << endl;
+    content.insert(0, side);
+    content.append(side);
+    out << content << endl;
 }
 
 int main() {
-	//Ê×ÐÐ
-	string sideline = string(50, '*');
-	cout << sideline << endl;
+    //é¦–è¡Œ
+    string sideline = string(50, '*');
+    cout << sideline << endl;
 
-	//¹«¹²±ßÏß
-	string side = string(15, '*');
+    //å…¬å…±è¾¹çº¿
+    string side = string(15, '*');
 
-	//×Ô¶¨ÒåÄÚÈÝ
-	printContext(cout, "  »¶Ó­²Î¼ÓÑÝ½²±ÈÈü  ", side);
-	printContext(cout, "   1.¿ªÊ¼ÑÝ½²±ÈÈü   ", side);
-	printContext(cout, "   2.²é¿´Íù½ì¼ÇÂ¼   ", side);
+    //è‡ªå®šä¹‰å†…å®¹
+    printContext(cout, "  æ¬¢è¿Žå‚åŠ æ¼”è®²æ¯”èµ›  ", side);
+    printContext(cout, "   1.å¼€å§‹æ¼”è®²æ¯”èµ›   ", side);
+    printContext(cout, "   2.æŸ¥çœ‹å¾€å±Šè®°å½•   ", side);
 
-	//½áÎ²ÐÐ
-	cout << sideline << endl;
-	return 0;
+    //ç»“å°¾è¡Œ
+    cout << sideline << endl;
+    return 0;
 }
 #endif // STRING_MENU

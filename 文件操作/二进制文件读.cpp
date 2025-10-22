@@ -3,41 +3,41 @@
 
 #ifdef BINARY_READ
 
-//TODO º¯ÊıÔ­ĞÍ£º istream& read(char* buffer, int len);
+//TODO å‡½æ•°åŸå‹ï¼š istream& read(char* buffer, int len);
 
 class Person {
 public:
-	char name[64];
-	int age;
+    char name[64];
+    int age;
 
 };
 
 void test() {
 
-	//1.´´½¨Á÷¶ÔÏó
-	ifstream ifs("person.bin", ios::in | ios::binary);
+    //1.åˆ›å»ºæµå¯¹è±¡
+    ifstream ifs("person.bin", ios::in | ios::binary);
 
-	//ifs.open("person.bin", ios::out | ios::binary);
+    //ifs.open("person.bin", ios::out | ios::binary);
 
-	if (!ifs.is_open()) {
-		cout << "´ò¿ªÎÄ¼şÊ§°Ü" << endl;
-		return;
-	}
+    if (!ifs.is_open()) {
+        cout << "æ‰“å¼€æ–‡ä»¶å¤±è´¥" << endl;
+        return;
+    }
 
-	//¶ÁÎÄ¼ş
-	Person p;
-	ifs.read((char*)&p, sizeof(Person));
+    //è¯»æ–‡ä»¶
+    Person p;
+    ifs.read((char*)&p, sizeof(Person));
 
-	cout << "ĞÕÃû: " << p.name << " ÄêÁä: " << p.age << endl;
+    cout << "å§“å: " << p.name << " å¹´é¾„: " << p.age << endl;
 
-	//¹Ø±ÕÎÄ¼ş
-	ifs.close();
+    //å…³é—­æ–‡ä»¶
+    ifs.close();
 }
 
 int main() {
-	test();
+    test();
 
-	return 0;
+    return 0;
 }
 
 

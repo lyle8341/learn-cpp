@@ -4,12 +4,12 @@
 
 class Animal {
 public:
-	int age;
+    int age;
 };
 
-//TODO ÀûÓÃĞé¼Ì³Ğ£¬½â¾öÁâĞÎ¼Ì³ĞµÄÎÊÌâ
-//¼Ì³ĞÖ®Ç°¼ÓÉÏ¹Ø¼ü×Ö virtual ±ä³ÉĞé¼Ì³Ğ
-//AnimalÀà³ÆÎª Ğé»ùÀà
+//TODO åˆ©ç”¨è™šç»§æ‰¿ï¼Œè§£å†³è±å½¢ç»§æ‰¿çš„é—®é¢˜
+//ç»§æ‰¿ä¹‹å‰åŠ ä¸Šå…³é”®å­— virtual å˜æˆè™šç»§æ‰¿
+//Animalç±»ç§°ä¸º è™šåŸºç±»
 class Sheep : virtual public Animal {
 public:
 
@@ -28,49 +28,49 @@ public:
 
 
 void test01() {
-	Alpaca a;
+    Alpaca a;
 
-	a.Sheep::age = 10;
-	a.Camel::age = 20;
-
-
-	cout << "ÑòµÄÄêÁä: " << a.Sheep::age << endl;
-	cout << "ÍÕµÄÄêÁä: " << a.Camel::age << endl;
-	cout << "ÑòÍÕÄêÁä: " << a.age << endl;
+    a.Sheep::age = 10;
+    a.Camel::age = 20;
 
 
-	/*
-	class Alpaca    size(12):
-			+---
-	 0      | +--- (base class Sheep)
-	 0      | | {vbptr}
-			| +---
-	 4      | +--- (base class Camel)
-	 4      | | {vbptr}
-			| +---
-			+---
-			+--- (virtual base Animal)
-	 8      | age
-			+---
+    cout << "ç¾Šçš„å¹´é¾„: " << a.Sheep::age << endl;
+    cout << "é©¼çš„å¹´é¾„: " << a.Camel::age << endl;
+    cout << "ç¾Šé©¼å¹´é¾„: " << a.age << endl;
 
-	Alpaca::$vbtable@Sheep@:
-	 0      | 0
-	 1      | 8 (Alpacad(Sheep+0)Animal)
 
-	Alpaca::$vbtable@Camel@:
-	 0      | 0
-	 1      | 4 (Alpacad(Camel+0)Animal)
-	vbi:       class  offset o.vbptr  o.vbte fVtorDisp
-			  Animal       8       0       4 0
+    /*
+    class Alpaca    size(12):
+            +---
+     0      | +--- (base class Sheep)
+     0      | | {vbptr}
+            | +---
+     4      | +--- (base class Camel)
+     4      | | {vbptr}
+            | +---
+            +---
+            +--- (virtual base Animal)
+     8      | age
+            +---
 
-	*/
+    Alpaca::$vbtable@Sheep@:
+     0      | 0
+     1      | 8 (Alpacad(Sheep+0)Animal)
+
+    Alpaca::$vbtable@Camel@:
+     0      | 0
+     1      | 4 (Alpacad(Camel+0)Animal)
+    vbi:       class  offset o.vbptr  o.vbte fVtorDisp
+              Animal       8       0       4 0
+
+    */
 
 }
 
 int main() {
-	test01();
+    test01();
 
-	return 0;
+    return 0;
 }
 
 #endif // DIAMON_EXTEND_RESOLVE

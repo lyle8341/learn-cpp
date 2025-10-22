@@ -7,7 +7,7 @@ class Person {
 
 public:
 	Person() {
-		cout << "PersonÄ¬ÈÏ¹¹Ôìº¯Êıµ÷ÓÃ" << endl;
+		cout << "Personé»˜è®¤æ„é€ å‡½æ•°è°ƒç”¨" << endl;
 	}
 
 	Person(int age, int height) {
@@ -15,22 +15,22 @@ public:
 		this->height = new int(height);
 	}
 
-	//Ä¬ÈÏ¿½±´¹¹Ôì¾ÍÊÇÇ³¿½±´
-	//×Ô¼ºÊµÏÖ¿½±´¹¹Ôìº¯Êı£¬½â¾öÇ³¿½±´´øÀ´µÄÎÊÌâ
+	//é»˜è®¤æ‹·è´æ„é€ å°±æ˜¯æµ…æ‹·è´
+	//è‡ªå·±å®ç°æ‹·è´æ„é€ å‡½æ•°ï¼Œè§£å†³æµ…æ‹·è´å¸¦æ¥çš„é—®é¢˜
 	Person(const Person& p) {
-		cout << "Person¿½±´¹¹Ôìº¯Êıµ÷ÓÃ" << endl;
+		cout << "Personæ‹·è´æ„é€ å‡½æ•°è°ƒç”¨" << endl;
 		this->age = p.age;
 		this->height = new int(*p.height);
 	}
 
 	~Person() {
-		//½«¶ÑÇø¿ª±ÙµÄÊı¾İ×öÊÍ·Å
+		//å°†å †åŒºå¼€è¾Ÿçš„æ•°æ®åšé‡Šæ”¾
 		if (height != NULL) {
 			delete height;
 			height = NULL;
 		}
 
-		cout << "PersonÎö¹¹º¯Êıµ÷ÓÃ" << endl;
+		cout << "Personææ„å‡½æ•°è°ƒç”¨" << endl;
 	}
 
 	int age;
@@ -38,14 +38,14 @@ public:
 
 };
 
-//Ç³¿½±´´øÀ´µÄÎÊÌâ¾ÍÊÇ¶ÑÇøÄÚ´æÖØ¸´ÊÍ·Å
+//æµ…æ‹·è´å¸¦æ¥çš„é—®é¢˜å°±æ˜¯å †åŒºå†…å­˜é‡å¤é‡Šæ”¾
 void test01() {
 	Person p1(14, 150);
 
-	cout << "p1µÄÄêÁä: " << p1.age << " Éí¸ß: " << *p1.height << endl;
+	cout << "p1çš„å¹´é¾„: " << p1.age << " èº«é«˜: " << *p1.height << endl;
 
 	Person p2(p1);
-	cout << "p2µÄÄêÁä: " << p2.age << " Éí¸ß: " << *p2.height << endl;
+	cout << "p2çš„å¹´é¾„: " << p2.age << " èº«é«˜: " << *p2.height << endl;
 }
 
 int main() {

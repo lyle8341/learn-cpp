@@ -4,14 +4,14 @@
 #ifdef POINTER_DEFINE
 
 int main() {
-	//1.����ָ��
+	//1.定义指针
 	int a = 10;
-	//ָ�붨����﷨�� ��������* ָ�������;
+	//指针定义的语法： 数据类型* 指针变量名;
 	int* p = &a;
-	cout << "a�ĵ�ַΪ:\t" << &a << endl;
-	cout << "ָ��pΪ:\t" << p << endl;
+	cout << "a的地址为:\t" << &a << endl;
+	cout << "指针p为:\t" << p << endl;
 
-	//2.ʹ��ָ�룬����ͨ�������õķ�ʽ���ҵ�ָ��ָ����ڴ�
+	//2.使用指针，可以通过解引用的方式来找到指针指向的内存
 	*p = 900;
 
 	cout << "a = " << a << endl;

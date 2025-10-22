@@ -11,16 +11,16 @@ public:
 	T2 age;
 };
 
-//TODO 类模板构造函数的类外实现
+//TODO 绫绘ā鏉挎瀯閫犲嚱鏁扮殑绫诲瀹炵幇
 template<class T1, class T2>
 Person<T1, T2>::Person(T1 name, T2 age) {
 	this->name = name;
 	this->age = age;
 }
-//TODO 类模板成员函数的类外实现
+//TODO 绫绘ā鏉挎垚鍛樺嚱鏁扮殑绫诲瀹炵幇
 template<class T1, class T2>
 void Person<T1, T2>::showPerson() {
-	cout << "姓名: " << this->name << " 年龄: " << this->age << endl;
+	cout << "濮撳悕: " << this->name << " 骞撮緞: " << this->age << endl;
 }
 
 int main() {

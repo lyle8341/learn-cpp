@@ -4,39 +4,39 @@
 #ifdef HOW_TO_USE_NEW
 
 int* func() {
-	return new int(20);//´´½¨Ò»¸ö±äÁ¿
+    return new int(20);//åˆ›å»ºä¸€ä¸ªå˜é‡
 }
 
 void test01() {
-	int* p = func();
-	cout << *p << endl;
-	cout << *p << endl;
-	//ÊÍ·Å¶ÑÇøµÄÊı¾İ
-	delete p;
+    int* p = func();
+    cout << *p << endl;
+    cout << *p << endl;
+    //é‡Šæ”¾å †åŒºçš„æ•°æ®
+    delete p;
 }
 
 void test02() {
-	//´´½¨10¸öÕûĞÎµÄÊı×éÔÚ¶ÑÇø
-	int* arr = new int[10];
-	int* init = arr;//¸³ÖµÓÃ
-	int* read = arr;//±éÀúÓÃ
-	for (int i = 0; i < 10; i++)
-	{
-		*init++ = i + 100; // arrÖ¸ÕëÒÑ¾­ÒÆ¶¯ÁË£¬ºóÃæ²»ÄÜÔÙÓÃÀ´¶ÁÊı¾İÁË
-	}
-	for (int i = 0; i < 10; i++)
-	{
-		cout << *read++ << endl;
-	}
-	//ÊÍ·ÅÊı×é
-	//Èç¹ûÖ¸ÕëÒÆ¶¯ÁË£¬´Ë´¦½«»á±¨´í
-	delete[] arr;
+    //åˆ›å»º10ä¸ªæ•´å½¢çš„æ•°ç»„åœ¨å †åŒº
+    int* arr = new int[10];
+    int* init = arr;//èµ‹å€¼ç”¨
+    int* read = arr;//éå†ç”¨
+    for (int i = 0; i < 10; i++)
+    {
+        *init++ = i + 100; // arræŒ‡é’ˆå·²ç»ç§»åŠ¨äº†ï¼Œåé¢ä¸èƒ½å†ç”¨æ¥è¯»æ•°æ®äº†
+    }
+    for (int i = 0; i < 10; i++)
+    {
+        cout << *read++ << endl;
+    }
+    //é‡Šæ”¾æ•°ç»„
+    //å¦‚æœæŒ‡é’ˆç§»åŠ¨äº†ï¼Œæ­¤å¤„å°†ä¼šæŠ¥é”™
+    delete[] arr;
 }
 
 int main() {
-	//test01();
-	test02();
-	return 0;
+    //test01();
+    test02();
+    return 0;
 }
 
 #endif // HOW_TO_USE_NEW

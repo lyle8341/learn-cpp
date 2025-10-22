@@ -4,11 +4,11 @@
 #ifdef STRUCT_CLASS_DIFF
 
 class C1 {
-	int age; // 默认私有权限
+	int age; // 榛樿绉佹湁鏉冮檺
 };
 
 struct S1 {
-	int age; // 默认公共权限
+	int age; // 榛樿鍏叡鏉冮檺
 };
 
 
@@ -16,7 +16,7 @@ int main() {
 	C1 c;
 	S1 s;
 	s.age = 3;
-	//c.age = 3; //报错
+	//c.age = 3; //鎶ラ敊
 
 	return 0;
 }

@@ -3,10 +3,10 @@
 #ifdef CLASS_TEMPLATE_AS_FUNCTION_PARAM
 
 
-//ÀàÄ£°åÊµÀı»¯´¦µÄ¶ÔÏó£¬Ïòº¯Êı´«²ÎµÄ·½Ê½
-	//1.Ö¸¶¨´«ÈëµÄÀàĞÍ
-	//2.²ÎÊıÄ£°å»¯
-	//3.Õû¸öÀàÄ£°å»¯
+//ç±»æ¨¡æ¿å®ä¾‹åŒ–å¤„çš„å¯¹è±¡ï¼Œå‘å‡½æ•°ä¼ å‚çš„æ–¹å¼
+	//1.æŒ‡å®šä¼ å…¥çš„ç±»å‹
+	//2.å‚æ•°æ¨¡æ¿åŒ–
+	//3.æ•´ä¸ªç±»æ¨¡æ¿åŒ–
 
 template<class T1, class T2>
 class Person {
@@ -17,34 +17,34 @@ public:
 	}
 
 	void showPerson() {
-		cout << "ĞÕÃû: " << this->name << " ÄêÁä: " << this->age << endl;
+		cout << "å§“å: " << this->name << " å¹´é¾„: " << this->age << endl;
 	}
 
 	T1 name;
 	T2 age;
 };
 
-//TODO *1.Ö¸¶¨´«ÈëµÄÀàĞÍ
+//TODO *1.æŒ‡å®šä¼ å…¥çš„ç±»å‹
 void printPerson_a(Person<string, int>& p) {
 	p.showPerson();
 }
-//TODO 2.²ÎÊıÄ£°å»¯
+//TODO 2.å‚æ•°æ¨¡æ¿åŒ–
 template<class T1, class T2>
 void printPerson_b(Person<T1, T2>& p) {
 	p.showPerson();
-	//TODO ²é¿´Ä£°å¾ßÌåÀàĞÍ
-	cout << "T1µÄÀàĞÍÎª: " << typeid(T1).name() << endl;
-	cout << "T2µÄÀàĞÍÎª: " << typeid(T2).name() << endl;
+	//TODO æŸ¥çœ‹æ¨¡æ¿å…·ä½“ç±»å‹
+	cout << "T1çš„ç±»å‹ä¸º: " << typeid(T1).name() << endl;
+	cout << "T2çš„ç±»å‹ä¸º: " << typeid(T2).name() << endl;
 }
-//TODO 3.Õû¸öÀàÄ£°å»¯
+//TODO 3.æ•´ä¸ªç±»æ¨¡æ¿åŒ–
 template<class T>
 void printPerson_c(T& p) {
 	p.showPerson();
-	cout << "TµÄÀàĞÍÎª: " << typeid(T).name() << endl;
+	cout << "Tçš„ç±»å‹ä¸º: " << typeid(T).name() << endl;
 }
 
 void test01() {
-	Person<string, int> p("ËïÎò¿Õ", 600);
+	Person<string, int> p("å­™æ‚Ÿç©º", 600);
 	printPerson_a(p);
 	printPerson_b(p);
 	printPerson_c(p);

@@ -5,12 +5,12 @@
 
 #ifdef FUNCTION_OBJ_PREDICATE
 
-//TODO ·µ»ØboolÀàĞÍµÄ·Âº¯Êı³ÆÎª "Î½´Ê"
-//TODO operator ½ÓÊÜÒ»¸ö²ÎÊı---> Ò»ÔªÎ½´Ê
-//TODO operator ½ÓÊÜ¶ş¸ö²ÎÊı---> ¶şÔªÎ½´Ê
+//TODO è¿”å›boolç±»å‹çš„ä»¿å‡½æ•°ç§°ä¸º "è°“è¯"
+//TODO operator æ¥å—ä¸€ä¸ªå‚æ•°---> ä¸€å…ƒè°“è¯
+//TODO operator æ¥å—äºŒä¸ªå‚æ•°---> äºŒå…ƒè°“è¯
 
 
-//Ò»ÔªÎ½´Ê
+//ä¸€å…ƒè°“è¯
 struct GreaterFive
 {
 	bool operator()(int var) {
@@ -27,15 +27,15 @@ void test01() {
 	v.push_back(12);
 	v.push_back(785);
 	v.push_back(65);
-	vector<int>::iterator it = find_if(v.begin(), v.end(), GreaterFive());//ÄäÃûº¯Êı¶ÔÏó
+	vector<int>::iterator it = find_if(v.begin(), v.end(), GreaterFive());//åŒ¿åå‡½æ•°å¯¹è±¡
 	if (it != v.end()) {
-		//ÕÒµ½ÁË,·µ»ØÂú×ãÌõ¼şµÄÔªËØµÄ pos
-		cout << "ÕÒµ½ÁË: " << *it << endl;
+		//æ‰¾åˆ°äº†,è¿”å›æ»¡è¶³æ¡ä»¶çš„å…ƒç´ çš„ pos
+		cout << "æ‰¾åˆ°äº†: " << *it << endl;
 	}
 }
 
 
-//¶şÔªÎ½´Ê
+//äºŒå…ƒè°“è¯
 struct MySort
 {
 	bool operator()(int a, int b) {

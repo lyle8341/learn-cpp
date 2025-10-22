@@ -21,15 +21,15 @@ struct Teacher
 int main() {
 	Teacher t;
 	t.id = 1;
-	t.name = "ÕÅ¾ÓÕı";
+	t.name = "å¼ å±…æ­£";
 	t.age = 50;
-	t.stu.name = "ÍòÀú";
+	t.stu.name = "ä¸‡å†";
 	t.stu.age = 20;
 	t.stu.score = 15;
 
 	Teacher* p = &t;
 
-	cout << "ÀÏÊ¦Ãû×Ö: " << p->name << "\tÀÏÊ¦ÄêÁä: " << p->age << "\tÑ§ÉúÃû×Ö: " << p->stu.name << "\tÑ§Éú³É¼¨: " << p->stu.score << endl;
+	cout << "è€å¸ˆåå­—: " << p->name << "\tè€å¸ˆå¹´é¾„: " << p->age << "\tå­¦ç”Ÿåå­—: " << p->stu.name << "\tå­¦ç”Ÿæˆç»©: " << p->stu.score << endl;
 	return 0;
 }
 

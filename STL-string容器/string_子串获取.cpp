@@ -4,7 +4,7 @@
 
 int main() {
 	string str = "today is Thursday";
-	//起始位置, 截取个数
+	//璧峰浣嶇疆, 鎴彇涓暟
 	string sub = str.substr(1, 4);
 
 	cout << sub << endl;

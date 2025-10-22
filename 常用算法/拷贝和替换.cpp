@@ -16,7 +16,7 @@ int main() {
 	//replace_if(iterator beg, iterator end, _pred, newvalue)
 
 
-	//Í¬ÀàĞÍÈİÆ÷
+	//åŒç±»å‹å®¹å™¨
 	//swap(container c1, container c2)
 
 

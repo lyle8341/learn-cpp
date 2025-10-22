@@ -1,5 +1,5 @@
 #include "starter.h"
-#include "../±ê×¼Ä£°å¿â(STL)/lyleRandom.h"
+#include "../æ ‡å‡†æ¨¡æ¿åº“(STL)/lyleRandom.h"
 
 #ifdef TRAVERSE_ALGORITHM
 
@@ -22,9 +22,9 @@ void test_for_each() {
 	{
 		v.push_back(lyle_generateRandom());
 	}
-	for_each(v.begin(), v.end(), ordinary_function_print);//ÆÕÍ¨º¯ÊıÃû
+	for_each(v.begin(), v.end(), ordinary_function_print);//æ™®é€šå‡½æ•°å
 	cout << endl;
-	for_each(v.begin(), v.end(), functor_print());//·Âº¯Êı¶ÔÏó
+	for_each(v.begin(), v.end(), functor_print());//ä»¿å‡½æ•°å¯¹è±¡
 }
 
 struct MyTransform

@@ -2,8 +2,8 @@
 
 #ifdef FUNCTION_OBJ_USING
 
-//TODO ÖØÔØº¯Êýµ÷ÓÃ·û µÄÀà£¬Æä¶ÔÏó³ÆÎª "º¯Êý¶ÔÏó"
-//TODO º¯Êý¶ÔÏóÊ¹ÓÃÖØÔØµÄ () Ê±£¬ÐÐÎªÀàËÆº¯Êýµ÷ÓÃ£¬¹Ê½Ð "·Âº¯Êý"
+//TODO é‡è½½å‡½æ•°è°ƒç”¨ç¬¦ çš„ç±»ï¼Œå…¶å¯¹è±¡ç§°ä¸º "å‡½æ•°å¯¹è±¡"
+//TODO å‡½æ•°å¯¹è±¡ä½¿ç”¨é‡è½½çš„ () æ—¶ï¼Œè¡Œä¸ºç±»ä¼¼å‡½æ•°è°ƒç”¨ï¼Œæ•…å« "ä»¿å‡½æ•°"
 
 class MyAdd {
 public:
@@ -13,9 +13,9 @@ public:
 
 };
 
-//TODO 1.¿ÉÒÔÏñÆÕÍ¨º¯ÊýÄÇÑùµ÷ÓÃ£¬¿ÉÒÔÓÐ²ÎÊý¡¢·µ»ØÖµ
+//TODO 1.å¯ä»¥åƒæ™®é€šå‡½æ•°é‚£æ ·è°ƒç”¨ï¼Œå¯ä»¥æœ‰å‚æ•°ã€è¿”å›žå€¼
 void test01() {
-	MyAdd myadd;//º¯Êý¶ÔÏó
+	MyAdd myadd;//å‡½æ•°å¯¹è±¡
 	cout << myadd(2, 3) << endl;
 }
 
@@ -28,17 +28,17 @@ public:
 		cout << text << endl;
 		this->count++;
 	}
-	int count; //ÄÚ²¿×Ô¼º×´Ì¬
+	int count; //å†…éƒ¨è‡ªå·±çŠ¶æ€
 };
 
-//TODO 2.º¯Êý¶ÔÏó¿ÉÒÔÓÐ×Ô¼ºµÄ×´Ì¬
+//TODO 2.å‡½æ•°å¯¹è±¡å¯ä»¥æœ‰è‡ªå·±çš„çŠ¶æ€
 void test02() {
 	MyPrint myprint;
 	myprint("hello");
 	myprint("hello");
 	myprint("hello");
 	myprint("hello");
-	cout << "myprintµ÷ÓÃ´ÎÊý: " << myprint.count << endl;
+	cout << "myprintè°ƒç”¨æ¬¡æ•°: " << myprint.count << endl;
 
 }
 
@@ -46,7 +46,7 @@ void doPrint(MyPrint& mp, string text) {
 	mp(text);
 }
 
-//TODO 3.º¯Êý¶ÔÏó¿ÉÒÔ×÷Îª²ÎÊý´«µÝ
+//TODO 3.å‡½æ•°å¯¹è±¡å¯ä»¥ä½œä¸ºå‚æ•°ä¼ é€’
 void test03() {
 	MyPrint myprint;
 	doPrint(myprint, "how do you do");

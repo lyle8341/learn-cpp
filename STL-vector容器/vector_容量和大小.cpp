@@ -1,5 +1,5 @@
 #include "starter.h"
-#include "../±ê×¼Ä£°å¿â(STL)/lyleRandom.h"
+#include "../æ ‡å‡†æ¨¡æ¿åº“(STL)/lyleRandom.h"
 
 #ifdef VECTOR_CAPACITY_SIZE
 
@@ -16,16 +16,16 @@ int main() {
 	if (!v.empty()) {
 		printVector(v);
 
-		cout << "ÈİÁ¿: " << v.capacity() << endl;
-		cout << "´óĞ¡: " << v.size() << endl;
+		cout << "å®¹é‡: " << v.capacity() << endl;
+		cout << "å¤§å°: " << v.size() << endl;
 	}
 
-	//TODO ÖØĞÂÖ¸¶¨´óĞ¡
-	//v.resize(20); ÓÃ 0 Ìî³ä
+	//TODO é‡æ–°æŒ‡å®šå¤§å°
+	//v.resize(20); ç”¨ 0 å¡«å……
 	v.resize(15, 110);
 	printVector(v);
 
-	v.resize(5); //¶àÓà²¿·Ö»áÉ¾³ı
+	v.resize(5); //å¤šä½™éƒ¨åˆ†ä¼šåˆ é™¤
 	printVector(v);
 
 

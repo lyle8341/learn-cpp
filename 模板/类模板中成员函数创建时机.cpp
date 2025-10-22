@@ -4,8 +4,8 @@
 
 #ifdef CLASS_TEMPLATE_FUNCTION_CREATE_TIME
 
-//TODO ��ͨ���еĳ�Ա����һ��ʼ�Ϳ��Դ���
-//TODO ��ģ���еĳ�Ա�����ڵ���ʱ�Ŵ����������ò�����
+//TODO 普通类中的成员函数一开始就可以创建
+//TODO 类模板中的成员函数在调用时才创建，不调用不创建
 
 class Person_1 {
 public:
@@ -26,7 +26,7 @@ class MyKlass {
 public:
 	T obj;
 
-	//TODO ��ģ���еĳ�Ա��������ʱ�Ŵ���������ʱ�Ŵ���
+	//TODO 类模板中的成员函数调用时才创建，调用时才创建
 	void func1() {
 		obj.showP1();
 	}

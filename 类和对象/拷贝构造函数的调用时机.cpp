@@ -6,21 +6,21 @@
 class Person {
 public:
 	Person() {
-		cout << "PersonÄ¬ÈÏ¹¹Ôìº¯Êıµ÷ÓÃ" << endl;
+		cout << "Personé»˜è®¤æ„é€ å‡½æ•°è°ƒç”¨" << endl;
 	}
 
 	Person(int age) {
 		this->age = age;
-		cout << "PersonÓĞ²Î¹¹Ôìº¯Êıµ÷ÓÃ" << endl;
+		cout << "Personæœ‰å‚æ„é€ å‡½æ•°è°ƒç”¨" << endl;
 	}
 
 	Person(const Person& p) {
 		this->age = p.age;
-		cout << "Person¿½±´¹¹Ôìº¯Êıµ÷ÓÃ" << endl;
+		cout << "Personæ‹·è´æ„é€ å‡½æ•°è°ƒç”¨" << endl;
 	}
 
 	~Person() {
-		cout << "PersonÎö¹¹º¯Êıµ÷ÓÃ" << endl;
+		cout << "Personææ„å‡½æ•°è°ƒç”¨" << endl;
 	}
 
 	int age;
@@ -28,13 +28,13 @@ public:
 
 };
 
-//1.Ê¹ÓÃÒ»¸öÒÑ¾­´´½¨Íê±ÏµÄ¶ÔÏóÀ´³õÊ¼»¯Ò»¸öĞÂ¶ÔÏó
+//1.ä½¿ç”¨ä¸€ä¸ªå·²ç»åˆ›å»ºå®Œæ¯•çš„å¯¹è±¡æ¥åˆå§‹åŒ–ä¸€ä¸ªæ–°å¯¹è±¡
 void test01() {
 	Person p1(20);
 	Person p2(p1);
 }
 
-//2.Öµ´«µİµÄ·½Ê½¸øº¯Êı²ÎÊı´«Öµ
+//2.å€¼ä¼ é€’çš„æ–¹å¼ç»™å‡½æ•°å‚æ•°ä¼ å€¼
 void doWork(Person p) {
 
 }
@@ -44,7 +44,7 @@ void test02() {
 	doWork(p);
 }
 
-//3.Öµ·½Ê½·µ»Ø¾Ö²¿¶ÔÏó
+//3.å€¼æ–¹å¼è¿”å›å±€éƒ¨å¯¹è±¡
 Person doWork2() {
 	Person p1;
 	cout << (int*)&p1 << endl;

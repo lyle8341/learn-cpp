@@ -4,147 +4,147 @@
 
 using namespace std;
 
-//const ĞŞÊÎ£¬²»ÔÊĞí¸Ä±äÄÚ²¿ÔªËØ
+//const ä¿®é¥°ï¼Œä¸å…è®¸æ”¹å˜å†…éƒ¨å…ƒç´ 
 void printDeque(const deque<int>& dq) {
-	for (deque<int>::const_iterator it = dq.begin(); it != dq.end(); it++)
-	{
-		//*it = 99; ÈİÆ÷ÖĞµÄÊı¾İ²»¿ÉÓÃĞŞ¸ÄÁË
-		cout << *it << " ";
-	}
-	cout << endl;
+    for (deque<int>::const_iterator it = dq.begin(); it != dq.end(); it++)
+    {
+        //*it = 99; å®¹å™¨ä¸­çš„æ•°æ®ä¸å¯ç”¨ä¿®æ”¹äº†
+        cout << *it << " ";
+    }
+    cout << endl;
 }
 
-// TODO ¹¹Ôìº¯Êı
+// TODO æ„é€ å‡½æ•°
 void test_construct() {
-	deque<int> dq;
-	for (int i = 0; i < 10; i++)
-	{
-		dq.push_back(i);
-	}
-	printDeque(dq);
+    deque<int> dq;
+    for (int i = 0; i < 10; i++)
+    {
+        dq.push_back(i);
+    }
+    printDeque(dq);
 
-	deque<int> d2(dq.begin(), dq.end());
-	printDeque(d2);
+    deque<int> d2(dq.begin(), dq.end());
+    printDeque(d2);
 
-	deque<int> d3(10, 99);
-	printDeque(d3);
+    deque<int> d3(10, 99);
+    printDeque(d3);
 
-	deque<int> d4(d3);
-	printDeque(d4);
+    deque<int> d4(d3);
+    printDeque(d4);
 }
 
-//TODO ¸³Öµ
+//TODO èµ‹å€¼
 void test_assign() {
-	deque<int> dq;
-	for (int i = 0; i < 10; i++)
-	{
-		dq.push_back(i);
-	}
-	printDeque(dq);
+    deque<int> dq;
+    for (int i = 0; i < 10; i++)
+    {
+        dq.push_back(i);
+    }
+    printDeque(dq);
 
-	deque<int> d1;
-	d1 = dq; // =¸³Öµ
-	printDeque(d1);
+    deque<int> d1;
+    d1 = dq; // =èµ‹å€¼
+    printDeque(d1);
 
-	deque<int> d2;
-	d2.assign(dq.begin(), dq.end());
-	printDeque(d2);
+    deque<int> d2;
+    d2.assign(dq.begin(), dq.end());
+    printDeque(d2);
 
-	deque<int> d3;
-	d3.assign(10, 200);
-	printDeque(d3);
+    deque<int> d3;
+    d3.assign(10, 200);
+    printDeque(d3);
 }
 
-//TODO ´óĞ¡²Ù×÷
+//TODO å¤§å°æ“ä½œ
 void op_size() {
-	deque<int> dq;
-	for (int i = 0; i < 10; i++)
-	{
-		dq.push_back(i);
-	}
-	if (!dq.empty()) {
-		cout << "´óĞ¡: " << dq.size() << endl;
-	}
-	dq.resize(15, -1);
-	printDeque(dq);
-	dq.resize(3);
-	printDeque(dq);
+    deque<int> dq;
+    for (int i = 0; i < 10; i++)
+    {
+        dq.push_back(i);
+    }
+    if (!dq.empty()) {
+        cout << "å¤§å°: " << dq.size() << endl;
+    }
+    dq.resize(15, -1);
+    printDeque(dq);
+    dq.resize(3);
+    printDeque(dq);
 }
 
 void insert_delete() {
-	deque<int> dq;
-	//Î²²å
-	dq.push_back(10);
-	dq.push_back(20);
-	//Í·²å
-	dq.push_front(-10);
-	dq.push_front(-20);
-	printDeque(dq);
-	//Î²É¾
-	dq.pop_back();
-	//Í·É¾
-	dq.pop_front();
-	printDeque(dq);
+    deque<int> dq;
+    //å°¾æ’
+    dq.push_back(10);
+    dq.push_back(20);
+    //å¤´æ’
+    dq.push_front(-10);
+    dq.push_front(-20);
+    printDeque(dq);
+    //å°¾åˆ 
+    dq.pop_back();
+    //å¤´åˆ 
+    dq.pop_front();
+    printDeque(dq);
 
-	//insert²åÈë
-	dq.insert(dq.begin(), -30);
-	printDeque(dq);
+    //insertæ’å…¥
+    dq.insert(dq.begin(), -30);
+    printDeque(dq);
 
-	dq.insert(dq.begin(), 3, -40);
-	printDeque(dq);
+    dq.insert(dq.begin(), 3, -40);
+    printDeque(dq);
 
-	//É¾³ı
-	deque<int>::iterator it = dq.begin();
-	it++;
-	dq.erase(it);
-	printDeque(dq);
+    //åˆ é™¤
+    deque<int>::iterator it = dq.begin();
+    it++;
+    dq.erase(it);
+    printDeque(dq);
 
-	//dq.erase(dq.begin(), dq.end());
-	dq.clear();
-	printDeque(dq);
+    //dq.erase(dq.begin(), dq.end());
+    dq.clear();
+    printDeque(dq);
 }
 
 void save_get() {
-	deque<int> dq;
-	dq.push_back(10);
-	dq.push_back(20);
-	dq.push_back(30);
+    deque<int> dq;
+    dq.push_back(10);
+    dq.push_back(20);
+    dq.push_back(30);
 
-	for (int i = 0; i < dq.size(); i++)
-	{
-		// [] ·½Ê½
-		cout << "[]: " << dq[i] << " ";
-	}
-	cout << endl;
+    for (int i = 0; i < dq.size(); i++)
+    {
+        // [] æ–¹å¼
+        cout << "[]: " << dq[i] << " ";
+    }
+    cout << endl;
 
-	for (int i = 0; i < dq.size(); i++)
-	{
-		// at ·½Ê½
-		cout << "at: " << dq.at(i) << " ";
-	}
-	cout << endl;
-	cout << "µÚÒ»¸öÔªËØ:" << dq.front() << endl;
-	cout << "×îºóÒ»¸ö:" << dq.back() << endl;
+    for (int i = 0; i < dq.size(); i++)
+    {
+        // at æ–¹å¼
+        cout << "at: " << dq.at(i) << " ";
+    }
+    cout << endl;
+    cout << "ç¬¬ä¸€ä¸ªå…ƒç´ :" << dq.front() << endl;
+    cout << "æœ€åä¸€ä¸ª:" << dq.back() << endl;
 }
 
 void deque_sort() {
-	deque<int> dq;
-	dq.push_back(56);
-	dq.push_back(12);
-	dq.push_back(21);
-	dq.push_back(89);
-	dq.push_back(3);
-	//Ä¬ÈÏÉıĞò
-	sort(dq.begin(), dq.end());
-	printDeque(dq);
+    deque<int> dq;
+    dq.push_back(56);
+    dq.push_back(12);
+    dq.push_back(21);
+    dq.push_back(89);
+    dq.push_back(3);
+    //é»˜è®¤å‡åº
+    sort(dq.begin(), dq.end());
+    printDeque(dq);
 }
 
 int main() {
-	//test_construct();
-	//test_assign();
-	//op_size();
-	//insert_delete();
-	//save_get();
-	deque_sort();
-	return 0;
+    //test_construct();
+    //test_assign();
+    //op_size();
+    //insert_delete();
+    //save_get();
+    deque_sort();
+    return 0;
 }

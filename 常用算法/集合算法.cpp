@@ -5,57 +5,57 @@
 #ifdef COLLECT_ALGORITHM
 
 void myprint(int var) {
-	cout << var << " ";
+    cout << var << " ";
 }
 
-//TODO Á½¸ö¼¯ºÏ±ØĞëÊÇÓĞĞòĞòÁĞ
+//TODO ä¸¤ä¸ªé›†åˆå¿…é¡»æ˜¯æœ‰åºåºåˆ—
 void test_intersection(const vector<int>& v1, const vector<int>& v2) {
-	vector<int> v3;
-	v3.resize(min(v1.size(), v2.size()));
-	//TODO ½»¼¯
-	//TODO  £¡£¡£¡Sort both vectors before using set_intersection
-	vector<int>::iterator itEnd = set_intersection(v1.begin(), v1.end(), v2.begin(), v2.end(), v3.begin());
+    vector<int> v3;
+    v3.resize(min(v1.size(), v2.size()));
+    //TODO äº¤é›†
+    //TODO  ï¼ï¼ï¼Sort both vectors before using set_intersection
+    vector<int>::iterator itEnd = set_intersection(v1.begin(), v1.end(), v2.begin(), v2.end(), v3.begin());
 
-	//TODO end²»Ê¹ÓÃv3.end()¶øÓÃµÄitEnd£¬ÒòÎª½»¼¯ÊıÁ¿ºÜ¿ÉÄÜĞ¡ÓÚv3µÄsize£¬ÀïÃæ¶àÓàµÄÊÇ0
-	for_each(v3.begin(), itEnd, myprint); //×¢Òâ end
+    //TODO endä¸ä½¿ç”¨v3.end()è€Œç”¨çš„itEndï¼Œå› ä¸ºäº¤é›†æ•°é‡å¾ˆå¯èƒ½å°äºv3çš„sizeï¼Œé‡Œé¢å¤šä½™çš„æ˜¯0
+    for_each(v3.begin(), itEnd, myprint); //æ³¨æ„ end
 }
 
-//TODO Á½¸ö¼¯ºÏ±ØĞëÊÇÓĞĞòĞòÁĞ
+//TODO ä¸¤ä¸ªé›†åˆå¿…é¡»æ˜¯æœ‰åºåºåˆ—
 void test_union(const vector<int>& v1, const vector<int>& v2) {
-	vector<int> v3;
-	v3.resize(v1.size() + v2.size());
-	vector<int>::iterator itEnd = set_union(v1.begin(), v1.end(), v2.begin(), v2.end(), v3.begin());
-	for_each(v3.begin(), itEnd, myprint);
+    vector<int> v3;
+    v3.resize(v1.size() + v2.size());
+    vector<int>::iterator itEnd = set_union(v1.begin(), v1.end(), v2.begin(), v2.end(), v3.begin());
+    for_each(v3.begin(), itEnd, myprint);
 }
 
-//TODO Á½¸ö¼¯ºÏ±ØĞëÓĞĞòĞòÁĞ
+//TODO ä¸¤ä¸ªé›†åˆå¿…é¡»æœ‰åºåºåˆ—
 void test_diff(const vector<int>& v1, const vector<int>& v2) {
-	vector<int> v3;
-	v3.resize(max(v1.size(), v2.size()));
+    vector<int> v3;
+    v3.resize(max(v1.size(), v2.size()));
 
-	vector<int>::iterator itEnd = set_difference(v1.begin(), v1.end(), v2.begin(), v2.end(), v3.begin());
-	for_each(v3.begin(), itEnd, myprint);
+    vector<int>::iterator itEnd = set_difference(v1.begin(), v1.end(), v2.begin(), v2.end(), v3.begin());
+    for_each(v3.begin(), itEnd, myprint);
 }
 
 int main() {
-	vector<int> v1;
-	v1.push_back(10);
-	v1.push_back(20);
-	v1.push_back(40);
-	v1.push_back(50);
+    vector<int> v1;
+    v1.push_back(10);
+    v1.push_back(20);
+    v1.push_back(40);
+    v1.push_back(50);
 
-	vector<int> v2;
-	v2.push_back(20);
-	v2.push_back(50);
-	v2.push_back(60);
-	v2.push_back(100);
+    vector<int> v2;
+    v2.push_back(20);
+    v2.push_back(50);
+    v2.push_back(60);
+    v2.push_back(100);
 
-	test_intersection(v1, v2);
-	cout << endl;
-	test_union(v1, v2);
-	cout << endl;
-	test_diff(v1, v2);
-	return 0;
+    test_intersection(v1, v2);
+    cout << endl;
+    test_union(v1, v2);
+    cout << endl;
+    test_diff(v1, v2);
+    return 0;
 }
 
 #endif // #define COLLECT_ALGORITHM

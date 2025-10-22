@@ -3,14 +3,14 @@
 
 #ifdef REFERENCE_BASE
 
-//ÒýÓÃµÄ×÷ÓÃ£º ¸ø±äÁ¿Æð±ðÃû
-//Óï·¨£º Êý¾ÝÀàÐÍ &±ðÃû = Ô­Ãû
+//å¼•ç”¨çš„ä½œç”¨ï¼š ç»™å˜é‡èµ·åˆ«å
+//è¯­æ³•ï¼š æ•°æ®ç±»åž‹ &åˆ«å = åŽŸå
 
 int main() {
 	int a = 10;
 	int& b = a;
 
-	//sizeof ²Ù×÷·û×÷ÓÃÓÚÒýÓÃÊ±£¬·µ»ØµÄÊÇÒýÓÃ¶ÔÏóµÄ´óÐ¡£¬¶ø²»ÊÇÒýÓÃ±¾ÉíµÄ´óÐ¡¡£
+	//sizeof æ“ä½œç¬¦ä½œç”¨äºŽå¼•ç”¨æ—¶ï¼Œè¿”å›žçš„æ˜¯å¼•ç”¨å¯¹è±¡çš„å¤§å°ï¼Œè€Œä¸æ˜¯å¼•ç”¨æœ¬èº«çš„å¤§å°ã€‚
 	cout << "sizeof(a) = " << sizeof(a) << endl;
 	cout << "sizeof(b) = " << sizeof(b) << endl;
 

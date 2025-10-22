@@ -5,7 +5,7 @@
 
 class House {
 
-	//TODO HouseµÄºÃÓÑÁĞ±í
+	//TODO Houseçš„å¥½å‹åˆ—è¡¨
 	friend class Family;
 
 public:
@@ -28,10 +28,10 @@ public:
 	void visit();
 };
 
-//ÀàÍâĞ´³ÉÔ±º¯Êı
+//ç±»å¤–å†™æˆå‘˜å‡½æ•°
 House::House() {
-	livingRoom = "¿ÍÌü";
-	bedroom = "ÎÔÊÒ";
+	livingRoom = "å®¢å…";
+	bedroom = "å§å®¤";
 }
 
 Family::Family() {
@@ -39,8 +39,8 @@ Family::Family() {
 }
 
 void Family::visit() {
-	cout << "¼ÒÍ¥ÀàÕıÔÚ·ÃÎÊ: " << house->livingRoom << endl;
-	cout << "¼ÒÍ¥ÀàÕıÔÚ·ÃÎÊ: " << house->bedroom << endl;
+	cout << "å®¶åº­ç±»æ­£åœ¨è®¿é—®: " << house->livingRoom << endl;
+	cout << "å®¶åº­ç±»æ­£åœ¨è®¿é—®: " << house->bedroom << endl;
 }
 
 void test01() {

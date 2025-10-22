@@ -5,88 +5,88 @@
 template<class T>
 class MyArray {
 public:
-	MyArray(int capacity) {
-		this->capacity = capacity;
-		this->size = 0;
-		this->addr = new T[this->capacity];
-		//cout << "--- MyArray ÓĞ²Î¹¹Ôìº¯Êı ---" << endl;
-	}
-	//
-	MyArray(const MyArray& arr) {
-		this->capacity = arr.capacity;
-		this->size = arr.size;
-		//Éî¿½±´
-		this->addr = new T[arr.capacity];
-		//Èç¹ûarrÊı×éÓĞÊı¾İĞèÒª¿½±´µ½ĞÂÊı×éÖĞ
-		for (int i = 0; i < arr.size; i++)
-		{
-			this->addr[i] = arr.addr[i];
-		}
-		//cout << "--- MyArray ¿½±´¹¹Ôìº¯Êı ---" << endl;
-	}
+    MyArray(int capacity) {
+        this->capacity = capacity;
+        this->size = 0;
+        this->addr = new T[this->capacity];
+        //cout << "--- MyArray æœ‰å‚æ„é€ å‡½æ•° ---" << endl;
+    }
+    //
+    MyArray(const MyArray& arr) {
+        this->capacity = arr.capacity;
+        this->size = arr.size;
+        //æ·±æ‹·è´
+        this->addr = new T[arr.capacity];
+        //å¦‚æœarræ•°ç»„æœ‰æ•°æ®éœ€è¦æ‹·è´åˆ°æ–°æ•°ç»„ä¸­
+        for (int i = 0; i < arr.size; i++)
+        {
+            this->addr[i] = arr.addr[i];
+        }
+        //cout << "--- MyArray æ‹·è´æ„é€ å‡½æ•° ---" << endl;
+    }
 
-	MyArray& operator=(const MyArray& ma) {
-		//ÏÈÅĞ¶ÏÔ­À´¶ÑÇøÊÇ·ñÓĞÊı¾İ
-		if (this->addr != NULL) {
-			delete[] this->addr;
-			this->addr = NULL;
-		}
-		this->capacity = ma.capacity;
-		this->size = ma.size;
-		//Éî¿½±´
-		this->addr = new T[ma.capacity];
-		for (int i = 0; i < ma.size; i++)
-		{
-			this->addr[i] = ma.addr[i];
-		}
-		//cout << "--- MyArray =ÖØÔØ ---" << endl;
-		return *this;
-	}
+    MyArray& operator=(const MyArray& ma) {
+        //å…ˆåˆ¤æ–­åŸæ¥å †åŒºæ˜¯å¦æœ‰æ•°æ®
+        if (this->addr != NULL) {
+            delete[] this->addr;
+            this->addr = NULL;
+        }
+        this->capacity = ma.capacity;
+        this->size = ma.size;
+        //æ·±æ‹·è´
+        this->addr = new T[ma.capacity];
+        for (int i = 0; i < ma.size; i++)
+        {
+            this->addr[i] = ma.addr[i];
+        }
+        //cout << "--- MyArray =é‡è½½ ---" << endl;
+        return *this;
+    }
 
-	~MyArray() {
-		if (this->addr != NULL) {
-			delete[] this->addr;
-			this->addr = NULL;
-		}
-		//cout << "--- MyArray Îö¹¹º¯Êı ---" << endl;
-	}
+    ~MyArray() {
+        if (this->addr != NULL) {
+            delete[] this->addr;
+            this->addr = NULL;
+        }
+        //cout << "--- MyArray ææ„å‡½æ•° ---" << endl;
+    }
 
 
-	//Î²²å·¨
-	void tailInsert(const T& element) {
-		//ÅĞ¶ÏÈİÁ¿
-		if (this->capacity == this->size) {
-			return;
-		}
-		this->addr[this->size] = element;//Î²²å
-		this->size++;//¸üĞÂÊı×é´óĞ¡
-	}
+    //å°¾æ’æ³•
+    void tailInsert(const T& element) {
+        //åˆ¤æ–­å®¹é‡
+        if (this->capacity == this->size) {
+            return;
+        }
+        this->addr[this->size] = element;//å°¾æ’
+        this->size++;//æ›´æ–°æ•°ç»„å¤§å°
+    }
 
-	//Î²É¾
-	void tailDelete() {
-		if (this->size == 0) {
-			return;
-		}
-		this->size--;
-	}
+    //å°¾åˆ 
+    void tailDelete() {
+        if (this->size == 0) {
+            return;
+        }
+        this->size--;
+    }
 
-	//Í¨¹ıÏÂ±ê·½Ê½·ÃÎÊÔªËØ
-	T& operator[](int index) {
-		return	this->addr[index];
-	}
+    //é€šè¿‡ä¸‹æ ‡æ–¹å¼è®¿é—®å…ƒç´ 
+    T& operator[](int index) {
+        return	this->addr[index];
+    }
 
-	//·µ»ØÈİÁ¿
-	int getCapacity() {
-		return this->capacity;
-	}
+    //è¿”å›å®¹é‡
+    int getCapacity() {
+        return this->capacity;
+    }
 
-	//·µ»ØÊı×é´óĞ¡
-	int getSize() {
-		return this->size;
-	}
+    //è¿”å›æ•°ç»„å¤§å°
+    int getSize() {
+        return this->size;
+    }
 
 private:
-	T* addr; //Ö¸Ïò¶ÑÇø¿ª±ÙµÄÕæÊµÊı×é
-	int capacity;
-	int size;
+    T* addr; //æŒ‡å‘å †åŒºå¼€è¾Ÿçš„çœŸå®æ•°ç»„
+    int capacity;
+    int size;
 };

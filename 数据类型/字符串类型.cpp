@@ -5,46 +5,46 @@
 
 class Person {
 public:
-	char name[64];
-	int age;
+    char name[64];
+    int age;
 };
 
 
 void test01() {
-	//TODO c·ç¸ñ×Ö·û´® char ±äÁ¿Ãû[] = "×Ö·û´®Öµ";
-	char name[] = "lyle";
-	cout << name << endl;
-	cout << sizeof(name) << endl;// 4¸ö×Ö·û+1¸ö¿ÕÖÕÖ¹·û
+    //TODO cé£Žæ ¼å­—ç¬¦ä¸² char å˜é‡å[] = "å­—ç¬¦ä¸²å€¼";
+    char name[] = "lyle";
+    cout << name << endl;
+    cout << sizeof(name) << endl;// 4ä¸ªå­—ç¬¦+1ä¸ªç©ºç»ˆæ­¢ç¬¦
 
 
-	//TODO c++ ·ç¸ñ×Ö·û´® string ±äÁ¿Ãû = "×Ö·û´®Öµ";
-	string motto = "just do it";
-	cout << motto << endl;
-	cout << sizeof(motto) << endl; //stringÀà¶ÔÏó±¾ÉíµÄ´óÐ¡
-	cout << motto.size() << endl;
-	cout << motto.length() << endl;
+    //TODO c++ é£Žæ ¼å­—ç¬¦ä¸² string å˜é‡å = "å­—ç¬¦ä¸²å€¼";
+    string motto = "just do it";
+    cout << motto << endl;
+    cout << sizeof(motto) << endl; //stringç±»å¯¹è±¡æœ¬èº«çš„å¤§å°
+    cout << motto.size() << endl;
+    cout << motto.length() << endl;
 }
 
 void test02() {
-	Person p;
-	p.age = 10;
+    Person p;
+    p.age = 10;
 
 
-	//ÔÚ±àÒë½×¶Î£¬±àÒëÆ÷»á°Ñ"god"µÄÄÚÈÝ('g','o','d','\0')¸´ÖÆµ½Êý×éµÄÇ°4¸ö×Ö½Ú
-	char name[64] = "god";//ºÏ·¨µÄ³õÊ¼»¯Óï¾ä
-	cout << "name:       " << (void*)name << endl;      // Êý×éÊ×ÔªËØµØÖ·
-	cout << "&name[0]:   " << (void*)&name[0] << endl;  // µÚÒ»¸ö×Ö·ûµØÖ·
-	cout << "&name:      " << (void*)&name << endl;     // Õû¸öÊý×éµÄµØÖ·
+    //åœ¨ç¼–è¯‘é˜¶æ®µï¼Œç¼–è¯‘å™¨ä¼šæŠŠ"god"çš„å†…å®¹('g','o','d','\0')å¤åˆ¶åˆ°æ•°ç»„çš„å‰4ä¸ªå­—èŠ‚
+    char name[64] = "god";//åˆæ³•çš„åˆå§‹åŒ–è¯­å¥
+    cout << "name:       " << (void*)name << endl;      // æ•°ç»„é¦–å…ƒç´ åœ°å€
+    cout << "&name[0]:   " << (void*)&name[0] << endl;  // ç¬¬ä¸€ä¸ªå­—ç¬¦åœ°å€
+    cout << "&name:      " << (void*)&name << endl;     // æ•´ä¸ªæ•°ç»„çš„åœ°å€
 
-	// ÔÚc/c++ÓïÑÔÖÐ£¬Êý×é²»ÊÇ¿É¸³ÖµÀàÐÍ(non-assignable type)
-	//p.name = "god";//·Ç·¨¸³ÖµÓï¾ä
+    // åœ¨c/c++è¯­è¨€ä¸­ï¼Œæ•°ç»„ä¸æ˜¯å¯èµ‹å€¼ç±»åž‹(non-assignable type)
+    //p.name = "god";//éžæ³•èµ‹å€¼è¯­å¥
 
-	cout << p.name << " " << p.age << endl;
+    cout << p.name << " " << p.age << endl;
 }
 
 int main() {
-	//test01();
-	test02();
-	return 0;
+    //test01();
+    test02();
+    return 0;
 }
 #endif // STRING_TYPE

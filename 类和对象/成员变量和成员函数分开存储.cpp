@@ -10,21 +10,21 @@ class Person
 };
 
 class Student {
-	int age;				//�Ǿ�̬��Ա������������Ķ���
+	int age;				//非静态成员变量，属于类的对象
 
-	static int score;		//  ��̬��Ա�����������������
+	static int score;		//  静态成员变量，不属于类对象
 
-	void func() {}			//�Ǿ�̬��Ա�����������������
+	void func() {}			//非静态成员函数，不属于类对象
 
-	static void func2() {}	//  ��̬��Ա�����������������
+	static void func2() {}	//  静态成员函数，不属于类对象
 };
 
 int Student::score = 20;
 
 void test01() {
 	Person p;
-	//�ն���ռ���ڴ�ռ�Ϊ: 1�ֽڡ�Ϊ�����ֲ�ͬ�ն���ռ���ڴ��λ��
-	//ÿ���ն���ҲӦ����һ����һ�޶����ڴ��ַ
+	//空对象占用内存空间为: 1字节。为了区分不同空对象占用内存的位置
+	//每个空对象也应该有一个独一无二的内存地址
 	cout << "size of p = " << sizeof(p) << endl;
 
 }

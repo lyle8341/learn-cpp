@@ -6,18 +6,18 @@
 
 class Person {
 
-	//1.¹¹Ôìº¯Êý ½øÐÐ³õÊ¼»¯²Ù×÷
-	//´´½¨¶ÔÏóµÄÊ±ºò£¬¹¹Ôìº¯Êý»á×Ô¶¯µ÷ÓÃ£¬¶øÇÒÖ»µ÷ÓÃÒ»´Î
+	//1.æž„é€ å‡½æ•° è¿›è¡Œåˆå§‹åŒ–æ“ä½œ
+	//åˆ›å»ºå¯¹è±¡çš„æ—¶å€™ï¼Œæž„é€ å‡½æ•°ä¼šè‡ªåŠ¨è°ƒç”¨ï¼Œè€Œä¸”åªè°ƒç”¨ä¸€æ¬¡
 public:
 	Person() {
-		cout << "Person ¹¹Ôìº¯Êý±»µ÷ÓÃ" << endl;
+		cout << "Person æž„é€ å‡½æ•°è¢«è°ƒç”¨" << endl;
 	}
 
-	//2.Îö¹¹º¯Êý ½øÐÐÇåÀí²Ù×÷
-	//Îö¹¹º¯Êý²»¿ÉÒÔÓÐ²ÎÊý£¬²»¿ÉÒÔ·¢ÉúÖØÔØ
-	//¶ÔÏóÔÚÏú»ÙÇ°»á×Ô¶¯µ÷ÓÃÎö¹¹º¯Êý£¬¶øÇÒÖ»»áµ÷ÓÃÒ»´Î
+	//2.æžæž„å‡½æ•° è¿›è¡Œæ¸…ç†æ“ä½œ
+	//æžæž„å‡½æ•°ä¸å¯ä»¥æœ‰å‚æ•°ï¼Œä¸å¯ä»¥å‘ç”Ÿé‡è½½
+	//å¯¹è±¡åœ¨é”€æ¯å‰ä¼šè‡ªåŠ¨è°ƒç”¨æžæž„å‡½æ•°ï¼Œè€Œä¸”åªä¼šè°ƒç”¨ä¸€æ¬¡
 	~Person() {
-		cout << "Person Îö¹¹º¯Êý±»µ÷ÓÃ" << endl;
+		cout << "Person æžæž„å‡½æ•°è¢«è°ƒç”¨" << endl;
 	}
 
 
@@ -26,7 +26,7 @@ public:
 };
 
 void test01() {
-	Person p;//ÔÚÕ»ÉÏµÄÊý¾Ý£¬±¾·½·¨Ö´ÐÐÍê±Ïºó£¬ÊÍ·ÅÕâ¸ö¶ÔÏó
+	Person p;//åœ¨æ ˆä¸Šçš„æ•°æ®ï¼Œæœ¬æ–¹æ³•æ‰§è¡Œå®Œæ¯•åŽï¼Œé‡Šæ”¾è¿™ä¸ªå¯¹è±¡
 }
 
 int main() {

@@ -3,23 +3,23 @@
 
 #ifdef STATIC_FIELD_METHOD
 
-//¾²Ì¬³ÉÔ±±äÁ¿
+//é™æ€æˆå‘˜å˜é‡
 class Person {
 public:
 
-	//1.ËùÓÐ¶ÔÏó¶¼¹²ÏíÍ¬Ò»·ÝÊý¾Ý
-	//2.±àÒë½×¶Î¾Í·ÖÅäÄÚ´æ
-	//3.ÀàÄÚÉùÃ÷£¬ÀàÍâ³õÊ¼»¯²Ù×÷
+	//1.æ‰€æœ‰å¯¹è±¡éƒ½å…±äº«åŒä¸€ä»½æ•°æ®
+	//2.ç¼–è¯‘é˜¶æ®µå°±åˆ†é…å†…å­˜
+	//3.ç±»å†…å£°æ˜Žï¼Œç±»å¤–åˆå§‹åŒ–æ“ä½œ
 	static int age;
 
 
-	//¾²Ì¬³ÉÔ±º¯Êý
-	//ËùÓÐ¶ÔÏó¹²ÏíÍ¬Ò»¸öº¯Êý
-	//¾²Ì¬³ÉÔ±º¯ÊýÖ»ÄÜ·ÃÎÊ¾²Ì¬³ÉÔ±±äÁ¿
+	//é™æ€æˆå‘˜å‡½æ•°
+	//æ‰€æœ‰å¯¹è±¡å…±äº«åŒä¸€ä¸ªå‡½æ•°
+	//é™æ€æˆå‘˜å‡½æ•°åªèƒ½è®¿é—®é™æ€æˆå‘˜å˜é‡
 	static void func() {
 		cout << "static void func is called" << endl;
 
-		//¾²Ì¬³ÉÔ±º¯ÊýÖ»ÄÜ·ÃÎÊ¾²Ì¬³ÉÔ±±äÁ¿
+		//é™æ€æˆå‘˜å‡½æ•°åªèƒ½è®¿é—®é™æ€æˆå‘˜å˜é‡
 		age = 120;
 
 	}
@@ -33,7 +33,7 @@ private:
 };
 
 
-//ÀàÄÚÉùÃ÷£¬ÀàÍâ³õÊ¼»¯
+//ç±»å†…å£°æ˜Žï¼Œç±»å¤–åˆå§‹åŒ–
 int Person::age = 200;
 int Person::pwd = 12345;
 
@@ -46,14 +46,14 @@ void test01() {
 	cout << p.age << endl;
 }
 
-//¾²Ì¬³ÉÔ±±äÁ¿ÓÐÁ½ÖÖ·ÃÎÊ·½Ê½:
+//é™æ€æˆå‘˜å˜é‡æœ‰ä¸¤ç§è®¿é—®æ–¹å¼:
 void test02() {
-	//1.Í¨¹ý¶ÔÏó·ÃÎÊ
+	//1.é€šè¿‡å¯¹è±¡è®¿é—®
 	Person p;
 	cout << p.age << endl;
 	p.func();
 
-	//2.Í¨¹ýÀàÃû·ÃÎÊ
+	//2.é€šè¿‡ç±»åè®¿é—®
 	cout << Person::age << endl;
 
 	//inaccessible

@@ -3,21 +3,21 @@
 
 #ifdef REFERENCE_AS_PARAM
 
-//Öµ´«µİ
+//å€¼ä¼ é€’
 void swap01(int a, int b) {
 	int temp = a;
 	a = b;
 	b = temp;
 }
 
-//µØÖ·´«µİ
+//åœ°å€ä¼ é€’
 void swap02(int* a, int* b) {
 	int temp = *a;
 	*a = *b;
 	*b = temp;
 }
 
-//ÒıÓÃ´«µİ
+//å¼•ç”¨ä¼ é€’
 void swap03(int& a, int& b) {
 	int temp = a;
 	a = b;

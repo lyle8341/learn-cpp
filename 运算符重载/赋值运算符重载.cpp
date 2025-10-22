@@ -19,26 +19,26 @@ public:
 	}
 
 
-	//¼û Project(ÀàºÍ¶ÔÏó)ÖĞÉî¿½±´ºÍÇ³¿½±´.cpp
+	//è§ Project(ç±»å’Œå¯¹è±¡)ä¸­æ·±æ‹·è´å’Œæµ…æ‹·è´.cpp
 
 	//void operator=(Person& p) {
-	//	//ÏÈÊÍ·Å¸É¾»£¬È»ºóÔÙÉî¿½±´
+	//	//å…ˆé‡Šæ”¾å¹²å‡€ï¼Œç„¶åå†æ·±æ‹·è´
 	//	if (this->age != NULL) {
 	//		delete age;
 	//		this->age = NULL;
 	//	}
-	//	//Éî¿½±´
+	//	//æ·±æ‹·è´
 	//	this->age = new int(*p.age);
 	//}
 
-	//Éı¼¶£¬Âú×ã¼¶Áª¸³Öµ
+	//å‡çº§ï¼Œæ»¡è¶³çº§è”èµ‹å€¼
 	Person& operator=(Person& p) {
-		//ÏÈÊÍ·Å¸É¾»£¬È»ºóÔÙÉî¿½±´
+		//å…ˆé‡Šæ”¾å¹²å‡€ï¼Œç„¶åå†æ·±æ‹·è´
 		if (this->age != NULL) {
 			delete age;
 			this->age = NULL;
 		}
-		//Éî¿½±´
+		//æ·±æ‹·è´
 		this->age = new int(*p.age);
 		return *this;
 	}
@@ -58,9 +58,9 @@ void test01() {
 	Person p3(100);
 
 	p3 = p2 = p1;
-	cout << "p1ÄêÁä: " << *p1.age << endl;
-	cout << "p2ÄêÁä: " << *p2.age << endl;
-	cout << "p3ÄêÁä: " << *p3.age << endl;
+	cout << "p1å¹´é¾„: " << *p1.age << endl;
+	cout << "p2å¹´é¾„: " << *p2.age << endl;
+	cout << "p3å¹´é¾„: " << *p3.age << endl;
 }
 
 int main() {

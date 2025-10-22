@@ -7,48 +7,48 @@ class House;
 
 class Family {
 public:
-	Family();
+    Family();
 
-	House* house;
+    House* house;
 
-	void activity();
+    void activity();
 };
 
 
 class House {
 
-	//TODO House好友列表
-	friend void Family::activity();
+    //TODO House濂藉弸鍒楄〃
+    friend void Family::activity();
 
 public:
-	House();
+    House();
 
 public:
-	string livingRoom;
+    string livingRoom;
 private:
-	string bedRoom;
+    string bedRoom;
 };
 
 House::House() {
-	livingRoom = "客厅";
-	bedRoom = "卧室";
+    livingRoom = "瀹㈠巺";
+    bedRoom = "鍗у";
 }
 
 Family::Family() {
-	house = new House;
+    house = new House;
 }
 
 
 void Family::activity() {
-	cout << "activity正在访问: " << house->livingRoom << endl;
-	cout << "activity正在访问: " << house->bedRoom << endl;
+    cout << "activity姝ｅ湪璁块棶: " << house->livingRoom << endl;
+    cout << "activity姝ｅ湪璁块棶: " << house->bedRoom << endl;
 }
 
-//生命顺序和实现顺序很重要，有先后的哦
+//鐢熷懡椤哄簭鍜屽疄鐜伴『搴忓緢閲嶈锛屾湁鍏堝悗鐨勫摝
 int main() {
-	Family f;
-	f.activity();
-	return 0;
+    Family f;
+    f.activity();
+    return 0;
 }
 
 #endif // METHOD_FRIEND

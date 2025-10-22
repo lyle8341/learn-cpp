@@ -3,80 +3,80 @@
 #ifdef CLASS_TEMPLATE_SAMPLE
 
 void test01() {
-	MyArray<int> arr(5);
-	MyArray<int> arr2(arr);
-	MyArray<int> arr3(100);
+    MyArray<int> arr(5);
+    MyArray<int> arr2(arr);
+    MyArray<int> arr3(100);
 
-	arr3 = arr;
+    arr3 = arr;
 
 }
 
 template <typename T>
-//TODO printArray²ÎÊı²»ÄÜ¼Óconst£¬³£¶ÔÏóÖ»ÄÜµ÷ÓÃ³£º¯Êı£¬MyArrayÖĞµÄº¯ÊıÊÇÆÕÍ¨º¯Êı
+//TODO printArrayå‚æ•°ä¸èƒ½åŠ constï¼Œå¸¸å¯¹è±¡åªèƒ½è°ƒç”¨å¸¸å‡½æ•°ï¼ŒMyArrayä¸­çš„å‡½æ•°æ˜¯æ™®é€šå‡½æ•°
 void printArray(MyArray<T>& arr) {//
-	for (int i = 0; i < arr.getSize(); i++)
-	{
-		cout << arr[i] << "\t";
-	}
-	cout << endl;
+    for (int i = 0; i < arr.getSize(); i++)
+    {
+        cout << arr[i] << "\t";
+    }
+    cout << endl;
 }
 
 void test02() {
-	MyArray<int> arr(5);
-	for (int i = 0; i < arr.getCapacity(); i++)
-	{
-		arr.tailInsert(i);
-	}
-	printArray(arr);
+    MyArray<int> arr(5);
+    for (int i = 0; i < arr.getCapacity(); i++)
+    {
+        arr.tailInsert(i);
+    }
+    printArray(arr);
 
-	arr.tailDelete();
+    arr.tailDelete();
 
-	cout << "capacity: " << arr.getCapacity() << endl;
-	cout << "size: " << arr.getSize() << endl;
+    cout << "capacity: " << arr.getCapacity() << endl;
+    cout << "size: " << arr.getSize() << endl;
 }
 
 
 class Person {
 public:
-	Person(string name, int age) {
-		this->name = name;
-		this->age = age;
-	}
+    Person(string name, int age) {
+        this->name = name;
+        this->age = age;
+    }
 
-	Person() {}
+    Person() {}
 
-	string name;
-	int age;
+    string name;
+    int age;
 
 
 };
 
-//TODO ¾ßÌå»¯
+//TODO å…·ä½“åŒ–
 template<> void printArray(MyArray<Person>& arr) {//
-	for (int i = 0; i < arr.getSize(); i++)
-	{
-		Person temp = arr[i];
-		cout << "ĞÕÃû: " << temp.name << " ÄêÁä: " << temp.age << endl;
-	}
+    for (int i = 0; i < arr.getSize(); i++)
+    {
+        Person temp = arr[i];
+        cout << "å§“å: " << temp.name << " å¹´é¾„: " << temp.age << endl;
+    }
 }
 
 void test03() {
-	MyArray<Person> arr(10);
-	Person p1("ÆëÌì´óÊ¥", 600);
-	Person p2("¾íÁ±´ó½«", 200);
-	Person p3("½ğ²õ×Ó", 30);
-	arr.tailInsert(p1);
-	arr.tailInsert(p2);
-	arr.tailInsert(p3);
-	printArray(arr);
-	cout << "capacity: " << arr.getCapacity() << endl;
-	cout << "size: " << arr.getSize() << endl;
+    MyArray<Person> arr(10);
+    Person p1("é½å¤©å¤§åœ£", 600);
+    Person p2("å·å¸˜å¤§å°†", 200);
+    Person p3("é‡‘è‰å­", 30);
+    arr.tailInsert(p1);
+    arr.tailInsert(p2);
+    arr.tailInsert(p3);
+    printArray(arr);
+    cout << "capacity: " << arr.getCapacity() << endl;
+    cout << "size: " << arr.getSize() << endl;
 }
 
 int main() {
-	//test01();
-	//test02();
-	test03();
-	return 0;
+    //test01();
+    //test02();
+    test03();
+    return 0;
 }
 #endif // CLASS_TEMPLATE_SAMPLE

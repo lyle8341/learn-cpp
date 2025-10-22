@@ -19,14 +19,14 @@ int main() {
 	str3.append("sea ");
 
 	//5.
-	str3.append("food fruit", 5);//²ÎÊı2£º Ç°n¸ö×Ö·û
+	str3.append("food fruit", 5);//å‚æ•°2ï¼š å‰nä¸ªå­—ç¬¦
 
 	//6.
 	str3.append(str1);
 
 	//7.
 	string str4 = "good bye";
-	str3.append(str4, 5, 3);//²ÎÊı3: ½ØÈ¡×Ö·û¸öÊı
+	str3.append(str4, 5, 3);//å‚æ•°3: æˆªå–å­—ç¬¦ä¸ªæ•°
 
 	cout << str3 << endl;
 }

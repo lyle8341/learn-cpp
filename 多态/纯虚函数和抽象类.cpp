@@ -3,24 +3,24 @@
 
 #ifdef PURE_VIRTUAL_FUNCTION_ABSTRACT
 
-//´¿Ðéº¯ÊýÓï·¨:  virtual ·µ»ØÖµÀàÐÍ º¯ÊýÃû (²ÎÊýÁÐ±í) = 0;
+//çº¯è™šå‡½æ•°è¯­æ³•:  virtual è¿”å›žå€¼ç±»åž‹ å‡½æ•°å (å‚æ•°åˆ—è¡¨) = 0;
 
-//µ±ÀàÖÐÓÐÁË´¿Ðéº¯Êý£¬Õâ¸öÀàÒ²³ÆÎª ³éÏóÀà
+//å½“ç±»ä¸­æœ‰äº†çº¯è™šå‡½æ•°ï¼Œè¿™ä¸ªç±»ä¹Ÿç§°ä¸º æŠ½è±¡ç±»
 
-//³éÏóÀàÌØµã
-	//1.ÎÞ·¨ÊµÀý»¯¶ÔÏó
-	//2.×ÓÀà±ØÐëÖØÐ´³éÏóÀàÖÐµÄ´¿Ðéº¯Êý£¬·ñÔòÒ²ÊôÓÚ³éÏóÀà
+//æŠ½è±¡ç±»ç‰¹ç‚¹
+	//1.æ— æ³•å®žä¾‹åŒ–å¯¹è±¡
+	//2.å­ç±»å¿…é¡»é‡å†™æŠ½è±¡ç±»ä¸­çš„çº¯è™šå‡½æ•°ï¼Œå¦åˆ™ä¹Ÿå±žäºŽæŠ½è±¡ç±»
 
 class Base {
 public:
-	//´¿Ðéº¯Êý
-	//Ö»ÒªÓÐÒ»¸ö´¿Ðéº¯Êý£¬Õâ¸öÀà³ÆÎª³éÏóÀà
+	//çº¯è™šå‡½æ•°
+	//åªè¦æœ‰ä¸€ä¸ªçº¯è™šå‡½æ•°ï¼Œè¿™ä¸ªç±»ç§°ä¸ºæŠ½è±¡ç±»
 	virtual void func() = 0;
 };
 
 class Son :public Base {
 
-	//×ÓÀà±ØÐëÊµÏÖ£¬·ñÔòÎÞ·¨ÊµÀý»¯
+	//å­ç±»å¿…é¡»å®žçŽ°ï¼Œå¦åˆ™æ— æ³•å®žä¾‹åŒ–
 	virtual void func() {
 
 	}

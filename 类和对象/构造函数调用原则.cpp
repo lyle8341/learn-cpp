@@ -3,10 +3,10 @@
 
 #ifdef CONSTRUCT_CALL_PRINCIPLE
 
-//¼ûÄ¬ÈÏ¹¹Ôìº¯Êý.png
+//è§é»˜è®¤æž„é€ å‡½æ•°.png
 
-//Èç¹ûÓÃ»§¶¨ÒåÁËÓÐ²Î¹¹Ôì£¬c++²»ÔÙÌá¹©Ä¬ÈÏÎÞ²Î¹¹Ôì£¬µ«ÊÇ»áÌá¹©¿½±´¹¹Ôì
-//Èç¹ûÓÃ»§¶¨ÒåÁË¿½±´¹¹Ôì£¬c++²»ÔÙÌá¹©ÆäËû¹¹Ôìº¯Êý
+//å¦‚æžœç”¨æˆ·å®šä¹‰äº†æœ‰å‚æž„é€ ï¼Œc++ä¸å†æä¾›é»˜è®¤æ— å‚æž„é€ ï¼Œä½†æ˜¯ä¼šæä¾›æ‹·è´æž„é€ 
+//å¦‚æžœç”¨æˆ·å®šä¹‰äº†æ‹·è´æž„é€ ï¼Œc++ä¸å†æä¾›å…¶ä»–æž„é€ å‡½æ•°
 
 
 
@@ -15,14 +15,14 @@ class Person {
 
 public:
 	string name;
-	//int age; //intÊôÐÔ£¬±àÒëÆ÷»áÓÅ»¯£¬¿´²»µ½Ïë¿´µÄ½á¹û
+	//int age; //intå±žæ€§ï¼Œç¼–è¯‘å™¨ä¼šä¼˜åŒ–ï¼Œçœ‹ä¸åˆ°æƒ³çœ‹çš„ç»“æžœ
 };
 
 void test01() {
 	Person p;
 	p.name = "lyle";
 	Person p2(p);
-	cout << "p2ÐÕÃû: " << p2.name << endl;
+	cout << "p2å§“å: " << p2.name << endl;
 }
 
 int main() {

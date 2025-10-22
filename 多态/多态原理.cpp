@@ -6,7 +6,7 @@
 class Animal {
 public:
 	void speak() {
-		cout << "¶¯ÎïÔÚËµ»°" << endl;
+		cout << "åŠ¨ç‰©åœ¨è¯´è¯" << endl;
 	}
 };
 
@@ -15,7 +15,7 @@ public:
 class Creature {
 public:
 	virtual void speak() {
-		cout << "ÉúÎïÔÚËµ»°" << endl;
+		cout << "ç”Ÿç‰©åœ¨è¯´è¯" << endl;
 	}
 	/*
 		class Creature  size(4):
@@ -32,11 +32,11 @@ public:
 
 int main() {
 
-	//¿Õ¶ÔÏó
-	cout << "Ö»ÓÐÒ»¸öÆÕÍ¨º¯ÊýµÄÀà: " << sizeof(Animal) << endl;
+	//ç©ºå¯¹è±¡
+	cout << "åªæœ‰ä¸€ä¸ªæ™®é€šå‡½æ•°çš„ç±»: " << sizeof(Animal) << endl;
 
-	// ¶àÁËÒ»¸öÖ¸Õë
-	cout << "Ö»ÓÐÒ»¸ö  Ðéº¯ÊýµÄÀà: " << sizeof(Creature) << endl;
+	// å¤šäº†ä¸€ä¸ªæŒ‡é’ˆ
+	cout << "åªæœ‰ä¸€ä¸ª  è™šå‡½æ•°çš„ç±»: " << sizeof(Creature) << endl;
 
 	return 0;
 }

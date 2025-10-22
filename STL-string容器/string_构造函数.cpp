@@ -3,20 +3,20 @@
 
 #ifdef STRING_CONTAINER_CONSTRUCTOR
 
-//TODO string±¾ÖÊÊÇÒ»¸öÀà
+//TODO stringæœ¬è´¨æ˜¯ä¸€ä¸ªç±»
 
 void test01() {
-	//TODO Ä¬ÈÏ¹¹Ôì
+	//TODO é»˜è®¤æ„é€ 
 	string s1;
-	
-	//TODO Ê¹ÓÃ×Ö·û´®s³õÊ¼»¯
-	const char* str = "hello world"; //cÓïÑÔ·ç¸ñ×Ö·û´®
+
+	//TODO ä½¿ç”¨å­—ç¬¦ä¸²såˆå§‹åŒ–
+	const char* str = "hello world"; //cè¯­è¨€é£æ ¼å­—ç¬¦ä¸²
 	string s2(str);
-	
-	//TODO ¿½±´¹¹Ôì
+
+	//TODO æ‹·è´æ„é€ 
 	string s3(s2);
 
-	//TODO Ê¹ÓÃn¸ö×Ö·ûc³õÊ¼»¯
+	//TODO ä½¿ç”¨nä¸ªå­—ç¬¦cåˆå§‹åŒ–
 	string s4(4,'n');
 
 	cout << "s2 = " << s2 << endl;

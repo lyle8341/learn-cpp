@@ -3,7 +3,7 @@
 
 #ifdef FUNCTION_PLACEHOLDER
 
-//Óï·¨: ·µ»ØÖµÀàÐÍ º¯ÊýÃû (Êý¾ÝÀàÐÍ) {}
+//è¯­æ³•: è¿”å›žå€¼ç±»åž‹ å‡½æ•°å (æ•°æ®ç±»åž‹) {}
 
 void func(int a, int) {
 	cout << "this is func" << endl;
@@ -15,7 +15,7 @@ void func2(int a, int b = 20) {
 }
 
 int main() {
-	func(10, 10);//Õ¼Î»²ÎÊý±ØÐëÌî²¹
+	func(10, 10);//å ä½å‚æ•°å¿…é¡»å¡«è¡¥
 	func2(15);
 	return 0;
 }

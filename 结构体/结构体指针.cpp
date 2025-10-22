@@ -14,7 +14,7 @@ int main() {
 
 	struct Student* p = &stu;
 
-	cout << "姓名:" << p->name << "\t年龄:" << p->age << "\t分数:" << p->score << endl;
+	cout << "濮撳悕:" << p->name << "\t骞撮緞:" << p->age << "\t鍒嗘暟:" << p->score << endl;
 
 }
 

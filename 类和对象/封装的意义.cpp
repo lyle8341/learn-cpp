@@ -7,12 +7,12 @@ const double PI = 3.14;
 
 class Circle {
 
-	//·ÃÎÊÈ¨ÏŞ
+	//è®¿é—®æƒé™
 public:
-	//ÊôĞÔ
+	//å±æ€§
 	int r;
 
-	//ĞĞÎª
+	//è¡Œä¸º
 	double circumference() {
 		return 2 * PI * r;
 	}
@@ -20,12 +20,12 @@ public:
 
 
 int main() {
-	//´´½¨¾ßÌåµÄÔ²¶ÔÏó
+	//åˆ›å»ºå…·ä½“çš„åœ†å¯¹è±¡
 	Circle c1;
-	//¶ÔÏóÊôĞÔ¸³Öµ
+	//å¯¹è±¡å±æ€§èµ‹å€¼
 	c1.r = 5;
 
-	cout << "Ô²µÄÖÜ³¤ = " << c1.circumference() << endl;
+	cout << "åœ†çš„å‘¨é•¿ = " << c1.circumference() << endl;
 
 	return 0;
 }

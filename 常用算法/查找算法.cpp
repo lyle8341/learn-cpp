@@ -10,22 +10,22 @@ void test_find() {
 
 	vector<int>::iterator pos = find(v.begin(), v.end(), 5);
 	if (pos != v.end()) {
-		//ÕÒµ½ÁË
+		//æ‰¾åˆ°äº†
 	}
-	//TODO ×Ô¶¨ÒåÀàĞÍĞèÒªÖØÔØ ==
+	//TODO è‡ªå®šä¹‰ç±»å‹éœ€è¦é‡è½½ ==
 }
 
 void test_find_if() {
 
 	//find_if(iterator beg, iterator end, _Pred)
 
-	//²éÕÒÏàÁÚÖØ¸´
+	//æŸ¥æ‰¾ç›¸é‚»é‡å¤
 	//adjacent_find(iterator beg, iterator end)
 
-	//TODO ÎŞĞòĞòÁĞ²»¿ÉÓÃ
+	//TODO æ— åºåºåˆ—ä¸å¯ç”¨
 	//bool binary_search(iterator beg, iterator end, value);
 
-	//TODO ×Ô¶¨Òå¶ÔÏóĞèÒªÖØÔØ ==
+	//TODO è‡ªå®šä¹‰å¯¹è±¡éœ€è¦é‡è½½ ==
 	//int count(iterator beg, iterator end, value)
 	//count_if(iterator beg, iterator end, _Pred)
 

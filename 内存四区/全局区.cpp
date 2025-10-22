@@ -3,7 +3,7 @@
 
 #ifdef MEM_FOUR_REGION_GLOBAL
 
-//È«¾Ö±äÁ¿
+//å…¨å±€å˜é‡
 int g_a = 10;
 int g_b = 10;
 
@@ -11,35 +11,35 @@ const int c_g_a = 10;
 const int c_g_b = 10;
 
 int main() {
-	//ÆÕÍ¨¾Ö²¿±äÁ¿
+	//æ™®é€šå±€éƒ¨å˜é‡
 	int a = 10;
 	int b = 10;
-	cout << "¾Ö²¿±äÁ¿aµÄµØÖ·Îª:\t" << (long long)&a << endl;
-	cout << "¾Ö²¿±äÁ¿bµÄµØÖ·Îª:\t" << (long long)&b << endl;
+	cout << "å±€éƒ¨å˜é‡açš„åœ°å€ä¸º:\t" << (long long)&a << endl;
+	cout << "å±€éƒ¨å˜é‡bçš„åœ°å€ä¸º:\t" << (long long)&b << endl;
 
-	cout << "È«¾Ö±äÁ¿g_aµÄµØÖ·Îª:\t" << (long long)&g_a << endl;
-	cout << "È«¾Ö±äÁ¿g_bµÄµØÖ·Îª:\t" << (long long)&g_b << endl;
+	cout << "å…¨å±€å˜é‡g_açš„åœ°å€ä¸º:\t" << (long long)&g_a << endl;
+	cout << "å…¨å±€å˜é‡g_bçš„åœ°å€ä¸º:\t" << (long long)&g_b << endl;
 
-	//¾²Ì¬±äÁ¿
+	//é™æ€å˜é‡
 	static int s_a = 10;
 	static int s_b = 10;
-	cout << "¾²Ì¬±äÁ¿g_aµÄµØÖ·Îª:\t" << (long long)&s_a << endl;
-	cout << "¾²Ì¬±äÁ¿g_bµÄµØÖ·Îª:\t" << (long long)&s_b << endl;
+	cout << "é™æ€å˜é‡g_açš„åœ°å€ä¸º:\t" << (long long)&s_a << endl;
+	cout << "é™æ€å˜é‡g_bçš„åœ°å€ä¸º:\t" << (long long)&s_b << endl;
 
-	//³£Á¿
-	//×Ö·û´®³£Á¿
-	cout << "×Ö·û´®³£Á¿µÄµØÖ·Îª:\t" << (long long)&"Hello World" << endl;
+	//å¸¸é‡
+	//å­—ç¬¦ä¸²å¸¸é‡
+	cout << "å­—ç¬¦ä¸²å¸¸é‡çš„åœ°å€ä¸º:\t" << (long long)&"Hello World" << endl;
 
-	//constĞŞÊÎµÄ±äÁ¿
-	//constĞŞÊÎµÄÈ«¾Ö±äÁ¿
-	cout << "constĞŞÊÎÈ«¾Ö±äÁ¿c_g_a:\t" << (long long)&c_g_a << endl;
-	cout << "constĞŞÊÎÈ«¾Ö±äÁ¿c_g_b:\t" << (long long)&c_g_b << endl;
+	//constä¿®é¥°çš„å˜é‡
+	//constä¿®é¥°çš„å…¨å±€å˜é‡
+	cout << "constä¿®é¥°å…¨å±€å˜é‡c_g_a:\t" << (long long)&c_g_a << endl;
+	cout << "constä¿®é¥°å…¨å±€å˜é‡c_g_b:\t" << (long long)&c_g_b << endl;
 
-	//constĞŞÊÎµÄ¾Ö²¿±äÁ¿ ¾Ö²¿ ¾Ö²¿ ºÍÆÕÍ¨¾Ö²¿ÔÚÒ»Æğ
+	//constä¿®é¥°çš„å±€éƒ¨å˜é‡ å±€éƒ¨ å±€éƒ¨ å’Œæ™®é€šå±€éƒ¨åœ¨ä¸€èµ·
 	const int c_l_a = 10;
 	const int c_l_b = 10;
-	cout << "constĞŞÊÎ¾Ö²¿³£Á¿c_l_a:\t" << (long long)&c_l_a << endl;
-	cout << "constĞŞÊÎ¾Ö²¿³£Á¿c_l_b:\t" << (long long)&c_l_b << endl;
+	cout << "constä¿®é¥°å±€éƒ¨å¸¸é‡c_l_a:\t" << (long long)&c_l_a << endl;
+	cout << "constä¿®é¥°å±€éƒ¨å¸¸é‡c_l_b:\t" << (long long)&c_l_b << endl;
 
 	return 0;
 }

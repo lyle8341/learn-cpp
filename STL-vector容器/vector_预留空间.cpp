@@ -3,32 +3,32 @@
 #ifdef VECTOR_RESERVE
 
 int main() {
-	//TODO ¼õÉÙvectorÔÚ¶¯Ì¬À©Õ¹ÈİÁ¿Ê±µÄÀ©Õ¹´ÎÊı
+    //TODO å‡å°‘vectoråœ¨åŠ¨æ€æ‰©å±•å®¹é‡æ—¶çš„æ‰©å±•æ¬¡æ•°
 
-	//reserve(int len); ÈİÆ÷Ô¤Áôlen¸öÔªËØ³¤¶È£¬Ô¤ÁôÎ»ÖÃ²»³õÊ¼»¯£¬ÔªËØ²»¿É·ÃÎÊ
+    //reserve(int len); å®¹å™¨é¢„ç•™lenä¸ªå…ƒç´ é•¿åº¦ï¼Œé¢„ç•™ä½ç½®ä¸åˆå§‹åŒ–ï¼Œå…ƒç´ ä¸å¯è®¿é—®
 
-	vector<int> v;
-
-
-	//ÀûÓÃ reserve Ô¤Áô¿Õ¼ä£¬¿ÉÒÔ¼õÉÙÀ©Èİ´ÎÊı
-	v.reserve(100000);
+    vector<int> v;
 
 
-	int expand_times = 0;//Í³¼Æ¿ª±ÙÄÚ´æ´ÎÊı
-	int* p = NULL;
-	for (int i = 0; i < 100000; i++)
-	{
-		v.push_back(i);
+    //åˆ©ç”¨ reserve é¢„ç•™ç©ºé—´ï¼Œå¯ä»¥å‡å°‘æ‰©å®¹æ¬¡æ•°
+    v.reserve(100000);
 
-		if (p != &v[0]) {
-			p = &v[0];
-			expand_times++;
-		}
 
-	}
-	cout << "¿ª±ÙÄÚ´æ´ÎÊı: " << expand_times << endl;
+    int expand_times = 0;//ç»Ÿè®¡å¼€è¾Ÿå†…å­˜æ¬¡æ•°
+    int* p = NULL;
+    for (int i = 0; i < 100000; i++)
+    {
+        v.push_back(i);
 
-	return 0;
+        if (p != &v[0]) {
+            p = &v[0];
+            expand_times++;
+        }
+
+    }
+    cout << "å¼€è¾Ÿå†…å­˜æ¬¡æ•°: " << expand_times << endl;
+
+    return 0;
 }
 
 #endif // VECTOR_RESERVE

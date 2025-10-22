@@ -5,14 +5,14 @@
 
 class House {
 
-	//HouseµÄºÃÓÑÁĞ±í
-	//familyÈ«¾Öº¯ÊıÊÇ HouseµÄºÃÅóÓÑ£¬¿ÉÒÔ·ÃÎÊHouseÖĞË½ÓĞ³ÉÔ±
+	//Houseçš„å¥½å‹åˆ—è¡¨
+	//familyå…¨å±€å‡½æ•°æ˜¯ Houseçš„å¥½æœ‹å‹ï¼Œå¯ä»¥è®¿é—®Houseä¸­ç§æœ‰æˆå‘˜
 	friend void family(House* house);
 
 public:
 	House() {
-		livingRoom = "¿ÍÌü";
-		bedroom = "ÎÔÊÒ";
+		livingRoom = "å®¢å…";
+		bedroom = "å§å®¤";
 	}
 
 
@@ -24,10 +24,10 @@ private:
 
 };
 
-//TODO È«¾Öº¯Êı
+//TODO å…¨å±€å‡½æ•°
 void family(House* house) {
-	cout << "¼ÒÈËÈ«¾Öº¯Êı ÕıÔÚ·ÃÎÊ: " << house->livingRoom << endl;
-	cout << "¼ÒÈËÈ«¾Öº¯Êı ÕıÔÚ·ÃÎÊ: " << house->bedroom << endl;
+	cout << "å®¶äººå…¨å±€å‡½æ•° æ­£åœ¨è®¿é—®: " << house->livingRoom << endl;
+	cout << "å®¶äººå…¨å±€å‡½æ•° æ­£åœ¨è®¿é—®: " << house->bedroom << endl;
 }
 
 void test01() {

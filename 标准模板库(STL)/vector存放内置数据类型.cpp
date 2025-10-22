@@ -15,24 +15,24 @@ void test01() {
 	v.push_back(20);
 	v.push_back(30);
 
-	//µü´úÆ÷·ÃÎÊ
-	vector<int>::iterator itBegin = v.begin();//Ö¸ÏòÈİÆ÷ÖĞµÚÒ»¸öÔªËØ
-	vector<int>::iterator itEnd = v.end();    //Ö¸Ïò×îºóÒ»¸öÔªËØµÄÏÂÒ»¸öÎ»ÖÃ
+	//è¿­ä»£å™¨è®¿é—®
+	vector<int>::iterator itBegin = v.begin();//æŒ‡å‘å®¹å™¨ä¸­ç¬¬ä¸€ä¸ªå…ƒç´ 
+	vector<int>::iterator itEnd = v.end();    //æŒ‡å‘æœ€åä¸€ä¸ªå…ƒç´ çš„ä¸‹ä¸€ä¸ªä½ç½®
 
-	//µÚÒ»ÖÖ±éÀú
+	//ç¬¬ä¸€ç§éå†
 	while (itBegin != itEnd)
 	{
 		cout << *itBegin << endl;
 		itBegin++;
 	}
 
-	//µÚ¶şÖÖ±éÀú
+	//ç¬¬äºŒç§éå†
 	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
 	{
 		cout << *it << endl;
 	}
 
-	//µÚÈıÖÖ±éÀú ÀûÓÃSTLÌá¹©µÄ±éÀúËã·¨
+	//ç¬¬ä¸‰ç§éå† åˆ©ç”¨STLæä¾›çš„éå†ç®—æ³•
 	for_each(v.begin(), v.end(), myPrint);
 }
 

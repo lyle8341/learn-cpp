@@ -2,10 +2,10 @@
 
 #ifdef THIS_POINTER
 
-//TODO thisÖ¸ÕëµÄ±¾ÖÊ£º Ö¸Õë³£Á¿
+//TODO thisæŒ‡é’ˆçš„æœ¬è´¨ï¼š æŒ‡é’ˆå¸¸é‡
 class Person {
 public:
-	//1.this¿ÉÒÔ½â¾öÃüÃû³åÍ»
+	//1.thiså¯ä»¥è§£å†³å‘½åå†²çª
 	Person(int age) {
 		this->age = age;
 	}
@@ -13,12 +13,12 @@ public:
 
 	int age;
 
-	//TODO ·µ»Ø±¾Ìå£¬±ØĞëÓÃÒıÓÃ·½Ê½·µ»Ø
-	//TODO ·µ»Ø±¾Ìå£¬±ØĞëÓÃÒıÓÃ·½Ê½·µ»Ø
-	//TODO ·µ»Ø±¾Ìå£¬±ØĞëÓÃÒıÓÃ·½Ê½·µ»Ø
+	//TODO è¿”å›æœ¬ä½“ï¼Œå¿…é¡»ç”¨å¼•ç”¨æ–¹å¼è¿”å›
+	//TODO è¿”å›æœ¬ä½“ï¼Œå¿…é¡»ç”¨å¼•ç”¨æ–¹å¼è¿”å›
+	//TODO è¿”å›æœ¬ä½“ï¼Œå¿…é¡»ç”¨å¼•ç”¨æ–¹å¼è¿”å›
 	Person& personAddAge(Person& p) {
 		this->age += p.age;
-		//thisÖ¸Ïòp2µÄÖ¸Õë£¬¶ø*this Ö¸ÏòµÄ¾ÍÊÇp2Õâ¸ö¶ÔÏó±¾Ìå
+		//thisæŒ‡å‘p2çš„æŒ‡é’ˆï¼Œè€Œ*this æŒ‡å‘çš„å°±æ˜¯p2è¿™ä¸ªå¯¹è±¡æœ¬ä½“
 		return *this;
 	}
 
@@ -30,10 +30,10 @@ void test01() {
 	Person p2(30);
 
 	//p2.personAddAge(p);
-	//cout << "p2µÄÄêÁä: " << p2.age << endl;
+	//cout << "p2çš„å¹´é¾„: " << p2.age << endl;
 
 	p2.personAddAge(p).personAddAge(p).personAddAge(p);
-	cout << "p2µÄÄêÁä: " << p2.age << endl;
+	cout << "p2çš„å¹´é¾„: " << p2.age << endl;
 }
 
 int main() {

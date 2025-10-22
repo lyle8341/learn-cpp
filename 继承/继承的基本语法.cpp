@@ -11,9 +11,9 @@ public:
 };
 
 
-//Óï·¨:  class ×ÓÀà : ¼Ì³Ð·½Ê½ ¸¸Àà
-//TODO ×ÓÀàÒ²³ÆÎª ÅÉÉúÀà
-//TODO ¸¸ÀàÒ²³ÆÎª »ùÀà
+//è¯­æ³•:  class å­ç±» : ç»§æ‰¿æ–¹å¼ çˆ¶ç±»
+//TODO å­ç±»ä¹Ÿç§°ä¸º æ´¾ç”Ÿç±»
+//TODO çˆ¶ç±»ä¹Ÿç§°ä¸º åŸºç±»
 class Java : public BasePage {
 
 

@@ -8,15 +8,15 @@ int main() {
 	//sort(iterator beg, iterator end, _Fn)
 
 
-	// ĞèÒªÅäºÏ srand((unsigned int)time(NULL));
+	// éœ€è¦é…åˆ srand((unsigned int)time(NULL));
 	//random_shuffle(iterator beg, iterator end)
 
 
-	//TODO Á½¸öÈİÆ÷ÔªËØºÏ²¢µ½ÁíÒ»¸öÈİÆ÷£¬Á½¸öÈİÆ÷±ØĞëÊÇ "ÓĞĞòµÄ¡¢Í¬Ğò"
+	//TODO ä¸¤ä¸ªå®¹å™¨å…ƒç´ åˆå¹¶åˆ°å¦ä¸€ä¸ªå®¹å™¨ï¼Œä¸¤ä¸ªå®¹å™¨å¿…é¡»æ˜¯ "æœ‰åºçš„ã€åŒåº"
 	// target.resize(v1.size() + v2.size());
 	//merge(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest)
 
-	//·´×ª
+	//åè½¬
 	//reverse(iterator beg, iterator end)
 
 

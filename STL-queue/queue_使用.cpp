@@ -6,35 +6,35 @@ using namespace std;
 
 class Person {
 public:
-	string name;
-	int age;
-	Person(string name, int age) {
-		this->name = name;
-		this->age = age;
-	}
+    string name;
+    int age;
+    Person(string name, int age) {
+        this->name = name;
+        this->age = age;
+    }
 };
 
 
 int main() {
-	queue<Person> q;
+    queue<Person> q;
 
-	Person p1("悟空", 600);
-	Person p2("悟能", 300);
-	Person p3("悟静", 250);
-	Person p4("唐僧", 30);
-	q.push(p1);
-	q.push(p2);
-	q.push(p3);
-	q.push(p4);
+    Person p1("鎮熺┖", 600);
+    Person p2("鎮熻兘", 300);
+    Person p3("鎮熼潤", 250);
+    Person p4("鍞愬儳", 30);
+    q.push(p1);
+    q.push(p2);
+    q.push(p3);
+    q.push(p4);
 
-	while (!q.empty())
-	{
-		cout << "队头元素" << q.front().name << " " << q.front().age << endl;
-		cout << "队尾元素" << q.back().name << " " << q.back().age << endl;
-		cout << endl;
-		//出队
-		q.pop();
-	}
+    while (!q.empty())
+    {
+        cout << "闃熷ご鍏冪礌" << q.front().name << " " << q.front().age << endl;
+        cout << "闃熷熬鍏冪礌" << q.back().name << " " << q.back().age << endl;
+        cout << endl;
+        //鍑洪槦
+        q.pop();
+    }
 
-	return 0;
+    return 0;
 }

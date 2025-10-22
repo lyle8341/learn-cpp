@@ -8,7 +8,7 @@ public:
 	T m;
 };
 
-//TODO ×ÓÀà±ØĞëÒªÖªµÀ¸¸ÀàÖĞµÄTÀàĞÍ
+//TODO å­ç±»å¿…é¡»è¦çŸ¥é“çˆ¶ç±»ä¸­çš„Tç±»å‹
 class Son : public Base<int> {
 
 };
@@ -17,13 +17,13 @@ void test01() {
 	Son s;
 }
 
-//TODO Èç¹ûÏëÁé»îÖ¸¶¨¸¸ÀàÖĞTÀàĞÍ£¬×ÓÀàÒ²ĞèÒª±äÎªÀàÄ£°å
+//TODO å¦‚æœæƒ³çµæ´»æŒ‡å®šçˆ¶ç±»ä¸­Tç±»å‹ï¼Œå­ç±»ä¹Ÿéœ€è¦å˜ä¸ºç±»æ¨¡æ¿
 template<class T1, class T2>
 class GodSon :public Base<T2> {
 public:
 	GodSon() {
-		cout << "T1µÄÀàĞÍ: " << typeid(T1).name() << endl;
-		cout << "T2µÄÀàĞÍ: " << typeid(T2).name() << endl;
+		cout << "T1çš„ç±»å‹: " << typeid(T1).name() << endl;
+		cout << "T2çš„ç±»å‹: " << typeid(T2).name() << endl;
 	}
 	T1 obj;
 };

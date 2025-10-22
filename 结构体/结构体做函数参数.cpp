@@ -10,29 +10,29 @@ struct Student
 	int score;
 };
 
-//Öµ´«µÝ
+//å€¼ä¼ é€’
 void printStudent1(Student stu) {
 	stu.age = 29;
-	cout << "×Óº¯Êý1ÖÐ ÐÕÃû: " << stu.name << "\tÄêÁä: " << stu.age << "\t·ÖÊý: " << stu.score << endl;
+	cout << "å­å‡½æ•°1ä¸­ å§“å: " << stu.name << "\tå¹´é¾„: " << stu.age << "\tåˆ†æ•°: " << stu.score << endl;
 }
 
-//µØÖ·´«µÝ
+//åœ°å€ä¼ é€’
 void printStudent2(struct Student* p) {
 	p->age = 120;
-	cout << "×Óº¯Êý2ÖÐ ÐÕÃû: " << p->name << "\tÄêÁä: " << p->age << "\t·ÖÊý: " << p->score << endl;
+	cout << "å­å‡½æ•°2ä¸­ å§“å: " << p->name << "\tå¹´é¾„: " << p->age << "\tåˆ†æ•°: " << p->score << endl;
 }
 
 
 int main() {
 	Student s;
-	s.name = "ÕÅÈý";
+	s.name = "å¼ ä¸‰";
 	s.age = 34;
 	s.score = 90;
 
 	//printStudent1(s);
 	printStudent2(&s);
 
-	cout << "mainº¯ÊýÖÐ ÐÕÃû: " << s.name << "\tÄêÁä: " << s.age << "\t·ÖÊý: " << s.score << endl;
+	cout << "mainå‡½æ•°ä¸­ å§“å: " << s.name << "\tå¹´é¾„: " << s.age << "\tåˆ†æ•°: " << s.score << endl;
 
 	return 0;
 }

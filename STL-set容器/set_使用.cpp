@@ -3,143 +3,143 @@
 using namespace std;
 
 void printSet(const set<int>& s) {
-	for (set<int>::const_iterator it = s.begin(); it != s.end(); it++)
-	{
-		cout << *it << " ";
-	}
-	cout << endl;
+    for (set<int>::const_iterator it = s.begin(); it != s.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
 }
 
 void printMultiSet(const multiset<int>& ms) {
-	for (set<int>::const_iterator it = ms.begin(); it != ms.end(); it++)
-	{
-		cout << *it << " ";
-	}
-	cout << endl;
+    for (set<int>::const_iterator it = ms.begin(); it != ms.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
 }
 
 void test_construct_assign() {
-	set<int> s;//µ×²ãÊÇ¶ş²æÊ÷
+    set<int> s;//åº•å±‚æ˜¯äºŒå‰æ ‘
 
-	//²åÈëÊı¾İ£¬Ö»ÓĞinsert
-	s.insert(10);
-	s.insert(20);
-	s.insert(30);
-	s.insert(10);
-	s.insert(40);
-	s.insert(40);
+    //æ’å…¥æ•°æ®ï¼Œåªæœ‰insert
+    s.insert(10);
+    s.insert(20);
+    s.insert(30);
+    s.insert(10);
+    s.insert(40);
+    s.insert(40);
 
-	//TODO ×Ô¶¯ÅÅĞò¡¢²»ÖØ¸´
-	printSet(s);
+    //TODO è‡ªåŠ¨æ’åºã€ä¸é‡å¤
+    printSet(s);
 
-	set<int> s2(s);
-	printSet(s2);
+    set<int> s2(s);
+    printSet(s2);
 
-	set<int> s3;
-	s3 = s;
-	printSet(s3);
+    set<int> s3;
+    s3 = s;
+    printSet(s3);
 }
 
 void insert_delete() {
-	set<int> s;
-	s.insert(10);
-	s.insert(20);
-	s.insert(30);
-	s.insert(10);
-	s.insert(40);
-	printSet(s);
+    set<int> s;
+    s.insert(10);
+    s.insert(20);
+    s.insert(30);
+    s.insert(10);
+    s.insert(40);
+    printSet(s);
 
-	s.erase(s.begin());
-	printSet(s);
+    s.erase(s.begin());
+    printSet(s);
 
-	s.erase(40);
-	printSet(s);
+    s.erase(40);
+    printSet(s);
 
-	//Çå¿Õ
-	s.clear();
+    //æ¸…ç©º
+    s.clear();
 }
 
 
-//TODO setÃ»ÓĞresize£¬ÒòÎªresizeºó£¬ĞèÒªÌî³ä£¬µ«ÊÇÓÖ²»ÄÜÖØ¸´
+//TODO setæ²¡æœ‰resizeï¼Œå› ä¸ºresizeåï¼Œéœ€è¦å¡«å……ï¼Œä½†æ˜¯åˆä¸èƒ½é‡å¤
 
 void find_cout() {
-	set<int> s;
-	s.insert(10);
-	s.insert(20);
-	s.insert(30);
-	s.insert(10);
-	s.insert(40);
+    set<int> s;
+    s.insert(10);
+    s.insert(20);
+    s.insert(30);
+    s.insert(10);
+    s.insert(40);
 
-	set<int>::iterator pos = s.find(10);
-	if (pos != s.end()) {
-		cout << "ÕÒµ½ÔªËØ: " << *pos << endl;
-	}
-	cout << "¹²ÓĞ: " << s.count(20) << "¸ö" << endl;
+    set<int>::iterator pos = s.find(10);
+    if (pos != s.end()) {
+        cout << "æ‰¾åˆ°å…ƒç´ : " << *pos << endl;
+    }
+    cout << "å…±æœ‰: " << s.count(20) << "ä¸ª" << endl;
 
 }
 
 void multiset_diff_set() {
-	set<int> s;
-	pair<set<int>::iterator, bool> result = s.insert(10);
-	if (result.second) {
-		cout << "²åÈë³É¹¦" << endl;
-	}
-	else {
-		cout << "²åÈëÊ§°Ü" << endl;
-	}
-	result = s.insert(10);
-	if (result.second) {
-		cout << "²åÈë³É¹¦" << endl;
-	}
-	else {
-		cout << "²åÈëÊ§°Ü" << endl;
-	}
+    set<int> s;
+    pair<set<int>::iterator, bool> result = s.insert(10);
+    if (result.second) {
+        cout << "æ’å…¥æˆåŠŸ" << endl;
+    }
+    else {
+        cout << "æ’å…¥å¤±è´¥" << endl;
+    }
+    result = s.insert(10);
+    if (result.second) {
+        cout << "æ’å…¥æˆåŠŸ" << endl;
+    }
+    else {
+        cout << "æ’å…¥å¤±è´¥" << endl;
+    }
 
-	multiset<int> ms;
-	ms.insert(20);
-	ms.insert(20);
-	ms.insert(20);
-	ms.insert(20);
-	printMultiSet(ms);
+    multiset<int> ms;
+    ms.insert(20);
+    ms.insert(20);
+    ms.insert(20);
+    ms.insert(20);
+    printMultiSet(ms);
 }
 
-//¶Ô×éÊ¹ÓÃ
+//å¯¹ç»„ä½¿ç”¨
 void pair_use() {
 
-	//TODO ·½Ê½Ò»
-	pair<string, int> p("Tom", 1);
-	cout << "first:" << p.first << " second: " << p.second << endl;
+    //TODO æ–¹å¼ä¸€
+    pair<string, int> p("Tom", 1);
+    cout << "first:" << p.first << " second: " << p.second << endl;
 
-	//TODO ·½Ê½¶ş
-	pair<string, int> p2 = make_pair("Jerry", 2);
-	cout << "first:" << p2.first << " second: " << p2.second << endl;
+    //TODO æ–¹å¼äºŒ
+    pair<string, int> p2 = make_pair("Jerry", 2);
+    cout << "first:" << p2.first << " second: " << p2.second << endl;
 }
 
 
 
 
 
-//ÀûÓÃ·Âº¯Êı×Ô¶¨ÒåÅÅĞò
+//åˆ©ç”¨ä»¿å‡½æ•°è‡ªå®šä¹‰æ’åº
 class MyCompare {
 public:
-	bool operator()(int a, int b) const {//´Ë´¦±ØĞëÓĞconst
-		return a > b;
-	}
+    bool operator()(int a, int b) const {//æ­¤å¤„å¿…é¡»æœ‰const
+        return a > b;
+    }
 
 };
 
 void set_sort() {
-	set<int, MyCompare> s;
-	s.insert(10);
-	s.insert(40);
-	s.insert(20);
-	s.insert(50);
+    set<int, MyCompare> s;
+    s.insert(10);
+    s.insert(40);
+    s.insert(20);
+    s.insert(50);
 
-	for (set<int, MyCompare>::iterator it = s.begin(); it != s.end(); it++)
-	{
-		cout << *it << " ";
-	}
-	cout << endl;
+    for (set<int, MyCompare>::iterator it = s.begin(); it != s.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
 
 
 
@@ -147,16 +147,16 @@ void set_sort() {
 }
 
 int main() {
-	//test_construct_assign();
-	//insert_delete();
-	//find_cout();
-	//multiset_diff_set();
-	//pair_use();
+    //test_construct_assign();
+    //insert_delete();
+    //find_cout();
+    //multiset_diff_set();
+    //pair_use();
 
-	set_sort();
-
-
+    set_sort();
 
 
-	return 0;
+
+
+    return 0;
 }

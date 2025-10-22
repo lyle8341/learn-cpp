@@ -1,14 +1,14 @@
 
 /*
-c++ ¶¨Òå³£Á¿Á½ÖÖ·½Ê½
-1. #define ºê³£Á¿:	#define ³£Á¿Ãû ³£Á¿Öµ
-	- Í¨³£ÔÚÎÄ¼þÉÏ·½¶¨Òå£¬±íÊ¾Ò»¸ö³£Á¿
+c++ å®šä¹‰å¸¸é‡ä¸¤ç§æ–¹å¼
+1. #define å®å¸¸é‡:	#define å¸¸é‡å å¸¸é‡å€¼
+	- é€šå¸¸åœ¨æ–‡ä»¶ä¸Šæ–¹å®šä¹‰ï¼Œè¡¨ç¤ºä¸€ä¸ªå¸¸é‡
 
-2. constÐÞÊÎµÄ±äÁ¿:	const Êý¾ÝÀàÐÍ ³£Á¿Ãû = ³£Á¿Öµ
-	- Í¨³£ÔÚ±äÁ¿¶¨ÒåÇ°¼Ó¹Ø¼ü×Ö const£¬ÐÞÊÎ¸Ã±äÁ¿Îª³£Á¿£¬²»¿ÉÐÞ¸Ä
+2. constä¿®é¥°çš„å˜é‡:	const æ•°æ®ç±»åž‹ å¸¸é‡å = å¸¸é‡å€¼
+	- é€šå¸¸åœ¨å˜é‡å®šä¹‰å‰åŠ å…³é”®å­— constï¼Œä¿®é¥°è¯¥å˜é‡ä¸ºå¸¸é‡ï¼Œä¸å¯ä¿®æ”¹
 */
 
-//1. ºê³£Á¿
+//1. å®å¸¸é‡
 #define day 7
 
 #include <iostream>
@@ -16,11 +16,11 @@ using namespace std;
 
 int main() {
 
-	cout << "Ò»ÖÜ¹²ÓÐ " << day << " Ìì" << endl;
-	//day = 8; //±¨´í£¬ºê³£Á¿²»¿ÉÒÔÐÞ¸Ä
+    cout << "ä¸€å‘¨å…±æœ‰ " << day << " å¤©" << endl;
+    //day = 8; //æŠ¥é”™ï¼Œå®å¸¸é‡ä¸å¯ä»¥ä¿®æ”¹
 
-	// 2.constÐÞÊÎµÄ±äÁ¿
-	const int month = 12;
-	//month = 24; // ±¨´í£¬³£Á¿ÊÇ²»¿ÉÓÃÐÞ¸ÄµÄ
+    // 2.constä¿®é¥°çš„å˜é‡
+    const int month = 12;
+    //month = 24; // æŠ¥é”™ï¼Œå¸¸é‡æ˜¯ä¸å¯ç”¨ä¿®æ”¹çš„
 
 }

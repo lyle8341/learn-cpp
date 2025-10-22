@@ -8,7 +8,7 @@ public:
 
 	Phone(string brand) {
 		this->brand = brand;
-		cout << "ÏÈ¹¹ÔìÊÖ»ú" << endl;
+		cout << "å…ˆæ„é€ æ‰‹æœº" << endl;
 	}
 
 	string brand;
@@ -17,10 +17,10 @@ public:
 class Person {
 public:
 
-	//³õÊ¼»¯ÁĞ±í
-	//ÒşÊ½×ª»» Phone myPhone = brand;
+	//åˆå§‹åŒ–åˆ—è¡¨
+	//éšå¼è½¬æ¢ Phone myPhone = brand;
 	Person(string name, string brand) :m_name(name), myPhone(brand) {
-		cout << "ÔÙ¹¹ÔìÈË" << endl;
+		cout << "å†æ„é€ äºº" << endl;
 	}
 
 	string m_name;
@@ -32,7 +32,7 @@ void test01() {
 	Person p("lyle", "iphone");
 
 }
-//µ±ÆäËûÀà¶ÔÏó×÷Îª±¾Àà³ÉÔ±£¬ÏÈ¹¹Ôì±¾Àà³ÉÔ±£¬ÔÙ¹¹Ôì±¾Àà£¬Îö¹¹Ë³ĞòÏà·´
+//å½“å…¶ä»–ç±»å¯¹è±¡ä½œä¸ºæœ¬ç±»æˆå‘˜ï¼Œå…ˆæ„é€ æœ¬ç±»æˆå‘˜ï¼Œå†æ„é€ æœ¬ç±»ï¼Œææ„é¡ºåºç›¸å
 int main() {
 	test01();
 	return 0;

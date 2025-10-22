@@ -3,8 +3,8 @@
 #ifdef CHAR_TEST
 
 int main() {
-	//C��C++���ַ��ͱ���ֻռ��1���ֽ�
-	//�ַ��ͱ��������ǰ��ַ������ŵ��ڴ��д洢�����ǽ���Ӧ��ASCII������뵽�洢��Ԫ
+	//C和C++中字符型变量只占用1个字节
+	//字符型变量并不是把字符本身放到内存中存储，而是将对应的ASCII编码放入到存储单元
 
 	char ch = 'x';
 	cout << ch << endl;

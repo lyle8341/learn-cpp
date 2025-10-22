@@ -5,12 +5,12 @@
 #ifdef POINTER_ADDRESS
 
 int main() {
-	int a = 10;
-	int* p = &a;
-	cout << "p(存的地址):\t\t" << (void*)p << endl;
-	cout << "&p(p自己的地址):\t" << &p << endl;
+    int a = 10;
+    int* p = &a;
+    cout << "p(瀛樼殑鍦板潃):\t\t" << (void*)p << endl;
+    cout << "&p(p鑷繁鐨勫湴鍧�):\t" << &p << endl;
 
-	return 0;
+    return 0;
 }
 
 #endif // POINTER_ADDRESS

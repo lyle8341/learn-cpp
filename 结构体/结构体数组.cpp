@@ -10,20 +10,20 @@ struct Student {
 };
 
 int main() {
-	//½á¹¹ÌåÊı×é
+	//ç»“æ„ä½“æ•°ç»„
 	struct Student arr[3] = {
-		{"ÕÅÈı", 17, 68},
-		{"ÀîËÄ",25, 89},
-		{"ÍõÎå", 45, 40}
+		{"å¼ ä¸‰", 17, 68},
+		{"æå››",25, 89},
+		{"ç‹äº”", 45, 40}
 	};
 
-	//¸ø½á¹¹ÌåÊı×éÖĞÔªËØ¸³Öµ
-	arr[2].name = "ÍõÂé×Ó";
+	//ç»™ç»“æ„ä½“æ•°ç»„ä¸­å…ƒç´ èµ‹å€¼
+	arr[2].name = "ç‹éº»å­";
 
 	for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
 	{
 		Student temp = arr[i];
-		cout << "ĞÕÃû: " << temp.name << "\tÄêÁä: " << temp.age << "\t·ÖÊı: " << temp.score << endl;
+		cout << "å§“å: " << temp.name << "\tå¹´é¾„: " << temp.age << "\tåˆ†æ•°: " << temp.score << endl;
 	}
 
 

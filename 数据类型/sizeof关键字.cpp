@@ -3,11 +3,11 @@
 #ifdef RUN_SIZEOF
 
 
-//Óï·¨£º sizeof(Êı¾İÀàĞÍ / ±äÁ¿)
+//è¯­æ³•ï¼š sizeof(æ•°æ®ç±»å‹ / å˜é‡)
 int main() {
 	long id = 1244555;
-	cout << "long±äÁ¿Õ¼ÓÃ: " << sizeof(id) << " ×Ö½Ú" << endl;
-	cout << "long¹Ø¼ü×ÖÕ¼ÓÃ: " << sizeof(long) << " ×Ö½Ú" << endl;
+	cout << "longå˜é‡å ç”¨: " << sizeof(id) << " å­—èŠ‚" << endl;
+	cout << "longå…³é”®å­—å ç”¨: " << sizeof(long) << " å­—èŠ‚" << endl;
 
 	return 0;
 }

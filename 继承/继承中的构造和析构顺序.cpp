@@ -6,11 +6,11 @@
 class Base {
 public:
 	Base() {
-		cout << "Base¹¹Ôìº¯Êı" << endl;
+		cout << "Baseæ„é€ å‡½æ•°" << endl;
 	}
 
 	~Base() {
-		cout << "BaseÎö¹¹º¯Êı" << endl;
+		cout << "Baseææ„å‡½æ•°" << endl;
 	}
 
 };
@@ -18,11 +18,11 @@ public:
 class Son :public Base {
 public:
 	Son() {
-		cout << "Son¹¹Ôìº¯Êı" << endl;
+		cout << "Sonæ„é€ å‡½æ•°" << endl;
 	}
 
 	~Son() {
-		cout << "SonÎö¹¹º¯Êı" << endl;
+		cout << "Sonææ„å‡½æ•°" << endl;
 	}
 
 };

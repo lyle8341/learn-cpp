@@ -4,7 +4,7 @@
 
 #ifdef BINARY_WRITE
 
-//TODO º¯ÊıÔ­ĞÍ:  ostream& write(const char* buffer, int len);
+//TODO å‡½æ•°åŸå‹:  ostream& write(const char* buffer, int len);
 
 class Person {
 public:
@@ -16,7 +16,7 @@ public:
 void test() {
 	Person p = { "lyle", 20 };
 
-	//1.´´½¨Á÷¶ÔÏó
+	//1.åˆ›å»ºæµå¯¹è±¡
 	ofstream ofs("person.bin", ios::out | ios::binary);
 
 	//ofs.open("person.bin", ios::out | ios::binary);

@@ -11,12 +11,12 @@ public:
 		this->age = age;
 	}
 
-	//ÖØÔØ ==
+	//é‡è½½ ==
 	bool operator==(Person& p) {
 		return this->name == p.name && this->age == p.age;
 	}
 
-	//ÖØÔØ !=
+	//é‡è½½ !=
 	bool operator!=(Person& p) {
 		return this->name != p.name || this->age != p.age;
 	}
@@ -31,10 +31,10 @@ void test01() {
 	Person p1("lyle", 20);
 	Person p2("lyle2", 20);
 	if (p1 == p2) {
-		cout << "p1ºÍp2ÏàµÈ" << endl;
+		cout << "p1å’Œp2ç›¸ç­‰" << endl;
 	}
 	else {
-		cout << "p1ºÍp2²»ÏàµÈ" << endl;
+		cout << "p1å’Œp2ä¸ç›¸ç­‰" << endl;
 	}
 }
 

@@ -2,7 +2,7 @@
 
 
 #ifdef ORDINARY_FUNCTION_TEMPLATE
-//TODO ÆÕÍ¨º¯Êı¿ÉÒÔ·¢ÉúÒşÊ½ÀàĞÍ×ª»»£¬Ä£°åº¯ÊıÖ»ÓĞÏÔÊ¾·½Ê½²Å¿ÉÒÔ·¢ÉúÒşÊ½×ª»»
+//TODO æ™®é€šå‡½æ•°å¯ä»¥å‘ç”Ÿéšå¼ç±»å‹è½¬æ¢ï¼Œæ¨¡æ¿å‡½æ•°åªæœ‰æ˜¾ç¤ºæ–¹å¼æ‰å¯ä»¥å‘ç”Ÿéšå¼è½¬æ¢
 
 int myadd(int a, int b) {
 	return a + b;
@@ -16,21 +16,21 @@ int	add(T a, T b) {
 void test01() {
 	int a = 2;
 	int b = 4;
-	cout << "ÆÕÍ¨º¯Êı: " << myadd(a, b) << endl;
+	cout << "æ™®é€šå‡½æ•°: " << myadd(a, b) << endl;
 
-	//TODO ÒşÊ½ÀàĞÍ×ª»»
+	//TODO éšå¼ç±»å‹è½¬æ¢
 	char c = 'a';
-	cout << "ÆÕÍ¨º¯ÊıÒşÊ½×ª»»: " << myadd(a, c) << endl;
+	cout << "æ™®é€šå‡½æ•°éšå¼è½¬æ¢: " << myadd(a, c) << endl;
 }
 
 void test02() {
 	int a = 6;
 	int b = 4;
-	cout << "Ä£°åº¯Êı: " << add(a, b) << endl;
+	cout << "æ¨¡æ¿å‡½æ•°: " << add(a, b) << endl;
 
 	char c = 'a';
-	//ÏÔÊ¾·½Ê½²Å¿ÉÒÔÒşÊ½×ª»»
-	cout << "Ä£°åº¯Êı: " << add<int>(a, c) << endl;
+	//æ˜¾ç¤ºæ–¹å¼æ‰å¯ä»¥éšå¼è½¬æ¢
+	cout << "æ¨¡æ¿å‡½æ•°: " << add<int>(a, c) << endl;
 }
 
 int main() {

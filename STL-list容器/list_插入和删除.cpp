@@ -20,7 +20,7 @@ int main() {
 	cout << *nit << endl;
 
 	printList(L1);
-	//TODO É¾³ıÈİÆ÷ÖĞËùÓĞÓëeleÖµÆ¥ÅäµÄÔªËØ
+	//TODO åˆ é™¤å®¹å™¨ä¸­æ‰€æœ‰ä¸eleå€¼åŒ¹é…çš„å…ƒç´ 
 	L1.remove(4);
 	printList(L1);
 

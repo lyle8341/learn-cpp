@@ -1,30 +1,30 @@
 #pragma once
 
 #include <ctime>
-#include <cstdlib>  // Ìí¼ÓÕâ¸öÍ·ÎÄ¼ş
+#include <cstdlib>  // æ·»åŠ è¿™ä¸ªå¤´æ–‡ä»¶
 
-//Ìí¼ÓËæ»úÊıÖÖ×Ó
+//æ·»åŠ éšæœºæ•°ç§å­
 
 inline void lyle_initRandom() {
-	srand((unsigned int)time(NULL));
+    srand((unsigned int)time(NULL));
 }
 
 inline int lyle_generateRandom() {
-	return  rand() % 100 + 1;
+    return  rand() % 100 + 1;
 }
 
 inline void printVector(vector<int>& v) {
-	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
-	{
-		cout << *it << " ";
-	}
-	cout << endl;
+    for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
 }
 
 inline void printVector(vector<bool>& v) {
-	for (vector<bool>::iterator it = v.begin(); it != v.end(); it++)
-	{
-		cout << *it << " ";
-	}
-	cout << endl;
+    for (vector<bool>::iterator it = v.begin(); it != v.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
 }

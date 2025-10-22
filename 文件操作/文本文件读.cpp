@@ -36,30 +36,30 @@ void fourth_read_way(ifstream& ifs) {
 }
 
 void test01() {
-	//°üº¬ fstream
-	//1.´´½¨Á÷¶ÔÏó
+	//åŒ…å« fstream
+	//1.åˆ›å»ºæµå¯¹è±¡
 	ifstream ifs;
 
-	//2.´ò¿ªÎÄ¼ş£¬²¢ÅĞ¶ÏÊÇ·ñ´ò¿ª³É¹¦
-	ifs.open("text.txt", ios::in);//ÏîÄ¿¸ùÄ¿Â¼ÏÂ
+	//2.æ‰“å¼€æ–‡ä»¶ï¼Œå¹¶åˆ¤æ–­æ˜¯å¦æ‰“å¼€æˆåŠŸ
+	ifs.open("text.txt", ios::in);//é¡¹ç›®æ ¹ç›®å½•ä¸‹
 
 	if (!ifs.is_open()) {
-		cout << "ÎÄ¼ş´ò¿ªÊ§°Ü" << endl;
+		cout << "æ–‡ä»¶æ‰“å¼€å¤±è´¥" << endl;
 		return;
 	}
 
-	//3.¶ÁÊı¾İ£¨ËÄÖÖ·½Ê½£©
-	//·½Ê½Ò»
+	//3.è¯»æ•°æ®ï¼ˆå››ç§æ–¹å¼ï¼‰
+	//æ–¹å¼ä¸€
 	first_read_way(ifs);
-	//·½Ê½¶ş
+	//æ–¹å¼äºŒ
 	//second_read_way(ifs);
-	//·½Ê½Èı
+	//æ–¹å¼ä¸‰
 	//third_read_way(ifs);
-	//·½Ê½ËÄ
+	//æ–¹å¼å››
 	//fourth_read_way(ifs);
 
 
-	//4.¹Ø±ÕÎÄ¼ş
+	//4.å…³é—­æ–‡ä»¶
 	ifs.close();
 }
 

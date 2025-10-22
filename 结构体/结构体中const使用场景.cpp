@@ -4,22 +4,22 @@
 #ifdef STRUCT_CONST
 
 struct Student {
-	string name;
-	int age;
-	int score;
+    string name;
+    int age;
+    int score;
 };
 
-//½«º¯ÊıÖĞµÄĞÎ²Î¸ÄÎªÖ¸Õë£¬¿ÉÒÔ¼õÉÙÄÚ´æ¿Õ¼ä£¬¶øÇÒ²»»á¸´ÖÆĞÂµÄ¸±±¾³öÀ´
+//å°†å‡½æ•°ä¸­çš„å½¢å‚æ”¹ä¸ºæŒ‡é’ˆï¼Œå¯ä»¥å‡å°‘å†…å­˜ç©ºé—´ï¼Œè€Œä¸”ä¸ä¼šå¤åˆ¶æ–°çš„å‰¯æœ¬å‡ºæ¥
 void printStudent(const Student* stu) {
-	//stu->age = 999;//const·ÀÖ¹Îó²Ù×÷
-	cout << "ĞÕÃû: " << stu->name << "\tÄêÁä: " << stu->age << "\t·ÖÊı: " << stu->score << endl;
+    //stu->age = 999;//consté˜²æ­¢è¯¯æ“ä½œ
+    cout << "å§“å: " << stu->name << "\tå¹´é¾„: " << stu->age << "\tåˆ†æ•°: " << stu->score << endl;
 }
 
 int main() {
-	struct Student s = { "ÀîËÄ", 23, 87 };
+    struct Student s = { "æå››", 23, 87 };
 
 
 
-	return 0;
+    return 0;
 }
 #endif // STRUCT_CONST

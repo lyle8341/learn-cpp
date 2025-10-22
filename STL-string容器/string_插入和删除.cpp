@@ -8,7 +8,7 @@ int main() {
 
 	cout << str << endl;
 
-	//ÆğÊ¼Î»ÖÃ, É¾³ı¸öÊı
+	//èµ·å§‹ä½ç½®, åˆ é™¤ä¸ªæ•°
 	str.erase(1, 3);
 	cout << str << endl;
 

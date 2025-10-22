@@ -5,21 +5,21 @@
 
 int main() {
 
-	cout << "Çë¸øµçÓ°´ò·Ö" << endl;
+	cout << "è¯·ç»™ç”µå½±æ‰“åˆ†" << endl;
 	int score = 0;
 	cin >> score;
-	cout << "Äú´òµÄ·ÖÊýÎª: " << score << endl;
+	cout << "æ‚¨æ‰“çš„åˆ†æ•°ä¸º: " << score << endl;
 
-	switch (score) // Ö»ÄÜÊÇ ÕûÐÎ »òÕß ×Ö·ûÐÍ
+	switch (score) // åªèƒ½æ˜¯ æ•´å½¢ æˆ–è€… å­—ç¬¦åž‹
 	{
 	default:
-		cout << "ÄúÃ»ÓÐÒâ¼û" << endl;
+		cout << "æ‚¨æ²¡æœ‰æ„è§" << endl;
 		break;
 	case 10:
-		cout << "ÄúÈÏÎªÊÇ¾­µäµçÓ°" << endl;
+		cout << "æ‚¨è®¤ä¸ºæ˜¯ç»å…¸ç”µå½±" << endl;
 		break;
 	case 9:
-		cout << "ÄúÈÏÎªÊÇ²»´íµÄµçÓ°" << endl;
+		cout << "æ‚¨è®¤ä¸ºæ˜¯ä¸é”™çš„ç”µå½±" << endl;
 		break;
 	}
 

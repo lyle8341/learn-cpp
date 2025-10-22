@@ -4,13 +4,13 @@
 
 class Person {
 
-	//ÔÊĞíË½ÓĞ±äÁ¿·ÃÎÊ
+	//å…è®¸ç§æœ‰å˜é‡è®¿é—®
 	friend ostream& operator<<(ostream& out, Person& p);
 
 public:
 
 
-	//²»»áÀûÓÃ³ÉÔ±º¯ÊıÖØÔØ×óÒÆÔËËã·û<<£¬ ÒòÎªÎŞ·¨ÊµÏÖµ÷ÓÃÕßÔÚÓÒ²à£¬Èç£ºcout << p
+	//ä¸ä¼šåˆ©ç”¨æˆå‘˜å‡½æ•°é‡è½½å·¦ç§»è¿ç®—ç¬¦<<ï¼Œ å› ä¸ºæ— æ³•å®ç°è°ƒç”¨è€…åœ¨å³ä¾§ï¼Œå¦‚ï¼šcout << p
 	/*void operator<<(cout) {
 
 	}*/
@@ -22,12 +22,12 @@ public:
 };
 
 
-//Ö»ÄÜÀûÓÃÈ«¾Öº¯ÊıÖØÔØ×óÒÆÔËËã·û
+//åªèƒ½åˆ©ç”¨å…¨å±€å‡½æ•°é‡è½½å·¦ç§»è¿ç®—ç¬¦
 //void operator<<(ostream& cout, Person& p) {
 //	cout << "a = " << p.a << " b = " << p.b << endl;
 //}
 
-//Éı¼¶³ÉÁ´Ê½
+//å‡çº§æˆé“¾å¼
 ostream& operator<<(ostream& out, Person& p) {
 	out << "a = " << p.a << " b = " << p.b << endl;
 	return out;

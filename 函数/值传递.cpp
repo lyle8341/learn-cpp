@@ -4,22 +4,22 @@
 #ifdef PASS_BY_VALUE
 
 void swap(int a, int b) {
-	cout << "½»»»Ç°£º a = " << a << "; b = " << b << endl;
+	cout << "äº¤æ¢å‰ï¼š a = " << a << "; b = " << b << endl;
 	if (a != b) {
 		int temp = a;
 		a = b;
 		b = temp;
 	}
-	cout << "½»»»ºó£º a = " << a << "; b = " << b << endl;
+	cout << "äº¤æ¢åŽï¼š a = " << a << "; b = " << b << endl;
 }
 
 int main() {
 	int a = 10;
 	int b = 89;
 
-	cout << "Êµ²Î£º a = " << a << "; b = " << b << endl;
+	cout << "å®žå‚ï¼š a = " << a << "; b = " << b << endl;
 	swap(a, b);
-	cout << "Êµ²Î£º a = " << a << "; b = " << b << endl;
+	cout << "å®žå‚ï¼š a = " << a << "; b = " << b << endl;
 	return 0;
 }
 

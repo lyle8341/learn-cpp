@@ -26,13 +26,13 @@ int Son::a = 50;
 
 int main() {
 	Son s;
-	cout << "¸¸Àà¾²Ì¬Í¬Ãû±äÁ¿:" << s.Base::a << endl;
-	cout << "×ÓÀà¾²Ì¬Í¬Ãû±äÁ¿:" << s.a << endl;
+	cout << "çˆ¶ç±»é™æ€åŒåå˜é‡:" << s.Base::a << endl;
+	cout << "å­ç±»é™æ€åŒåå˜é‡:" << s.a << endl;
 	s.func();
 	s.Base::func();
 
-	cout << "¸¸Àà¾²Ì¬Í¬Ãû±äÁ¿:" << Son::Base::a << endl;
-	cout << "×ÓÀà¾²Ì¬Í¬Ãû±äÁ¿:" << Son::a << endl;
+	cout << "çˆ¶ç±»é™æ€åŒåå˜é‡:" << Son::Base::a << endl;
+	cout << "å­ç±»é™æ€åŒåå˜é‡:" << Son::a << endl;
 	Son::func();
 	Son::Base::func();
 

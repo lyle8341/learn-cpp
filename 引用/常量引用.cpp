@@ -3,27 +3,27 @@
 
 #ifdef CONST_REFERENCE
 
-// ÔÚº¯ÊýÐÎ²ÎÁÐ±íÖÐ£¬¿ÉÒÔ¼ÓconstÐÞÊÎÐÎ²Î£¬·ÀÖ¹ÐÎ²Î¸Ä±äÊµ²Î
+// åœ¨å‡½æ•°å½¢å‚åˆ—è¡¨ä¸­ï¼Œå¯ä»¥åŠ constä¿®é¥°å½¢å‚ï¼Œé˜²æ­¢å½¢å‚æ”¹å˜å®žå‚
 
 void showValue(const int& v) {
-	//v += 10;
-	cout << v << endl;
+    //v += 10;
+    cout << v << endl;
 }
 
 int main() {
 
-	//int& ref = 10;  //10ÊÇÒ»¸ö³£Á¿£¬ÒýÓÃ±ØÐëÒýÒ»¿éºÏ·¨µÄÄÚ´æ¿Õ¼ä£¬Òò´ËÕâ¸ö±¨´í
+    //int& ref = 10;  //10æ˜¯ä¸€ä¸ªå¸¸é‡ï¼Œå¼•ç”¨å¿…é¡»å¼•ä¸€å—åˆæ³•çš„å†…å­˜ç©ºé—´ï¼Œå› æ­¤è¿™ä¸ªæŠ¥é”™
 
-	//¼ÓÈëconst¾Í¿ÉÒÔÁË
-	//±àÒëÆ÷ÓÅ»¯´úÂë int temp = 10; const int& ref = temp;
-	const int& ref = 10;
+    //åŠ å…¥constå°±å¯ä»¥äº†
+    //ç¼–è¯‘å™¨ä¼˜åŒ–ä»£ç  int temp = 10; const int& ref = temp;
+    const int& ref = 10;
 
 
-	int x = 90;
-	//ÓÐµÄ±àÒëÆ÷»á±¨´í
-	int& const r = x; // ÒòÎªÒýÓÃ±¾Éí²»¿ÉÖØÐÂ°ó¶¨£¬ËùÒÔÎÞÐèÉè¼Æ "ÒýÓÃ³£Á¿"
+    int x = 90;
+    //æœ‰çš„ç¼–è¯‘å™¨ä¼šæŠ¥é”™
+    int& const r = x; // å› ä¸ºå¼•ç”¨æœ¬èº«ä¸å¯é‡æ–°ç»‘å®šï¼Œæ‰€ä»¥æ— éœ€è®¾è®¡ "å¼•ç”¨å¸¸é‡"
 
-	cout << "over" << endl;
+    cout << "over" << endl;
 }
 
 

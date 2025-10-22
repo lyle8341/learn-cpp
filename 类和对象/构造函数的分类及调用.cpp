@@ -3,31 +3,31 @@
 
 #ifdef CONSTRUCT_FUNCTION_TYPE_CALLED
 
-//1.¹¹Ôìº¯ÊýµÄ·ÖÀà¼°µ÷ÓÃ
+//1.æž„é€ å‡½æ•°çš„åˆ†ç±»åŠè°ƒç”¨
 
 class Person {
 public:
-	//ÎÞ²Î¹¹Ôìº¯Êý
+	//æ— å‚æž„é€ å‡½æ•°
 	Person() {
-		cout << "PersonµÄÎÞ²Î¹¹Ôìº¯Êýµ÷ÓÃ" << endl;
+		cout << "Personçš„æ— å‚æž„é€ å‡½æ•°è°ƒç”¨" << endl;
 	}
 
 	Person(int a) {
 		age = a;
-		cout << "PersonµÄÓÐ²Î¹¹Ôìº¯Êýµ÷ÓÃ" << endl;
+		cout << "Personçš„æœ‰å‚æž„é€ å‡½æ•°è°ƒç”¨" << endl;
 	}
 
 
-	//¿½±´¹¹Ôìº¯Êý
+	//æ‹·è´æž„é€ å‡½æ•°
 	Person(const Person& p) {
-		//½«´«Èë¶ÔÏóµÄËùÓÐÊôÐÔ¿½±´µ½ÎÒ×Ô¼ºÉíÉÏ
+		//å°†ä¼ å…¥å¯¹è±¡çš„æ‰€æœ‰å±žæ€§æ‹·è´åˆ°æˆ‘è‡ªå·±èº«ä¸Š
 		age = p.age;
-		cout << "PersonµÄ¿½±´¹¹Ôìº¯Êýµ÷ÓÃ" << endl;
+		cout << "Personçš„æ‹·è´æž„é€ å‡½æ•°è°ƒç”¨" << endl;
 	}
 
 
 	~Person() {
-		cout << "PersonµÄÎö¹¹º¯Êýµ÷ÓÃ" << endl;
+		cout << "Personçš„æžæž„å‡½æ•°è°ƒç”¨" << endl;
 	}
 
 
@@ -39,28 +39,28 @@ public:
 
 void test01() {
 
-	//1.À¨ºÅ·¨
-	Person p1;		//Ä¬ÈÏ¹¹Ôìº¯Êýµ÷ÓÃ
-	Person p2(10);	//ÓÐ²Î¹¹Ôìº¯Êý
-	Person p3(p2);	//¿½±´¹¹Ôìº¯Êý
+	//1.æ‹¬å·æ³•
+	Person p1;		//é»˜è®¤æž„é€ å‡½æ•°è°ƒç”¨
+	Person p2(10);	//æœ‰å‚æž„é€ å‡½æ•°
+	Person p3(p2);	//æ‹·è´æž„é€ å‡½æ•°
 
-	//×¢ÒâÊÂÏî
-	//µ÷ÓÃÄ¬ÈÏ¹¹Ôìº¯ÊýÊ±ºò£¬²»Òª¼Ó()£¬·ñÔò±àÒëÆ÷ÒÔÎªÊÇº¯ÊýÉùÃ÷ÄØ
+	//æ³¨æ„äº‹é¡¹
+	//è°ƒç”¨é»˜è®¤æž„é€ å‡½æ•°æ—¶å€™ï¼Œä¸è¦åŠ ()ï¼Œå¦åˆ™ç¼–è¯‘å™¨ä»¥ä¸ºæ˜¯å‡½æ•°å£°æ˜Žå‘¢
 	Person declare();
 
-	//2.ÏÔÊ½·¨
-	Person pa = Person(20); // ÓÐ²Î¹¹Ôì
+	//2.æ˜¾å¼æ³•
+	Person pa = Person(20); // æœ‰å‚æž„é€ 
 
-	Person pc = Person(pa); // ¿½±´¹¹Ôì
+	Person pc = Person(pa); // æ‹·è´æž„é€ 
 
-	Person(30); //ÄäÃû¶ÔÏó£¬ÌØµã£ºµ±Ç°ÐÐÖ´ÐÐ½áÊøºó£¬ÏµÍ³»áÁ¢¼´»ØÊÕµôÄäÃû¶ÔÏó
+	Person(30); //åŒ¿åå¯¹è±¡ï¼Œç‰¹ç‚¹ï¼šå½“å‰è¡Œæ‰§è¡Œç»“æŸåŽï¼Œç³»ç»Ÿä¼šç«‹å³å›žæ”¶æŽ‰åŒ¿åå¯¹è±¡
 
-	//²»ÒªÀûÓÃ¿½±´¹¹Ôìº¯Êý³õÊ¼»¯ÄäÃû¶ÔÏó£¬ÒòÎª±àÒëÆ÷»áÈÏÎª Person(pa) === Person pa; ·¢ÉúÖØ¶¨ÒåÁË
+	//ä¸è¦åˆ©ç”¨æ‹·è´æž„é€ å‡½æ•°åˆå§‹åŒ–åŒ¿åå¯¹è±¡ï¼Œå› ä¸ºç¼–è¯‘å™¨ä¼šè®¤ä¸º Person(pa) === Person pa; å‘ç”Ÿé‡å®šä¹‰äº†
 	//Person(pa);
 
-	//3.ÒþÊ½×ª»»·¨
-	Person px = 10; //Ïàµ±ÓÚÐ´ÁË Person px = Person(10);
-	Person py = px; //¿½±´¹¹Ôì
+	//3.éšå¼è½¬æ¢æ³•
+	Person px = 10; //ç›¸å½“äºŽå†™äº† Person px = Person(10);
+	Person py = px; //æ‹·è´æž„é€ 
 
 }
 

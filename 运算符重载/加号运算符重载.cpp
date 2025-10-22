@@ -3,13 +3,13 @@
 #ifdef PLUS_OP_OVERRIDE
 
 
-//thisÖ¸Õë.cpp
+//thisæŒ‡é’ˆ.cpp
 
 
 class Person {
 
 public:
-	//1.³ÉÔ±º¯ÊıÖØÔØ +
+	//1.æˆå‘˜å‡½æ•°é‡è½½ +
 	/*Person operator+(Person& p) {
 		Person temp;
 		temp.a = this->a + p.a;
@@ -24,7 +24,7 @@ public:
 };
 
 
-//2.È«¾Öº¯ÊıÖØÔØ +
+//2.å…¨å±€å‡½æ•°é‡è½½ +
 Person operator+(Person& p1, Person& p2) {
 	Person temp;
 	temp.a = p1.a + p2.a;
@@ -33,7 +33,7 @@ Person operator+(Person& p1, Person& p2) {
 }
 
 
-//ÔËËã·ûÖØÔØ
+//è¿ç®—ç¬¦é‡è½½
 Person operator+(Person& p1, int num) {
 	Person temp;
 	temp.a = p1.a + num;
@@ -53,10 +53,10 @@ void test01() {
 
 	Person p3 = p1 + p2;
 
-	// ³ÉÔ±º¯ÊıÖØÔØ±¾ÖÊµ÷ÓÃ
+	// æˆå‘˜å‡½æ•°é‡è½½æœ¬è´¨è°ƒç”¨
 	//Person p3 = p1.operator+(p2);
 
-	// È«¾Öº¯ÊıÖØÔØ±¾ÖÊµ÷ÓÃ
+	// å…¨å±€å‡½æ•°é‡è½½æœ¬è´¨è°ƒç”¨
 	//Person p3 = operator+(p1, p2);
 
 	cout << "p3: a = " << p3.a << " b = " << p3.b << endl;

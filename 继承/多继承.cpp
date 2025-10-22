@@ -3,7 +3,7 @@
 
 #ifdef MULTI_EXTEND
 
-//c++Êµ¼Ê¿ª·¢ÖÐ²»½¨ÒéÓÃ¶à¼Ì³Ð
+//c++å®žé™…å¼€å‘ä¸­ä¸å»ºè®®ç”¨å¤šç»§æ‰¿
 class Base1 {
 public:
 	int a;
@@ -34,10 +34,10 @@ public:
 };
 
 void test01() {
-	//TODO ÀûÓÃ¿ª·¢ÈËÔ±ÃüÁîÌáÊ¾·û¹¤¾ß²é¿´¶ÔÏóÄ£ÐÍ¾ÖÃüÁî:
-	//TODO cl /d1 reportSingleClassLayoutÀàÃû ÀàËùÔÚµÄcppÎÄ¼þ ----> cl /d1 reportSingleClassLayoutSon ¶à¼Ì³Ð.cpp
-	//TODO cl /d1 reportSingleClassLayoutÀàÃû ÀàËùÔÚµÄcppÎÄ¼þ ----> cl /d1 reportSingleClassLayoutSon ¶à¼Ì³Ð.cpp
-	//TODO cl /d1 reportSingleClassLayoutÀàÃû ÀàËùÔÚµÄcppÎÄ¼þ ----> cl /d1 reportSingleClassLayoutSon ¶à¼Ì³Ð.cpp
+	//TODO åˆ©ç”¨å¼€å‘äººå‘˜å‘½ä»¤æç¤ºç¬¦å·¥å…·æŸ¥çœ‹å¯¹è±¡æ¨¡åž‹å±€å‘½ä»¤:
+	//TODO cl /d1 reportSingleClassLayoutç±»å ç±»æ‰€åœ¨çš„cppæ–‡ä»¶ ----> cl /d1 reportSingleClassLayoutSon å¤šç»§æ‰¿.cpp
+	//TODO cl /d1 reportSingleClassLayoutç±»å ç±»æ‰€åœ¨çš„cppæ–‡ä»¶ ----> cl /d1 reportSingleClassLayoutSon å¤šç»§æ‰¿.cpp
+	//TODO cl /d1 reportSingleClassLayoutç±»å ç±»æ‰€åœ¨çš„cppæ–‡ä»¶ ----> cl /d1 reportSingleClassLayoutSon å¤šç»§æ‰¿.cpp
 	cout << "size of Son = " << sizeof(Son) << endl;
 }
 
