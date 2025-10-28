@@ -18,5 +18,13 @@
     <ClCompile Include="注释.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="c注释.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="starter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

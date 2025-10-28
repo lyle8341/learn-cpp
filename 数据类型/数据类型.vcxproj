@@ -139,6 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="c小数.c" />
+    <ClCompile Include="c进制.c" />
+    <ClCompile Include="c键盘录入.c" />
+    <ClCompile Include="字符串2.cpp" />
     <ClCompile Include="布尔类型.cpp" />
     <ClCompile Include="sizeof关键字.cpp" />
     <ClCompile Include="字符串类型.cpp" />

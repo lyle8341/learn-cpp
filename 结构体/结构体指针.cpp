@@ -16,6 +16,10 @@ int main() {
 
 	cout << "姓名:" << p->name << "\t年龄:" << p->age << "\t分数:" << p->score << endl;
 
+	//
+	struct Student* pp = new Student{ "Jay",89, 5 };
+	cout << "姓名:" << pp->name << " age:" << pp->age << " score:" << pp->score << endl;
+	delete pp;
 }
 
 #endif // STRUCT_POINTER

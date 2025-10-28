@@ -1,7 +1,10 @@
 #include <iostream>
+#include "starter.h"
 
 using namespace std;
 
+
+#ifdef CPP_COMMENT
 // 单行注释
 
 
@@ -12,5 +15,10 @@ using namespace std;
 */
 
 int main() {
-    return 0;
+
+	cout << "Hello C++" << endl;
+
+	return 0;
 }
+
+#endif // CPP_COMMENT

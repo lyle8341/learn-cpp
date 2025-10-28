@@ -44,5 +44,11 @@
     <ClCompile Include="函数重载.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="函数传入数组.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="函数返回数组.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

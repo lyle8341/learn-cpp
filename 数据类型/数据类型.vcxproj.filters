@@ -39,6 +39,18 @@
     <ClCompile Include="数据输入.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="字符串2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c进制.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c小数.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c键盘录入.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="starter.h">

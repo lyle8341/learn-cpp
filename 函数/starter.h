@@ -16,4 +16,7 @@ using namespace std;
 
 //#define FUNCTION_PLACEHOLDER
 
-#define FUNCTION_OVERRIDE
+//#define FUNCTION_OVERRIDE
+
+//#define FUNCTION_ARR_PARAM
+#define FUNCTION_RETURN_ARR

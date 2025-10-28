@@ -20,6 +20,17 @@ int main() {
 	cout << "long long变量占用: " << sizeof(d) << " 字节" << endl;
 	cout << "long long变量占用: " << sizeof(long long) << " 字节" << endl;
 
+
+	//无符号
+	unsigned int age = 10;
+	u_int height = 173; //u_int 就是 unsigned int
+
+
+
+
+
+
+
 	return 0;
 }
 

@@ -144,10 +144,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="值传递.cpp" />
+    <ClCompile Include="函数传入数组.cpp" />
     <ClCompile Include="函数分文件编写.cpp" />
     <ClCompile Include="函数占位符.cpp" />
     <ClCompile Include="函数声明.cpp" />
     <ClCompile Include="函数定义和调用.cpp" />
+    <ClCompile Include="函数返回数组.cpp" />
     <ClCompile Include="函数重载.cpp" />
     <ClCompile Include="函数默认参数.cpp" />
   </ItemGroup>

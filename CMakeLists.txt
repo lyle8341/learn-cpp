@@ -1,0 +1,197 @@
+cmake_minimum_required(VERSION 3.20)
+project(learn_cpp)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(STL-list容器)
+include_directories(STL-string容器)
+include_directories(STL-vector容器)
+include_directories(STL-函数对象)
+include_directories(内存四区)
+include_directories(函数)
+include_directories(友元)
+include_directories(多态)
+include_directories(常用算法)
+include_directories(引用)
+include_directories(指针)
+include_directories(数据类型)
+include_directories(数组)
+include_directories(文件操作)
+include_directories("标准模板库(STL)")
+include_directories(模板)
+include_directories(流程结构)
+include_directories(类和对象)
+include_directories(结构体)
+include_directories(继承)
+include_directories(运算符重载)
+
+add_executable(learn_cpp
+        STL-deque容器/deque_容器.cpp
+        STL-list容器/list_反转和排序.cpp
+        STL-list容器/list_插入和删除.cpp
+        STL-list容器/list_数据存取.cpp
+        STL-list容器/list_构造函数.cpp
+        STL-list容器/list_赋值和交换.cpp
+        STL-list容器/starter.h
+        STL-map/map_使用.cpp
+        STL-queue/queue_使用.cpp
+        STL-set容器/set_使用.cpp
+        STL-stack/stack_使用.cpp
+        STL-string容器/starter.h
+        STL-string容器/string_子串获取.cpp
+        STL-string容器/string_字符串拼接.cpp
+        STL-string容器/string_字符串比较.cpp
+        STL-string容器/string_字符存取.cpp
+        STL-string容器/string_插入和删除.cpp
+        STL-string容器/string_构造函数.cpp
+        STL-string容器/string_赋值.cpp
+        STL-string容器/字符串_查找和替换.cpp
+        STL-string容器/菜单.cpp
+        STL-vector容器/starter.h
+        STL-vector容器/vector_容器互换.cpp
+        STL-vector容器/vector_容量和大小.cpp
+        STL-vector容器/vector_插入和删除.cpp
+        STL-vector容器/vector_数据存取.cpp
+        STL-vector容器/vector_构造函数.cpp
+        STL-vector容器/vector_赋值.cpp
+        STL-vector容器/vector_预留空间.cpp
+        STL-函数对象/starter.h
+        STL-函数对象/内建函数对象.cpp
+        STL-函数对象/函数对象.cpp
+        STL-函数对象/谓词.cpp
+        关键字/标识符命名.cpp
+        内存四区/new关键字.cpp
+        内存四区/starter.h
+        内存四区/全局区.cpp
+        内存四区/堆区.cpp
+        内存四区/栈区.cpp
+        函数/starter.h
+        函数/swap.h
+        函数/值传递.cpp
+        函数/函数分文件编写.cpp
+        函数/函数占位符.cpp
+        函数/函数声明.cpp
+        函数/函数定义和调用.cpp
+        函数/函数重载.cpp
+        函数/函数默认参数.cpp
+        友元/starter.h
+        友元/全局函数做友元.cpp
+        友元/成员函数做友元.cpp
+        友元/类做友元.cpp
+        多态/starter.h
+        多态/多态原理.cpp
+        多态/多态基本概念.cpp
+        多态/纯虚函数和抽象类.cpp
+        多态/虚析构和纯虚析构.cpp
+        常用算法/starter.h
+        常用算法/拷贝和替换.cpp
+        常用算法/排序算法.cpp
+        常用算法/查找算法.cpp
+        常用算法/生成算法.cpp
+        常用算法/遍历算法.cpp
+        常用算法/集合算法.cpp
+        常量/Source.cpp
+        引用/starter.h
+        引用/常量引用.cpp
+        引用/引用.cpp
+        引用/引用做函数参数.cpp
+        引用/引用做函数的返回值.cpp
+        引用/引用注意事项.cpp
+        引用/引用的本质.cpp
+        指针/const修饰指针.cpp
+        指针/starter.h
+        指针/指针.cpp
+        指针/指针和函数.cpp
+        指针/指针和数组.cpp
+        指针/指针所占内存空间.cpp
+        指针/指针数组函数.cpp
+        指针/指针的地址.cpp
+        指针/空指针.cpp
+        指针/野指针.cpp
+        数据类型/sizeof关键字.cpp
+        数据类型/starter.h
+        数据类型/字符串类型.cpp
+        数据类型/字符型.cpp
+        数据类型/实型.cpp
+        数据类型/布尔类型.cpp
+        数据类型/数据输入.cpp
+        数据类型/整形.cpp
+        数据类型/转义字符.cpp
+        数组/starter.h
+        数组/一维数组.cpp
+        数组/一维数组名.cpp
+        数组/二维数组.cpp
+        数组/二维数组名.cpp
+        文件操作/starter.h
+        文件操作/二进制文件写.cpp
+        文件操作/二进制文件读.cpp
+        文件操作/文本文件写.cpp
+        文件操作/文本文件读.cpp
+        "标准模板库(STL)/lyleRandom.h"
+        "标准模板库(STL)/starter.h"
+        "标准模板库(STL)/vector存放内置数据类型.cpp"
+        "标准模板库(STL)/vector存放自定义数据类型.cpp"
+        "标准模板库(STL)/vector容器嵌套容器.cpp"
+        模板/MyArray.hpp
+        模板/Person.cpp
+        模板/person.h
+        模板/person.hpp
+        模板/starter.h
+        模板/函数模板.cpp
+        模板/普通函数和函数模板调用规则.cpp
+        模板/普通函数和模板函数区别.cpp
+        模板/模板的局限性.cpp
+        模板/类模板与友元.cpp
+        模板/类模板与继承.cpp
+        模板/类模板中成员函数创建时机.cpp
+        模板/类模板做函数参数.cpp
+        模板/类模板分文件编写1.cpp
+        模板/类模板分文件编写2.cpp
+        模板/类模板成员函数类外实现.cpp
+        模板/类模板案例.cpp
+        模板/类模板语法.cpp
+        模板/类模板默认参数列表.cpp
+        注释/注释.cpp
+        流程结构/goto.cpp
+        流程结构/starter.h
+        流程结构/switch.cpp
+        流程结构/while.cpp
+        类和对象/const修饰成员函数.cpp
+        类和对象/starter.h
+        类和对象/struct和class区别.cpp
+        类和对象/this指针.cpp
+        类和对象/初始化列表.cpp
+        类和对象/封装的意义.cpp
+        类和对象/封装的权限控制.cpp
+        类和对象/成员变量和成员函数分开存储.cpp
+        类和对象/拷贝构造函数的调用时机.cpp
+        类和对象/构造函数和析构函数.cpp
+        类和对象/构造函数的分类及调用.cpp
+        类和对象/构造函数调用原则.cpp
+        类和对象/深拷贝和浅拷贝.cpp
+        类和对象/类对象作为类成员.cpp
+        类和对象/继承.cpp
+        类和对象/静态成员.cpp
+        结构体/starter.h
+        结构体/结构体.cpp
+        结构体/结构体中const使用场景.cpp
+        结构体/结构体做函数参数.cpp
+        结构体/结构体嵌套.cpp
+        结构体/结构体指针.cpp
+        结构体/结构体数组.cpp
+        继承/starter.h
+        继承/多继承.cpp
+        继承/继承中同名成员处理方式.cpp
+        继承/继承中同名静态成员处理方式.cpp
+        继承/继承中的对象模型.cpp
+        继承/继承中的构造和析构顺序.cpp
+        继承/继承的基本语法.cpp
+        继承/菱形继承.cpp
+        继承/菱形继承解决方案.cpp
+        运算符重载/starter.h
+        运算符重载/关系运算符重载.cpp
+        运算符重载/函数调用符重载.cpp
+        运算符重载/加号运算符重载.cpp
+        运算符重载/左移运算符重载.cpp
+        运算符重载/赋值运算符重载.cpp
+        运算符重载/递增运算符重载.cpp)

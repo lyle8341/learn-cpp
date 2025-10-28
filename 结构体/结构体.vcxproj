@@ -147,7 +147,9 @@
     <ClCompile Include="结构体做函数参数.cpp" />
     <ClCompile Include="结构体嵌套.cpp" />
     <ClCompile Include="结构体指针.cpp" />
+    <ClCompile Include="结构体指针数组.cpp" />
     <ClCompile Include="结构体数组.cpp" />
+    <ClCompile Include="结构体默认值.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

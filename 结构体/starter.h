@@ -10,4 +10,8 @@ using namespace std;
 //#define STRUCT_NESTED
 //#define STRUCT_AS_PARAM
 
-#define STRUCT_CONST
+//#define STRUCT_CONST
+//#define STRUCT_DEFAULT
+
+
+#define STRUCT_PTR_ARRAY

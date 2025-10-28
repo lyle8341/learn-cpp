@@ -38,5 +38,11 @@
     <ClCompile Include="结构体中const使用场景.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="结构体默认值.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="结构体指针数组.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

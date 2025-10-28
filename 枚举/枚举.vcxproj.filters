@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="c常量.c">
+    <ClCompile Include="Season.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

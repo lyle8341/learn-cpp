@@ -29,6 +29,12 @@ int main() {
 	str3.append(str4, 5, 3);//参数3: 截取字符个数
 
 	cout << str3 << endl;
+
+
+	int age = 30;
+	string name = "lyle";
+	double height = 173;
+	string msg = name + " is " + to_string(age) + ", " + to_string(height) + "cm";
 }
 
 #endif // STRING_CONCAT
