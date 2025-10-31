@@ -1,8 +1,9 @@
 #pragma once
 
+#ifdef __cplusplus
+
 #include <iostream>
 using namespace std;
-
 
 //#define FUNCTION_DEF_INVOKE
 
@@ -19,4 +20,14 @@ using namespace std;
 //#define FUNCTION_OVERRIDE
 
 //#define FUNCTION_ARR_PARAM
-#define FUNCTION_RETURN_ARR
+//#define FUNCTION_RETURN_ARR
+
+#else
+#include <stdio.h>
+
+//#define C_TIME
+//#define C_RANDOM
+//#define C_FUNCTION_POINTER
+#define C_FUNCTION_POINTER_USE
+
+#endif

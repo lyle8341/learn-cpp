@@ -50,5 +50,17 @@
     <ClCompile Include="函数返回数组.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="c_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c_随机数.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c_函数指针.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c_函数指针的作用.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

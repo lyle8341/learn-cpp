@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="c小数.c" />
+    <ClCompile Include="c整型.c" />
     <ClCompile Include="c进制.c" />
     <ClCompile Include="c键盘录入.c" />
     <ClCompile Include="字符串2.cpp" />

@@ -1,9 +1,8 @@
 #pragma once
 
-
+#ifdef __cplusplus
 #include <iostream>
 using namespace std;
-
 
 
 //#define POINTER_DEFINE
@@ -18,4 +17,14 @@ using namespace std;
 //#define POINTER_AND_FUNCTION
 //#define POINTER_ARRAY_FUNCTION
 
-#define POINTER_ADDRESS
+//#define POINTER_ADDRESS
+
+#else
+
+#include <stdio.h>
+//#define C_ROLE_OF_POINTER
+//#define C_VOID_POINTER
+//#define C_SECONDARY_POINTER
+#define C_ARR_POINTER
+
+#endif

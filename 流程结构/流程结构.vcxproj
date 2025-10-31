@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="c无限循环.c" />
     <ClCompile Include="goto.cpp" />
     <ClCompile Include="switch.cpp" />
     <ClCompile Include="while.cpp" />

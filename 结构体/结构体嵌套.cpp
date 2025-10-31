@@ -1,6 +1,7 @@
 #include "starter.h"
 
 
+
 #ifdef STRUCT_NESTED
 
 struct Student
@@ -15,21 +16,21 @@ struct Teacher
 	int id;
 	string name;
 	int age;
-	struct Student stu;
+	struct Student stu; //struct¿ÉÒÔÊ¡ÂÔ
 };
 
 int main() {
 	Teacher t;
 	t.id = 1;
-	t.name = "å¼ å±…æ­£";
+	t.name = "ÕÅ¾ÓÕı";
 	t.age = 50;
-	t.stu.name = "ä¸‡å†";
+	t.stu.name = "ÍòÀú";
 	t.stu.age = 20;
 	t.stu.score = 15;
 
 	Teacher* p = &t;
 
-	cout << "è€å¸ˆåå­—: " << p->name << "\tè€å¸ˆå¹´é¾„: " << p->age << "\tå­¦ç”Ÿåå­—: " << p->stu.name << "\tå­¦ç”Ÿæˆç»©: " << p->stu.score << endl;
+	cout << "ÀÏÊ¦Ãû×Ö: " << p->name << "\tÀÏÊ¦ÄêÁä: " << p->age << "\tÑ§ÉúÃû×Ö: " << p->stu.name << "\tÑ§Éú³É¼¨: " << p->stu.score << endl;
 	return 0;
 }
 

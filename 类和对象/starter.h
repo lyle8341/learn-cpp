@@ -16,8 +16,6 @@ using namespace std;
 //#define INIT_LIST
 //#define CLASS_OBJ_AS_CLASS_FIELD
 //#define STATIC_FIELD_METHOD
-//#define FIELD_METHOD_DIFF_STORAGE
-
+#define FIELD_METHOD_DIFF_STORAGE
 //#define THIS_POINTER
-
-#define CONST_CLASS_METHOD
+//#define CONST_CLASS_METHOD

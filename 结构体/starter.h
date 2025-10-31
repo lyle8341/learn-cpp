@@ -1,5 +1,7 @@
 #pragma once
 
+#ifdef __cplusplus
+
 #include <iostream>
 using namespace std;
 
@@ -12,6 +14,13 @@ using namespace std;
 
 //#define STRUCT_CONST
 //#define STRUCT_DEFAULT
+//#define STRUCT_PTR_ARRAY
 
+#else
+#include <stdio.h>
 
-#define STRUCT_PTR_ARRAY
+//#define C_STRUCT_ALIAS
+//#define C_STRUCT_NESTED
+#define C_STRUCT_MEM_ALIGN
+
+#endif

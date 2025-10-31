@@ -142,6 +142,7 @@
     <ClInclude Include="starter.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="c_数组指针.c" />
     <ClCompile Include="二维数组名.cpp" />
     <ClCompile Include="一维数组.cpp" />
     <ClCompile Include="二维数组.cpp" />

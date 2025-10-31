@@ -32,5 +32,8 @@
     <ClCompile Include="二维数组名.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="c_数组指针.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

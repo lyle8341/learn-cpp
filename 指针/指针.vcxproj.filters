@@ -47,5 +47,17 @@
     <ClCompile Include="指针的地址.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="c_指针的作用.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c_void类型指针.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c_二级指针.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c_数组指针.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

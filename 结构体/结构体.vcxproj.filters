@@ -29,9 +29,6 @@
     <ClCompile Include="结构体指针.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="结构体嵌套.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="结构体做函数参数.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -42,6 +39,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="结构体指针数组.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c_结构体别名.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="结构体嵌套.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c_结构体嵌套.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c_结构体对齐.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

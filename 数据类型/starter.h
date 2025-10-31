@@ -22,6 +22,8 @@ using namespace std;
 //#define C_BINARY
 
 //#define C_DECIMAL
-#define C_KEYBOARD_INPUT
+//#define C_KEYBOARD_INPUT
+//#define C_INTEGER
+
 
 #endif

@@ -143,6 +143,10 @@
     <ClInclude Include="swap.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="c_time.c" />
+    <ClCompile Include="c_函数指针.c" />
+    <ClCompile Include="c_函数指针的作用.c" />
+    <ClCompile Include="c_随机数.c" />
     <ClCompile Include="值传递.cpp" />
     <ClCompile Include="函数传入数组.cpp" />
     <ClCompile Include="函数分文件编写.cpp" />

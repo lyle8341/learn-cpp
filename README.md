@@ -87,4 +87,18 @@
 
 
 
+
 [C++一套通关系列课程](https://www.yuque.com/embheima/newcpp)
+
+
+
+
+
+# C语言
+
+
++ 隐式转换两条规则
+  + 1.取值范围小的和取值范围大的计算，小的会自动提升为大的，再进行计算
+    + char < short < int < long < long long < float < double
+  + 2.short char类型的数据在运算的时候，先提升为int，再进行计算
+    + short a加 short b 结果是 int

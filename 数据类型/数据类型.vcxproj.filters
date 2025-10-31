@@ -51,6 +51,9 @@
     <ClCompile Include="c键盘录入.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="c整型.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="starter.h">
