@@ -1,5 +1,5 @@
 #include "starter.h"
-#include "../æ ‡å‡†æ¨¡æ¿åº“(STL)/lyleRandom.h"
+#include "../±ê×¼Ä£°å¿â(STL)/lyleRandom.h"
 
 
 #ifdef VECTOR_ASSIGN
@@ -15,7 +15,7 @@ int main() {
 	}
 	printVector(v1);
 
-	//TODO èµ‹å€¼
+	//TODO ¸³Öµ
 	vector<int> v2;
 	v2 = v1;
 	printVector(v2);
@@ -25,7 +25,7 @@ int main() {
 	v3.assign(v1.begin(), v1.end());
 	printVector(v3);
 
-	//TODO  nä¸ªelem æ–¹å¼èµ‹å€¼
+	//TODO  n¸öelem ·½Ê½¸³Öµ
 	vector<int> v4;
 	v4.assign(4, 100);
 	printVector(v4);

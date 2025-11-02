@@ -1,5 +1,5 @@
 #include "starter.h"
-#include "../æ ‡å‡†æ¨¡æ¿åº“(STL)/lyleRandom.h"
+#include "../±ê×¼Ä£°å¿â(STL)/lyleRandom.h"
 
 #ifdef VECTOR_SWAP
 
@@ -21,33 +21,33 @@ int main() {
 	}
 	printVector(b);
 
-	//äº¤æ¢
+	//½»»»
 	a.swap(b);
 
 	printVector(a);
 	printVector(b);
 
 
-	//TODO ç”¨é€”
+	//TODO ÓÃÍ¾
 	vector<int> hugeV;
 	hugeV.assign(10000, 1);
-	hugeV.resize(3);//é‡æ–°æŒ‡å®šå¤§å°
-	cout << "hugeVå®¹é‡: " << hugeV.capacity() << endl;
-	cout << "hugeVå¤§å°: " << hugeV.size() << endl;
+	hugeV.resize(3);//ÖØĞÂÖ¸¶¨´óĞ¡
+	cout << "hugeVÈİÁ¿: " << hugeV.capacity() << endl;
+	cout << "hugeV´óĞ¡: " << hugeV.size() << endl;
 
-	//TODO æ”¶ç¼©å†…å­˜åŸç†å¦‚ä¸‹ï¼š
+	//TODO ÊÕËõÄÚ´æÔ­ÀíÈçÏÂ£º
 	vector<int> temp(hugeV);
 	printVector(temp);
-	cout << "tempå®¹é‡: " << temp.capacity() << endl;		//å®¹é‡å˜æˆ3
-	cout << "tempå¤§å°: " << temp.size() << endl;        //å¤§å°å˜æˆ3
+	cout << "tempÈİÁ¿: " << temp.capacity() << endl;		//ÈİÁ¿±ä³É3
+	cout << "temp´óĞ¡: " << temp.size() << endl;        //´óĞ¡±ä³É3
 
 
 
-	// vector<int>(hugeV) åŒ¿åå¯¹è±¡
+	// vector<int>(hugeV) ÄäÃû¶ÔÏó
 	vector<int>(hugeV).swap(hugeV);
 
-	cout << "äº¤æ¢åå®¹é‡: " << hugeV.capacity() << endl;
-	cout << "äº¤æ¢åå¤§å°: " << hugeV.size() << endl;
+	cout << "½»»»ºóÈİÁ¿: " << hugeV.capacity() << endl;
+	cout << "½»»»ºó´óĞ¡: " << hugeV.size() << endl;
 
 	return 0;
 }

@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{42df842e-97fb-45de-afba-f09a65138add}</ProjectGuid>
-    <RootNamespace>文件操作</RootNamespace>
+    <ProjectGuid>{0aeceafc-2fc5-484a-a071-c98f74218ced}</ProjectGuid>
+    <RootNamespace>c语言多线程</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>文件操作</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -143,14 +142,7 @@
     <ClInclude Include="starter.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="c_写文件.c" />
-    <ClCompile Include="c_文件拷贝.c" />
-    <ClCompile Include="c_读写模式.c" />
-    <ClCompile Include="c_读取文件.c" />
-    <ClCompile Include="二进制文件写.cpp" />
-    <ClCompile Include="二进制文件读.cpp" />
-    <ClCompile Include="文本文件写.cpp" />
-    <ClCompile Include="文本文件读.cpp" />
+    <ClCompile Include="c_创建线程.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

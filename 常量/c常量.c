@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int main() {
+int main2() {
 
 	// .93 等同于 0.93
 	//18. 等同于 18.0

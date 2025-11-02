@@ -1,33 +1,33 @@
 #include "starter.h"
-#include "../æ ‡å‡†æ¨¡æ¿åº“(STL)/lyleRandom.h"
+#include "../±ê×¼Ä£°å¿â(STL)/lyleRandom.h"
 
 
 #ifdef VECTOR_CONSTRUCT
 
-//TODO åŠ¨æ€æ‰©å±•ï¼Œå°†åŸæ•°æ®æ‹·è´åˆ°æ–°ç©ºé—´ï¼Œé‡Šæ”¾åŸç©ºé—´
+//TODO ¶¯Ì¬À©Õ¹£¬½«Ô­Êı¾İ¿½±´µ½ĞÂ¿Õ¼ä£¬ÊÍ·ÅÔ­¿Õ¼ä
 
 
 int main() {
 	lyle_initRandom();
 
-	vector<int> v1;//TODO é»˜è®¤æ„é€ 
+	vector<int> v1;//TODO Ä¬ÈÏ¹¹Ôì
 	for (int i =0;i< 10;i++)
 	{
 		v1.push_back(lyle_generateRandom());
 	}
 	printVector(v1);
 
-	//TODO é€šè¿‡åŒºé—´æ„é€ 
-	vector<int> v2(v1.begin(), v1.end());//å‚æ•°: è¿­ä»£å™¨
+	//TODO Í¨¹ıÇø¼ä¹¹Ôì
+	vector<int> v2(v1.begin(), v1.end());//²ÎÊı: µü´úÆ÷
 	printVector(v2);
 
-	//TODO nä¸ªelementæ–¹å¼æ„é€ 
+	//TODO n¸öelement·½Ê½¹¹Ôì
 	int count = 8;
 	int value = 110;
 	vector<int> v3(count, value);
 	printVector(v3);
 
-	//TODO æ‹·è´æ„é€ 
+	//TODO ¿½±´¹¹Ôì
 	vector<int> v4(v3);
 	printVector(v4);
 

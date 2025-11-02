@@ -20,28 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="文本文件读.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="文本文件写.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="二进制文件读.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="二进制文件写.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="c_读取文件.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="c_写文件.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="c_读写模式.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="c_文件拷贝.c">
+    <ClCompile Include="c_创建线程.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
