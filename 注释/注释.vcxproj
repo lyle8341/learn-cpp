@@ -139,7 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="c注释.c" />
+    <ClCompile Include="c_打印格式化.c" />
+    <ClCompile Include="c_注释.c" />
     <ClCompile Include="注释.cpp" />
   </ItemGroup>
   <ItemGroup>

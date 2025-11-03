@@ -15,10 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="c_打印格式化.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="注释.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="c注释.c">
+    <ClCompile Include="c_注释.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

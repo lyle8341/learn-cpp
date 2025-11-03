@@ -1,18 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <stdlib.h>
 
 
 int main() {
 
-	char* a[] = { "abc", "def", "hij" };
+	int a = 23;
+	long b = 2233444L;
+	float c = 3.14F;
+	double d = 344.43;
+	long long e = 3444;
 
-	char** p = a;
+	printf("%zu\n", sizeof(int));//4
+	printf("%zu\n", sizeof(double));//8
+	printf("%zu\n", sizeof(long long));//8
 
 
-	printf("%c\n", *(*(p + 2) + 1));
-	printf("%c\n", a[2][1]);
-	printf("%c\n", p[2][1]);
+
+	printf("%llu\n", (long long)(&a));
+	printf("%llu\n", (long long)(&d));
+	printf("%llu\n", (long long)(&e));
 
 
 	return 0;

@@ -23,6 +23,14 @@ int main() {
 	//TODO 2.利用二级指针获取到变量中记录的数据
 	printf("%d\n", **pp);
 
+
+	//利用二级指针获取hij中的i
+	char* a[] = { "abc", "def", "hij" };
+	char** p = a;
+	printf("%c\n", *(*(p + 2) + 1));
+	printf("%c\n", a[2][1]);
+	printf("%c\n", p[2][1]);
+
 	return 0;
 }
 #endif // C_SECONDARY_POINTER

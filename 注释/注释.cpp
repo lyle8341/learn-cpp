@@ -5,13 +5,13 @@ using namespace std;
 
 
 #ifdef CPP_COMMENT
-// å•è¡Œæ³¨é‡Š
+// µ¥ÐÐ×¢ÊÍ
 
 
 /*
- mainæ˜¯ä¸€ä¸ªç¨‹åºçš„å…¥å£
- æ¯ä¸ªç¨‹åºéƒ½å¿…é¡»æœ‰è¿™ä¹ˆä¸€ä¸ªå‡½æ•°
- æœ‰ä¸”ä»…æœ‰ä¸€ä¸ª
+ mainÊÇÒ»¸ö³ÌÐòµÄÈë¿Ú
+ Ã¿¸ö³ÌÐò¶¼±ØÐëÓÐÕâÃ´Ò»¸öº¯Êý
+ ÓÐÇÒ½öÓÐÒ»¸ö
 */
 
 int main() {
